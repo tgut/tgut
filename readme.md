@@ -1,3 +1,5 @@
-Good:Linux,Autosar arch,c++,c
+##Good:
+Linux,Autosar arch,c++,c
 
-Bad:Oral expression
+##Bad
+Oral expression
