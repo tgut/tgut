@@ -1,5 +1,5 @@
-##Good:
+## Good:
 Linux,Autosar arch,c++,c
 
-##Bad
+## Bad
 Oral expression
