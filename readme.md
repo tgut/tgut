@@ -1,5 +1,5 @@
 ## Good
-:thumbsup:Linux,Autosar arch,c++,c
+:thumbsup:Linux command,Autosar arch,c basic,c++ basic
 
 ## Bad
 :point_right:*
