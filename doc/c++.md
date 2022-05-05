@@ -23,3 +23,22 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 #### operation
  distance,unique,next,pre,find_if,reverse_iterator 隶属 [stl](https://www.cnblogs.com/blog-yejy/p/9551346.html) 提供的接口(todo)
 
+#### 深拷贝/浅拷贝
+* 浅拷贝只是增加了一个指针指向已经存在的内存。
+* 深拷贝就是增加一个指针并且申请一个新的内存，使这个增加的指针指向这个新的内存
+  
+[example](https://blog.csdn.net/wzz953200463/article/details/103587545)
+
+### lamda表达式
+```c++
+[ capture ] ( params ) opt -> ret { body; };
+```
+其中 capture 是捕获列表，params 是参数表，opt 是函数选项，ret 是返回值类型，body是函数体。
+
+[example](../c++/lamda.cpp)
+
+### 多线程(todo)
+
+### signal使用（todo）
+
+### template(todo)
