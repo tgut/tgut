@@ -20,6 +20,7 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 
 ### smart pointer（todo）
 
+[c++11中智能指针的原理、使用、实现](https://www.cnblogs.com/wxquare/p/4759020.html)
 #### operation
  distance,unique,next,pre,find_if,reverse_iterator 隶属 [stl](https://www.cnblogs.com/blog-yejy/p/9551346.html) 提供的接口(todo)
 
@@ -39,6 +40,15 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 
 ### 多线程(todo)
 
+[example](https://blog.csdn.net/weixin_43971373/article/details/119678930)
+[print sequence abc](../c++/print_abc_sequence.cpp)
+[print random number](../c++/nvidia_programming.cpp)
 ### signal使用（todo）
 
 ### template(todo)
+
+
+函数模板
+[example](http://c.biancheng.net/view/320.html)
+类模板
+[example](http://c.biancheng.net/view/2317.html)
