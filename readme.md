@@ -1,5 +1,5 @@
 ## Good
-:thumbsup:Linux command,Autosar arch,c basic,c++ basic
+:thumbsup:Linux,Autosar CAN,c basic,c++ basic,distributed computing beginner
 
 ## Bad
 :point_right:*
