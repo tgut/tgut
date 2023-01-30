@@ -12,6 +12,8 @@
 [c语言static的用法](https://blog.csdn.net/weixin_35756130/article/details/112115302)
 
 ### c语言程序内存分布
+
+```bash
 high address   |----------------------|
                |       stack          |
                |                      | 
@@ -27,6 +29,7 @@ high address   |----------------------|
                |----------------------|
                |        text          |
 low address    |----------------------|
+```
 
 我们可以使用size/objdump命令在linux下查看c语言在以上区域的大小。
 
