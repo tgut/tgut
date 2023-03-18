@@ -5,7 +5,8 @@ refer http://c.biancheng.net/view/3741.html
 #include<vector>
 #include<algorithm>
 
-#define LAMDA_DEC
+#define LAMDA_EXP
+
 #ifdef SELF_TEST
 #include<iostream>
 int main(){

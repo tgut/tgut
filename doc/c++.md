@@ -1,3 +1,17 @@
+### c++内存分布
+
+常量存储区，静态存储区，自由存储区，堆以及栈。
+
+常量存储区存储的是只读常量，无法修改，例如字符串字面值常量，全局定义的带const关键字的常量都存放在该区域。 
+静态存储区存储的是全局中定义的变量以及程序中带 static 关键字的变量。
+自由存储区是一个更加抽象的概念，是 C++ 使用 new/delete 动态管理对象的一个抽象概念
+堆是操作系统维护的区域。
+栈是用户操作的内存区
+
+
+[地址空间：由 C 至 C++](https://supwills.com/post/address-space/)
+
+
 ### iterator
     作用类似c语言中下标访问元素（vecotr,string）。library container里一般都支持iterator访问元素。
     This iterator(end) denotes a nonexistent element “off the end” of the container.
@@ -10,7 +24,7 @@
     以上容器的复杂度
 
 ####  stack 属于哪一类（todo）？
-
+    不属于序列容器，因为其没有iterator，所以不属于sequence容器。也没有关联容器的。。。
 ### auto decltype keyword
     auto 是自动获取变量类型，编译器可以推断；decltype声明变量为推断类型。
     [decltype](http://c.biancheng.net/view/7151.html#:~:text=decltype%20%E6%98%AF%E2%80%9Cdeclare%20type%E2%80%9D%E7%9A%84%E7%BC%A9%E5%86%99%EF%BC%8C%E8%AF%91%E4%B8%BA%E2%80%9C%E5%A3%B0%E6%98%8E%E7%B1%BB%E5%9E%8B%E2%80%9D%E3%80%82.%20%E6%97%A2%E7%84%B6%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%BA%86%20auto%20%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%20decltype%20%E5%85%B3%E9%94%AE%E5%AD%97%E5%91%A2%EF%BC%9F.,%28exp%29%20varname%20%3D%20value%3B%20%E5%85%B6%E4%B8%AD%EF%BC%8Cvarname%20%E8%A1%A8%E7%A4%BA%E5%8F%98%E9%87%8F%E5%90%8D%EF%BC%8Cvalue%20%E8%A1%A8%E7%A4%BA%E8%B5%8B%E7%BB%99%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC%EF%BC%8Cexp%20%E8%A1%A8%E7%A4%BA%E4%B8%80%E4%B8%AA%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%82)
@@ -47,7 +61,8 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 
 ### template(todo)
 
-
+c++模板
+[c++模板](https://www.runoob.com/cplusplus/cpp-templates.html)
 函数模板
 [example](http://c.biancheng.net/view/320.html)
 类模板
@@ -55,3 +70,19 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 
 
 ### 虚函数的调用关系（todo）
+
+### 设计模式（c++）
+
+[菜鸟笔记设计模式](https://www.coonote.com/cpp-design-pattern/cpp-decoration-mode.html)
+
+### 回调函数的使用和意义（todo）
+
+解耦
+
+[C 语言回调函数详解](https://www.runoob.com/w3cnote/c-callback-function.html)
+
+
+### 左值和右值-->拷贝构造，移动构造(todo)
+
+[拷贝构造，移动构造](https://www.jianshu.com/p/f5d48a7f5a52）
+[一次性搞定右值，右值引用（&&），和move语义](https://juejin.cn/post/6844903497075294216)

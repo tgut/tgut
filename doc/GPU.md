@@ -70,3 +70,4 @@ Synchronizing across streams using an event
 4. [英伟达GPU架构演进近十年，从费米到安培](https://zhuanlan.zhihu.com/p/413145211)
 5. [操作流程和kernel概念](https://www.cnblogs.com/hankeyyh/p/6580427.html)
 6. [cuda stream和event](https://www.cnblogs.com/1024incn/p/5891051.html)
+7. [深入GPU硬件架构及运行机制](https://www.cnblogs.com/timlly/p/11471507.html)

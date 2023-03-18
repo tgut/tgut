@@ -173,3 +173,21 @@ KiB Swap:        0 total,        0 free,        0 used. 52080537+avail Mem
 13094 root      20   0   11732   3248   2904 S   0.0  0.0   0:00.00              `- mtail.sh                                                                                                                                                                                                          
 13863 root      20   0  720288  23412   9496 S   1.3  0.0   0:18.39                  `- mtail
 ```
+
+#### linux进程调度的模式，以及如何配置进程的调度模式(todo)
+
+ps -c命令可以查看进程的调度.(TS应该是other调度模式)
+```bash
+tgut@DESKTOP-KM8414E:~/Documents/test$ ps -c
+  PID CLS PRI TTY          TIME CMD
+ 3948 TS   19 pts/10   00:00:01 bash
+ 9163 TS   19 pts/10   00:00:00 ps
+```
+
+chrt -r -p pid 命令可以修改进程的调度模式
+
+
+### 参考
+
+[linux核心概念详解](https://s3.shizhz.me/)
+[Operating System: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)

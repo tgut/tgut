@@ -28,15 +28,36 @@ WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance 
 
 1. horovod总结
 
+[深度学习分布式训练框架 Horovod](https://www.cnblogs.com/rossiXYZ/p/14856464.html)
+
 2. pytorch源码分析
 
 3. shell 脚本基本语法
 
 4. tensorflow2/PalMe 2算法原理（端到端训练）
 
+5. 性能调优的方向CPU/文件io/内存/网络
+
+cpu工具：top
+
+文件io工具：iostat
+
+内存工具：vmstat
+
+网络io工具：sar
+
+实际项目上使用的优化技巧：数据预取，设置cpu的affinity,合并tensorflow/pytorch的stream。
 
 
+[分布式-性能调优](https://zhuanlan.zhihu.com/p/397896543)
 
+### 小米
+
+[soc和mcu之间通信方式](https://zhuanlan.zhihu.com/p/599146849)：uart->spi->ethernet 
+[自动驾驶系统性能优化](https://zhuanlan.zhihu.com/p/63125847)
+DoIP,DDS,aurix平台(TC397)(todo)
+
+### 技术总结
 #### RDMA 和 DPDK对比
 
 相同点：
