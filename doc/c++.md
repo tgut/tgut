@@ -84,5 +84,22 @@ c++模板
 
 ### 左值和右值-->拷贝构造，移动构造(todo)
 
+1. 左值是等号的左边，可以取地址；右值位于等号的右边无法取地址。
+
+2. 右值引用（&&）是把常量引用细分成常量引用和右值。[参考代码1](../c%2B%2B/l_r_value.cpp) [参考代码2](../c%2B%2B/and_function.cpp)
+
+3. move的作用就是把左值转变为右值。
+
+```bash
+int a = 5; // a是个左值
+int &ref_a_left = a; // 左值引用指向左值
+int &&ref_a_right = std::move(a); // 通过std::move将左值转化为右值，可以被右值引用指向
+ 
+cout << a; // 打印结果：5
+```
+
 [拷贝构造，移动构造](https://www.jianshu.com/p/f5d48a7f5a52）
+
 [一次性搞定右值，右值引用（&&），和move语义](https://juejin.cn/post/6844903497075294216)
+
+[一文读懂C++右值引用和std::move](https://zhuanlan.zhihu.com/p/335994370)
