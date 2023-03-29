@@ -168,3 +168,26 @@ greedy algorithm
 
 #### permutation sequence(todo)
 c https://blog.csdn.net/yuqinjh/article/details/79427400
+
+
+### c++ leetcode
+
+1.递归写法
+
+2.回溯写法
+
+3.深度优先搜索
+
+4.广度优先搜索
+
+#### 二叉树，[递归能做的，栈也能做](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%AD%E4%BB%A3%E9%81%8D%E5%8E%86.html)
+#### 前缀树（字典树）的特性
+
+
+前缀树的3个基本性质：
+
+根节点不包含字符，除根节点外每一个节点都只包含一个字符。
+从根节点到某一节点，路径上经过的字符连接起来，为该节点对应的字符串。
+每个节点的所有子节点包含的字符都不相同。
+
+[字典树](https://zhuanlan.zhihu.com/p/28891541)

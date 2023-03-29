@@ -34,6 +34,18 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 
 ### smart pointer（todo）
 
+shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指向对象，weak_ptr用来检测shared_ptr.
+
+1. shared_ptr 使用：make_shared初始化，拷贝的时候引用计数加1,赋值引用计数减1. [使用](../c++/shared_ptr_usage.cpp)
+
+2. unique_ptr 使用：通过构造函数指定、通过reset方法重新指定、通过release方法释放所有权、通过移动语义转移所有权.[使用](../c++/unique_ptr_usage.cpp)
+
+3.  weak_ptr 使用：没有重载operator*和->,它的最大作用在于协助shared_ptr工作，像旁观者那样观测资源的使用情况。[使用](../c++/weak_ptr_usage.cpp)
+
+以上三个指针的功能是为了避免循环应用，示例通过
+>    原始指针版本->共享指针版本->共享指针+weak_ptr版本  来解决循环引用问题
+>   ([原始版本](../c%2B%2B/circular_reference.cpp)->[共享指针+weak_ptr版本](../c%2B%2B/circular_reference_2.cpp))
+
 [c++11中智能指针的原理、使用、实现](https://www.cnblogs.com/wxquare/p/4759020.html)
 #### operation
  distance,unique,next,pre,find_if,reverse_iterator 隶属 [stl](https://www.cnblogs.com/blog-yejy/p/9551346.html) 提供的接口(todo)
@@ -59,15 +71,19 @@ https://blog.csdn.net/liujiayu2/article/details/45101791
 [print random number](../c++/nvidia_programming.cpp)
 ### signal使用（todo）
 
-### template(todo)
+### template
 
-c++模板
+1.  c++模板
 [c++模板](https://www.runoob.com/cplusplus/cpp-templates.html)
-函数模板
+2.  函数模板
 [example](http://c.biancheng.net/view/320.html)
-类模板
+3.  类模板
 [example](http://c.biancheng.net/view/2317.html)
 
+class vs typename
+
+模板中，如果模板参数不确定是类的话，使用typename来替换。
+[class 关键词和 typename的区别](https://liam.page/2018/03/16/keywords-typename-and-class-in-Cxx/)
 
 ### 虚函数的调用关系（todo）
 
@@ -103,3 +119,7 @@ cout << a; // 打印结果：5
 [一次性搞定右值，右值引用（&&），和move语义](https://juejin.cn/post/6844903497075294216)
 
 [一文读懂C++右值引用和std::move](https://zhuanlan.zhihu.com/p/335994370)
+
+### stl(todo)
+
+[六大组件](https://blog.csdn.net/jnu_simba/article/details/9410459)
