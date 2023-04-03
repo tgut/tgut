@@ -123,3 +123,14 @@ cout << a; // 打印结果：5
 ### stl(todo)
 
 [六大组件](https://blog.csdn.net/jnu_simba/article/details/9410459)
+
+### 算法接口
+    sort 使用多种排序算法（insert,heap,quicksort）
+    stable_sort
+    isupper
+    find
+    islower
+
+#### 参考
+
+[Sort function in C++](https://www.mygreatlearning.com/blog/sort-function-in-cpp/#sort-algorithm)

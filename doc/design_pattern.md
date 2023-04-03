@@ -5,6 +5,7 @@ c++ version
 [代码](../c%2B%2B/singleton.cpp)
  
 [单例模式](https://zhuanlan.zhihu.com/p/37469260)
+[使用锁机制来保护](https://zhuanlan.zhihu.com/p/83539039)
 
 ### 简单工厂模式->工厂方法->模板工厂
 [简单工厂](../c%2B%2B/simple_factor.cpp)->[工厂方法](../c%2B%2B/factor_method.cpp)->[模板工厂](../c%2B%2B/template_factory.cpp)
