@@ -126,10 +126,11 @@ cout << a; // 打印结果：5
 
 ### 算法接口
     sort 使用多种排序算法（insert,heap,quicksort）
-    stable_sort
-    isupper
-    find
-    islower
+1. stable_sort
+2. isupper
+3. isalpha
+4. [find](https://cplusplus.com/reference/algorithm/find/?kw=find)
+5. islower
 
 #### 参考
 

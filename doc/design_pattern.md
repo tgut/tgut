@@ -19,3 +19,9 @@ c++ version
 [原型模式](https://zhuanlan.zhihu.com/p/365222623)
 
 ### 代理模式(todo)
+
+### 设计模式的原则
+
+[开放-封闭原则](https://www.cnblogs.com/gaochundong/p/open_closed_principle.html)
+
+    对于继承是开放的，对于修改时封闭的。

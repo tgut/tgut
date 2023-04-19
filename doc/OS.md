@@ -186,6 +186,13 @@ tgut@DESKTOP-KM8414E:~/Documents/test$ ps -c
 
 chrt -r -p pid 命令可以修改进程的调度模式
 
+### 进程、线程间通信的方式
+
+进程间通信的方式有：1、无名管道( pipe )；2、高级管道(popen)；3、有名管道(named pipe)；4、消息队列( message queue )；5、信号量( semophore )；7、共享内存( shared memory )；8、套接字( socket )
+
+线程通信的方式：1、信号量，2、互斥锁 3、临界区 4、条件变量
+
+[进程间通信和线程间通信的几种方式](https://www.cnblogs.com/fanguangdexiaoyuer/p/10834737.html)
 
 ### 参考
 

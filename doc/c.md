@@ -55,8 +55,23 @@ Idx Name          Size      VMA               LMA               File off  Algn
 ```
 bss is shorted for block started by symbol.
 
+
 [memory.c](../c/memory.c)
 
-[memroyLayOutC's Picture](../pic/memoryLayoutC.jpg)
+![memroyLayOutC's Picture](../pic/memoryLayoutC.jpg)
 
 [c语言中各种变量的是如何存储的](https://blog.csdn.net/weixin_42400669/article/details/117021980)
+
+
+### 程序的编译过程
+
+预处理->编译->汇编->链接
+
+![compile_process](../pic/doc/c/compile_process.png)
+
+
+> 参考
+
+[深入理解计算机系统](https://github.com/tgut/books/blob/master/computer_basic/Computer%20Systems%20-%20A%20Programmer's%20Perspective%20(2nd).pdf)
+
+[程序详细编译过程（预处理、编译、汇编、链接)](https://zhuanlan.zhihu.com/p/476697014?utm_campaign=shareopn&utm_medium=social&utm_oi=588072105724088320&utm_psn=1631984361023930368&utm_source=wechat_session)

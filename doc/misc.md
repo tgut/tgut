@@ -2,7 +2,7 @@
 
 1. 相关硬件的深入（todo）
 
-rdma/dpdk/spdk pcie cxl(compute express link)
+cxl(compute express link)
 
 dpdk:data plane develop kit
 
@@ -14,7 +14,7 @@ aarch64是64位执行状态，包括状态的异常模型、内存模型、程�
 
 2. arm mali gpu
 
-3.Vulkan,OpenGL/ES,EGL.
+3. Vulkan,OpenGL/ES,EGL.
 
 Vulkan is next generation of OpenGL.
 
@@ -53,11 +53,65 @@ cpu工具：top
 
 ### 小米
 
+#### QoS in DDS
+QoS, or Quality of Service, is a set of parameters that control the behavior of a DDS system. These parameters can be used to control the reliability, liveliness, durability, and other aspects of the system. Some qos example as below
+
+```bash
+// Create a QosPolicy for the DataWriter.
+dds.DataWriterQos qos = new dds.DataWriterQos();
+
+// Set the reliability to reliable.
+qos.reliability.kind = dds.ReliabilityQosPolicyKind.Reliable;
+
+// Set the liveliness to automatic.
+qos.liveliness.kind = dds.LivelinessQosPolicyKind.Automatic;
+
+// Set the durability to transient local.
+qos.durability.kind = dds.DurabilityQosPolicyKind.TransientLocal;
+
+// Set the history to unlimited.
+qos.history.kind = dds.HistoryQosPolicyKind.KeepLast;
+
+// Set the history depth to 100.
+qos.history.depth = 100;
+
+// Set the latency budget to 100 milliseconds.
+qos.latency_budget = 100;
+
+// Set the ownership to exclusive.
+qos.ownership.kind = dds.OwnershipQosPolicyKind.Exclusive;
+
+// Set the access control to allow all readers.
+qos.access_control.kind = dds.AccessDecisionKind.AllowAll;
+
+// Create a QosProfile for the DataWriter.
+dds.QosProfile profile = new dds.QosProfile();
+
+// Add the QosPolicy to the QosProfile.
+profile.add("DataWriterQos", qos);
+
+// Set the QosProfile for the DataWriter.
+writer.qos = profile;
+
+```
+
 [soc和mcu之间通信方式](https://zhuanlan.zhihu.com/p/599146849)：uart->spi->ethernet 
 [自动驾驶系统性能优化](https://zhuanlan.zhihu.com/p/63125847)
-DoIP,DDS,aurix平台(TC397)(todo)
+aurix平台(TC397)(todo)
+
+
+#### p3server,p2server(todo)
+
+#### backtrace,tasking编译器编c++(todo)
+
+[backtrace调试程序段错误](https://blog.csdn.net/u011298001/article/details/84400991)
 
 ### 小鹏汽车
+
+
+### 博世
+
+粒子滤波，卡尔曼滤波，贝叶斯理论(todo) 参考bili上老王课程
 
 ### 技术总结
 #### RDMA 和 DPDK对比
@@ -105,6 +159,42 @@ The /system/core directory in the Linux kernel source tree contains various core
 8. include: This directory contains header files that are used throughout the Android system, including kernel headers and headers for various system libraries.
 
 Overall, the /system/core directory contains essential components of the Android system that are necessary for the system to function properly.
+
+### 分布式面经(todo)
+
+[分布式面经1](https://www.jianshu.com/p/182fe2d1946e)
+
+
+### 沐曦科技
+
+#### system c
+
+asic设计流程:
+
+需求->顶层架构设计->芯片建模->逻辑设计 和 功能仿真->物理设计
+
+![芯片设计流程](../pic/doc/misc/asic%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B.jpg)
+
+
+c model 的功能定位：
+
+1. 作为算法模型的C版本，定义模块输入输出行为的标准，实现数据的bit-match；
+
+2. 在1的基础上，定义模块的内部结构和资源约束；
+
+3. 在2的基础上，精确定义模块的输入输出时序，实现cycle-accurate；
+
+c model的设计流程：
+
+1. 解决基础的数学运算问题，比如整数、定点数、点数、指数、三角函数运算
+
+2. 定义模块的内部结构和资源约束
+
+3. cycle-accurate基别的仿真
+
+#### 参考
+
+[ASIC Design and C Model](https://zhuanlan.zhihu.com/p/263012865)
 
 ### 参考
 
