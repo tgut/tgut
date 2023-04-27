@@ -63,3 +63,7 @@ dds 主要提供订阅和分发服务，其使用的传输协议有一下三种�
 
 GPTP stands for "IEEE 802.1AS-Rev Time-Sensitive Networking (TSN) Protocol", also known as "IEEE 1588-2008 Precision Time Protocol (PTP) for G.MACs" or "gPTP" for short. It is a standard for time synchronization of clocks in distributed systems, particularly those that require precise timing, such as industrial automation, avionics, and multimedia applications.
 
+## LIN总线
+    Local Interconnect Network,类似uart总线，是基于 UART/SCI(通用异步收发器/串行通信接口)的低成本串行通信协议。
+
+[LIN总线的学习](https://blog.csdn.net/zz56z56/article/details/95034165#:~:text=%E6%80%BB%E7%BA%BF%E7%9A%84%E5%AD%A6%E4%B9%A0-,LIN%E4%BB%8B%E7%BB%8DLIN%20%E6%98%AFLocal%20Interconnect%20Network%20%E7%9A%84%E7%BC%A9%E5%86%99%EF%BC%8C%E6%98%AF,%E5%BA%94%E7%94%A8%E9%83%BD%E4%BD%BF%E7%94%A8LIN%E6%80%BB%E7%BA%BF%E3%80%82)

@@ -24,7 +24,7 @@
     以上容器的复杂度
 
 ####  stack 属于哪一类（todo）？
-    不属于序列容器，因为其没有iterator，所以不属于sequence容器。也没有关联容器的。。。
+    不属于序列容器，因为其没有iterator，所以不属于sequence容器。也没有关联容器的。属于容器适配器。
 ### auto decltype keyword
     auto 是自动获取变量类型，编译器可以推断；decltype声明变量为推断类型。
     [decltype](http://c.biancheng.net/view/7151.html#:~:text=decltype%20%E6%98%AF%E2%80%9Cdeclare%20type%E2%80%9D%E7%9A%84%E7%BC%A9%E5%86%99%EF%BC%8C%E8%AF%91%E4%B8%BA%E2%80%9C%E5%A3%B0%E6%98%8E%E7%B1%BB%E5%9E%8B%E2%80%9D%E3%80%82.%20%E6%97%A2%E7%84%B6%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%BA%86%20auto%20%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%20decltype%20%E5%85%B3%E9%94%AE%E5%AD%97%E5%91%A2%EF%BC%9F.,%28exp%29%20varname%20%3D%20value%3B%20%E5%85%B6%E4%B8%AD%EF%BC%8Cvarname%20%E8%A1%A8%E7%A4%BA%E5%8F%98%E9%87%8F%E5%90%8D%EF%BC%8Cvalue%20%E8%A1%A8%E7%A4%BA%E8%B5%8B%E7%BB%99%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC%EF%BC%8Cexp%20%E8%A1%A8%E7%A4%BA%E4%B8%80%E4%B8%AA%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%82)
@@ -98,9 +98,9 @@ class vs typename
 [C 语言回调函数详解](https://www.runoob.com/w3cnote/c-callback-function.html)
 
 
-### 左值和右值-->拷贝构造，移动构造(todo)
+### 左值和右值-->拷贝构造，移动构造
 
-1. 左值是等号的左边，可以取地址；右值位于等号的右边无法取地址。
+1. 左值是等号的左边，可以取地址；右值位于等号的右边无法取地址（临时变量属于右值，参考[拷贝构造，移动构造](https://www.jianshu.com/p/f5d48a7f5a52)）。
 
 2. 右值引用（&&）是把常量引用细分成常量引用和右值。[参考代码1](../c%2B%2B/l_r_value.cpp) [参考代码2](../c%2B%2B/and_function.cpp)
 
@@ -114,7 +114,13 @@ int &&ref_a_right = std::move(a); // 通过std::move将左值转化为右值，�
 cout << a; // 打印结果：5
 ```
 
-[拷贝构造，移动构造](https://www.jianshu.com/p/f5d48a7f5a52）
+
+c++11之前只有拷贝构造，拷贝赋值运算符,析构函数；
+c++11开始添加 移动(move)构造，移动（move）赋值运算符。
+
+> 参考
+
+ [拷贝构造，移动构造](https://www.jianshu.com/p/f5d48a7f5a52)
 
 [一次性搞定右值，右值引用（&&），和move语义](https://juejin.cn/post/6844903497075294216)
 
@@ -124,6 +130,8 @@ cout << a; // 打印结果：5
 
 [六大组件](https://blog.csdn.net/jnu_simba/article/details/9410459)
 
+>[感恩STL](https://blog.csdn.net/elloop/article/details/50340623)
+
 ### 算法接口
     sort 使用多种排序算法（insert,heap,quicksort）
 1. stable_sort
@@ -131,7 +139,22 @@ cout << a; // 打印结果：5
 3. isalpha
 4. [find](https://cplusplus.com/reference/algorithm/find/?kw=find)
 5. islower
+6. [upper_bound](https://en.cppreference.com/w/cpp/algorithm/upper_bound)
 
-#### 参考
+7. [binary_search](https://en.cppreference.com/w/cpp/algorithm/binary_search)
+
+>参考
 
 [Sort function in C++](https://www.mygreatlearning.com/blog/sort-function-in-cpp/#sort-algorithm)
+
+### c++默认构造函数和初始化列表
+
+初始化函数列表可以对const,引用成员进行初始化。用户自己定义的构造函数中如果对const,引用成员做复制操作则会报错。
+
+编译器会默认生成构造函数的说法，其实不完全准确(默认该类的成员或方法，编译器可以默认赋值或者实现的话，是可以生成默认构造函数的；否则不行)。
+
+[default_construct.cpp](../c%2B%2B/test/default_construct.cpp)
+
+>参考
+[c++ 中关于没有默认构造函数的成员类对象问题](https://blog.csdn.net/lqlblog/article/details/17473381)
+[c++ 类构造函数初始化列表](https://www.runoob.com/w3cnote/cpp-construct-function-initial-list.html)

@@ -75,3 +75,9 @@ bss is shorted for block started by symbol.
 [深入理解计算机系统](https://github.com/tgut/books/blob/master/computer_basic/Computer%20Systems%20-%20A%20Programmer's%20Perspective%20(2nd).pdf)
 
 [程序详细编译过程（预处理、编译、汇编、链接)](https://zhuanlan.zhihu.com/p/476697014?utm_campaign=shareopn&utm_medium=social&utm_oi=588072105724088320&utm_psn=1631984361023930368&utm_source=wechat_session)
+
+### makefile 学习
+
+
+
+[跟我一起写Makefile](https://seisman.github.io/how-to-write-makefile/overview.html#id2)

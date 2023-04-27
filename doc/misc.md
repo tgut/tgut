@@ -204,3 +204,10 @@ c model的设计流程：
 4. [RDMA vs. DPDK](https://www.jianshu.com/p/09b4b756b833)
 5. [使用 SPDK 技术优化虚拟机本地存储的 IO 性能](https://blog.didiyun.com/index.php/2018/12/20/spdk-io/)
 6. [好大一棵树 - PCIe Tree](https://mp.weixin.qq.com/s?__biz=MzU4MTczMDg1Nw==&mid=2247483660&idx=1&sn=c3f0da07f82685a1c09f176efb4fb695&chksm=fd42564aca35df5c358f3744cb784d6af8ee2993fa5a740eaeb44c3579e3f0c62d217e753477&scene=178&cur_album_id=1337043626001661952#rd)
+
+
+### MQTT
+基于tcp/ip的一个协议，qos有0，1，2三种。
+
+>参考[知乎mqtt协议，终于有人讲清楚了](https://zhuanlan.zhihu.com/p/421109780)
+
