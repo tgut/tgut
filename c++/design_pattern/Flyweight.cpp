@@ -4,7 +4,8 @@
 using namespace std;
 
 class Flyweight{
-  virtual void operation(int extrinsicstate);
+  public:
+    virtual void operation(int extrinsicstate) const = 0;
 };
 
 class ConcreteFlyweight:public Flyweight{
@@ -24,9 +25,9 @@ class FlyweightFactory{
         unordered_map<string,Flyweight> data;
     public:
          FlyweightFactory(){
-            data.insert("x",ConcreteFlyweight);
-            data.insert("y",ConcreteFlyweight);
-            data.insert("z",UnsharedConcreteFlyweight);
+            data.insert(make_pair<std::string, Flyweight>("x",ConcreteFlyweight()));
+            data.insert(make_pair<std::string, Flyweight>("y",ConcreteFlyweight()));
+            data.insert(make_pair<std::string, Flyweight>("z",UnsharedConcreteFlyweight()));
          }
          Flyweight getFlyweight(string str){
             return (data[str]);

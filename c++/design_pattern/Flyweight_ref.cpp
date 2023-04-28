@@ -1,6 +1,7 @@
 
 #include<iostream>
 #include<string>
+#include<unordered_map>
 
 /**
  * Flyweight Design Pattern

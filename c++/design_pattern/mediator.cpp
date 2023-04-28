@@ -5,7 +5,7 @@ using namespace std;
 class Mediator
 {
 public:
-    virtual void send(string st, string coll) const = 0;
+    virtual void send(string st, string coll) const = 0;//why const ==0,todo
 };
 
 class Colleage

@@ -25,14 +25,40 @@
 
 ####  stack 属于哪一类（todo）？
     不属于序列容器，因为其没有iterator，所以不属于sequence容器。也没有关联容器的。属于容器适配器。
-### auto decltype keyword
-    auto 是自动获取变量类型，编译器可以推断；decltype声明变量为推断类型。
-    [decltype](http://c.biancheng.net/view/7151.html#:~:text=decltype%20%E6%98%AF%E2%80%9Cdeclare%20type%E2%80%9D%E7%9A%84%E7%BC%A9%E5%86%99%EF%BC%8C%E8%AF%91%E4%B8%BA%E2%80%9C%E5%A3%B0%E6%98%8E%E7%B1%BB%E5%9E%8B%E2%80%9D%E3%80%82.%20%E6%97%A2%E7%84%B6%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%BA%86%20auto%20%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E9%9C%80%E8%A6%81%20decltype%20%E5%85%B3%E9%94%AE%E5%AD%97%E5%91%A2%EF%BC%9F.,%28exp%29%20varname%20%3D%20value%3B%20%E5%85%B6%E4%B8%AD%EF%BC%8Cvarname%20%E8%A1%A8%E7%A4%BA%E5%8F%98%E9%87%8F%E5%90%8D%EF%BC%8Cvalue%20%E8%A1%A8%E7%A4%BA%E8%B5%8B%E7%BB%99%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC%EF%BC%8Cexp%20%E8%A1%A8%E7%A4%BA%E4%B8%80%E4%B8%AA%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%82)
 
-### static_cast dynamic_cast, const_cast(todo)
-https://blog.csdn.net/liujiayu2/article/details/45101791 
+### static_cast dynamic_cast, const_cast,reinterpreter_cast
 
-### smart pointer（todo）
+
+1. static_cast可以替代c语言中的强制转换,做上行转换时安全的，是静态类型转换，在编译时做安全检查。
+
+2. dynamic_cast用于父类到子类的转换（下行转换），是动态类型转换，在运行时做安全检查。
+
+[dynamic_cast.cpp](../c%2B%2B/dynamic_cast.cpp)
+
+3. const_cast 用来将类型的const、volatile和__unaligned属性移除。常量指针被转换成非常量指针，并且仍然指向原来的对象；常量引用被转换成非常量引用，并且仍然引用原来的对象。
+
+[const_cast.cpp](../c%2B%2B/const_cast.cpp) 使用const_cast.
+
+[test_const_cast.cpp](../c%2B%2B/test_const_cast.cpp) 反例，下面是编译时的错误信息。
+
+```bash
+      |                         (
+test_const_cast.cpp:6:26: error: expected ‘)’ before ‘;’ token
+    6 |  int y = const_cast<int>x;
+      |                          ^
+      |                          )
+test_const_cast.cpp:6:26: error: invalid use of const_cast with type ‘int’, which is not a pointer, reference, nor a pointer-to-data-member type
+```
+
+4. reinterpreter_cast 用于不同类型之间的位模式转换，例如将指针类型转换为整型或将整型转换为浮点型等。
+
+[reinterpret_cast.cpp](../c%2B%2B/reinterpret_cast.cpp)
+
+>参考
+
+[static_cast, dynamic_cast, const_cast学习和探讨](https://blog.csdn.net/liujiayu2/article/details/45101791 )
+
+### smart pointer
 
 shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指向对象，weak_ptr用来检测shared_ptr.
 
@@ -46,7 +72,7 @@ shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指�
 >    原始指针版本->共享指针版本->共享指针+weak_ptr版本  来解决循环引用问题
 >   ([原始版本](../c%2B%2B/circular_reference.cpp)->[共享指针+weak_ptr版本](../c%2B%2B/circular_reference_2.cpp))
 
-[c++11中智能指针的原理、使用、实现](https://www.cnblogs.com/wxquare/p/4759020.html)
+[c++11中智能指针的原理、使用、实现](https://www.cnblogs.com/wxquare/p/4759020.html)(todod)
 #### operation
  distance,unique,next,pre,find_if,reverse_iterator 隶属 [stl](https://www.cnblogs.com/blog-yejy/p/9551346.html) 提供的接口(todo)
 
@@ -158,3 +184,35 @@ c++11开始添加 移动(move)构造，移动（move）赋值运算符。
 >参考
 [c++ 中关于没有默认构造函数的成员类对象问题](https://blog.csdn.net/lqlblog/article/details/17473381)
 [c++ 类构造函数初始化列表](https://www.runoob.com/w3cnote/cpp-construct-function-initial-list.html)
+
+### auto 和decltype的区别
+
+1. 用法
+
+```c++
+auto varname = value;//auto根据=右侧的值来推断类型
+
+decltype (express) var_name [= value]//根据express的结果来推测
+```
+
+2. 对const 和 volatile的处理
+
+auto 对除了引用和指针会丢失上述两个属性（const ,volatile），decltype则一直保留。
+
+3. 对引用
+
+decltype 会保留引用类型，而 auto 会抛弃引用类型，直接推导出它的原始类型。
+
+
+>参考
+
+[C++ auto和decltype的区别](http://c.biancheng.net/view/7158.html#:~:text=auto%20%E5%B0%86%E5%8F%98%E9%87%8F%E7%9A%84%E7%B1%BB%E5%9E%8B,decltype%20%E7%9A%84%E4%BD%BF%E7%94%A8%E6%9B%B4%E5%8A%A0%E7%81%B5%E6%B4%BB%E3%80%82)
+
+### 虚析构函数的作用
+
+在析构的时候(在创建子类，返回父类类型)，达到先析构子类，再析构父类的目的。
+
+[virtual_destruct](../c%2B%2B/virtual_destruct.cpp)
+
+
+[test_construct](../c%2B%2B/test_construct.cpp)
