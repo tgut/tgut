@@ -194,7 +194,17 @@ chrt -r -p pid 命令可以修改进程的调度模式
 
 [进程间通信和线程间通信的几种方式](https://www.cnblogs.com/fanguangdexiaoyuer/p/10834737.html)
 
-### 参考
+> 参考
 
 [linux核心概念详解](https://s3.shizhz.me/)
 [Operating System: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
+### 宏内核vs 微内核
+
+宏内核就是内核空间拥有文件管理，内存管理，进程间通信等机制，用户通过用户空间调用系统接口来访问内核空间。微内核中，文件管理，内存管理，进程管理分配在用户空间和内核空间中。两者设计的区别，宏内核减少了用户空间和内核空间的交互，让内核来协调用户请求，这样内核的压力比较大。两者设计的区别如下，
+
+![微内核vs宏内核](../pic/doc/os/%E5%BE%AE%E5%86%85%E6%A0%B8vs%E5%AE%8F%E5%86%85%E6%A0%B8.jpg)
+
+>参考
+
+[什么是微内核](https://www.zhihu.com/question/339638625)

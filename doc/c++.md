@@ -216,3 +216,43 @@ decltype 会保留引用类型，而 auto 会抛弃引用类型，直接推导�
 
 
 [test_construct](../c%2B%2B/test_construct.cpp)
+
+
+### override关键词
+
+在 C++11 中，如果重写了虚函数但是函数签名不同，则编译器会给出一个警告。
+
+[override.cpp](../c%2B%2B/override.cpp)
+
+
+### delete关键词
+
+1. 禁用特定函数的默认实现，如默认构造函数，拷贝构造函数，拷贝赋值运算符和析构函数
+
+2. 防止类被继承，如果构造函数声明为protected,子类还是可以重写该构造函数。如果在父类中使用"=delete",可以避免这种情况。
+
+[delete_2.cpp](../c%2B%2B/delete_2.cpp)
+
+3. 删除模板特化。
+
+[delete_3.cpp](../c%2B%2B/delete_3.cpp)
+
+### default 关键词
+
+"= default"可以使用编译器自己生成的函数功能（默认构造函数，拷贝构造函数，拷贝复制运算符，析构函数），自己可以不用再编写对应的函数。
+
+[default_keyword.cpp](../c%2B%2B/default_keyword.cpp)-chatgpt promt '= defualt使用举例'
+
+### 类方法=0用法
+
+在C++中，纯虚函数是指在基类中声明但没有定义的虚函数。在声明函数时，使用= 0表示这个函数是纯虚函数。例如：
+
+```c++
+class Base {
+public:
+    virtual void f() = 0;
+};
+```
+纯虚函数使得一个类成为抽象类，不能实例化该类，而是只能被用作接口。派生类必须实现基类中的所有纯虚函数，否则它们也将成为抽象类。
+
+纯虚函数通常用于定义接口，让派生类来实现具体的操作。
