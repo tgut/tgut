@@ -1,7 +1,7 @@
 c++ version
 
 
-### 设计模式的原则
+### 设计模式的原则(todo)
 
 [开放-封闭原则](https://www.cnblogs.com/gaochundong/p/open_closed_principle.html)
 
