@@ -174,9 +174,9 @@ KiB Swap:        0 total,        0 free,        0 used. 52080537+avail Mem
 13863 root      20   0  720288  23412   9496 S   1.3  0.0   0:18.39                  `- mtail
 ```
 
-#### linux进程调度的模式，以及如何配置进程的调度模式(todo)
+#### linux进程调度的模式，以及如何配置进程的调度模式
 
-ps -c命令可以查看进程的调度.(TS应该是other调度模式)
+ps -c命令可以查看进程的调度.(TS应该是other调度模式,)
 ```bash
 tgut@DESKTOP-KM8414E:~/Documents/test$ ps -c
   PID CLS PRI TTY          TIME CMD
@@ -184,7 +184,19 @@ tgut@DESKTOP-KM8414E:~/Documents/test$ ps -c
  9163 TS   19 pts/10   00:00:00 ps
 ```
 
-chrt -r -p pid 命令可以修改进程的调度模式
+chrt -r -p pid //修改进程pid为round robin调度模式
+
+
+> linux调度策略(todo)
+
+> 1. SCHED_OTHER 分时调度策略
+> 2. SCHED_FIFO实时调度策略，先到先服务
+> 3. SCHED_RR实时调度策略，时间片轮转
+
+
+>参考
+
+[linux内核的三种主要调度策略](https://blog.csdn.net/u011308691/article/details/46489939)
 
 ### 进程、线程间通信的方式
 

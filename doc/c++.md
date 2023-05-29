@@ -23,7 +23,7 @@
     map,set，multimap,multiset(order(*),unordered(unordered_*))
     以上容器的复杂度
 
-####  stack 属于哪一类（todo）？
+####  stack 属于哪一类
     不属于序列容器，因为其没有iterator，所以不属于sequence容器。也没有关联容器的。属于容器适配器。
 
 ### static_cast dynamic_cast, const_cast,reinterpreter_cast
@@ -62,7 +62,7 @@ test_const_cast.cpp:6:26: error: invalid use of const_cast with type ‘int’, 
 
 shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指向对象，weak_ptr用来检测shared_ptr.
 
-1. shared_ptr 使用：make_shared初始化，拷贝的时候引用计数加1,赋值引用计数减1. [使用](../c++/shared_ptr_usage.cpp)
+1. shared_ptr 使用：make_shared初始化，拷贝使得对象的引用计数增加1，赋值使得原对象引用计数减1，当计数为0时，自动释放内存。后来指向的对象引用计数加1，指向后来的对象。 [使用](../c++/shared_ptr_usage.cpp)
 
 2. unique_ptr 使用：通过构造函数指定、通过reset方法重新指定、通过release方法释放所有权、通过移动语义转移所有权.[使用](../c++/unique_ptr_usage.cpp)
 
@@ -72,14 +72,15 @@ shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指�
 >    原始指针版本->共享指针版本->共享指针+weak_ptr版本  来解决循环引用问题
 >   ([原始版本](../c%2B%2B/circular_reference.cpp)->[共享指针+weak_ptr版本](../c%2B%2B/circular_reference_2.cpp))
 
-[c++11中智能指针的原理、使用、实现](https://www.cnblogs.com/wxquare/p/4759020.html)(todod)
-#### operation
+[c++11中智能指针的原理、使用、实现](https://www.cnblogs.com/wxquare/p/4759020.html)(todo)
+### STL operation
  distance,unique,next,pre,find_if,reverse_iterator 隶属 [stl](https://www.cnblogs.com/blog-yejy/p/9551346.html) 提供的接口(todo)
 
-#### 深拷贝/浅拷贝
+### 深拷贝/浅拷贝
 * 浅拷贝只是增加了一个指针指向已经存在的内存。
 * 深拷贝就是增加一个指针并且申请一个新的内存，使这个增加的指针指向这个新的内存
-  
+  [shadow_copy.cpp](../c%2B%2B/shadow_copy.cpp)(todo,verify)
+  [deep_copy.cpp](../c%2B%2B/deep_copy.cpp)(todo,verify)
 [example](https://blog.csdn.net/wzz953200463/article/details/103587545)
 
 ### lamda表达式
@@ -95,6 +96,7 @@ shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指�
 [example](https://blog.csdn.net/weixin_43971373/article/details/119678930)
 [print sequence abc](../c++/print_abc_sequence.cpp)
 [print random number](../c++/nvidia_programming.cpp)
+[C++11 并发指南系列](https://www.cnblogs.com/haippy/p/3284540.html) (todo)
 ### signal使用（todo）
 
 ### template
@@ -179,7 +181,7 @@ c++11开始添加 移动(move)构造，移动（move）赋值运算符。
 
 编译器会默认生成构造函数的说法，其实不完全准确(默认该类的成员或方法，编译器可以默认赋值或者实现的话，是可以生成默认构造函数的；否则不行)。
 
-[default_construct.cpp](../c%2B%2B/test/default_construct.cpp)
+[default_construct.cpp](../c%2B%2B/test/default_construct.cpp)(todo,文件找不到)
 
 >参考
 [c++ 中关于没有默认构造函数的成员类对象问题](https://blog.csdn.net/lqlblog/article/details/17473381)

@@ -49,7 +49,10 @@
         "iostream": "cpp",
         "limits": "cpp",
         "typeinfo": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "set": "cpp",
+        "future": "cpp",
+        "mutex": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
