@@ -107,6 +107,7 @@ shared_ptr 所有指针指向同一个对象，unique_ptr只有一个指针指�
 [example](http://c.biancheng.net/view/320.html)
 3.  类模板
 [example](http://c.biancheng.net/view/2317.html)
+[class_template](../c%2B%2B/class_template.cpp)
 
 class vs typename
 
