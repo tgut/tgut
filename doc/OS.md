@@ -220,3 +220,14 @@ chrt -r -p pid //修改进程pid为round robin调度模式
 >参考
 
 [什么是微内核](https://www.zhihu.com/question/339638625)
+
+### Linux Kernel(todo)
+
+
+### 自旋锁（todo）
+
+c++ version
+
+[spin_lock](../c++/OS/spin_lock.cpp)
+
+### 内存池（tood）
