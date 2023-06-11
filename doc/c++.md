@@ -319,8 +319,9 @@ int x = 1 + 2;
 
 >[参考bard](Q:what's the function of keyword inline in c++?)
 
-### virtual function mechenics
-
+### virtual function mechenics（todo）
+ 
+虚函数
 
 
 >ref
