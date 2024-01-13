@@ -211,3 +211,8 @@ c model的设计流程：
 
 >参考[知乎mqtt协议，终于有人讲清楚了](https://zhuanlan.zhihu.com/p/421109780)
 
+
+### frp服务器配置
+
+[FRP搭建内网穿透(亲测有效)](https://blog.csdn.net/qq_36981760/article/details/115713179)
+[Ubuntu下实现Frpc自启动](https://zhuanlan.zhihu.com/p/521448626)

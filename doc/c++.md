@@ -284,6 +284,35 @@ class DerivedClass : public BaseClass {
 
 ```
 
+### explicit关键词
+explicit是C++中的一个关键字，通常用于构造函数和类型转换运算符之前。explicit关键字防止编译器执行非预期的隐式类型转换。
+
+```c++
+class MyString {
+public:
+    // 转换构造函数
+    class MyString {
+public:
+    // 转换构造函数
+    MyString(const char* str) { /*...*/ }
+    //explicit MyString(const char* str) { /*...*/ }/*解决编译器隐式转换问题*/
+};
+
+void func(MyString s) { /*...*/ }
+
+int main() {
+    func("Hello");  // 编译器自动使用构造函数将const char*转换成MyString
+}
+
+};
+
+void func(MyString s) { /*...*/ }
+
+int main() {
+    func("Hello");  // 编译器自动使用构造函数将const char*转换成MyString,在MyString的copy 构造中使用explicit声明就可以避免这个问题。
+}
+
+```
 ###　性能优化（todo）
 
 >参考
@@ -323,6 +352,29 @@ int x = 1 + 2;
  
 虚函数
 
+
+### 变长参数模板
+
+在C++中，...args是一种特殠的参数类型，称为变长参数模板或可变参数模板。它被用于函数模板或类模板，允许您传递任意数量和任意类型的参数。
+
+下面是一个简单的例子，这个函数接收多个参数并打印出它们：
+
+```cpp
+#include <iostream>
+
+template<typename... Args>
+void print(Args... args) {
+    (std::cout << ... << args) << '\n';
+}
+
+int main() {
+    print(1, "Hello", 'c', 3.14);
+    return 0;
+}
+```
+在上述代码中，print函数通过使用...Args定义了一个变长参数模板。然后使用了args...来对所有传递给函数的参数进行操作。在这个例子中，我们只是简单地将所有参数打印出来。
+
+注意，在C++中，变长参数模板的用法比这个例子更加复杂和强大。例如，可以在编译时计算出参数的数量和类型，并根据需要进行相应的操作。
 
 >ref
 

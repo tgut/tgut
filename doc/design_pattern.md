@@ -5,7 +5,16 @@ c++ version
 
 [开放-封闭原则](https://www.cnblogs.com/gaochundong/p/open_closed_principle.html)
 
-    对于继承是开放的，对于修改是封闭的。
+对于继承是开放的，对于修改是封闭的。
+
+|abr|中文名字|全称|
+|---|---|---|
+|SRP|单一职责原则|Single Responsibility Principle｜
+|OCP|开放封闭原则|Open Closed Principle|
+|LSP|里氏替换原则|Liskov Substitution Principle|
+|ISP|接口分离原则|Interface Segregation Principle|
+|DIP|依赖倒置原则|Dependency Inversion Principle|
+|LKP|最少知识原则|Least Knowledge Principle|
 
 ## 创建型模式
 
@@ -518,7 +527,7 @@ c++ version
 
 2. uml图
 
-![](../pic/design_pattern/.png)
+![](../pic/design_pattern/.png)(todo，少图)
 
 3. 代码实现
 
