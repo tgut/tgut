@@ -1,0 +1,22 @@
+        -:    0:Source:gcc_gcov.cc
+        -:    0:Graph:gcc_gcov.gcno
+        -:    0:Data:gcc_gcov.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <string.h>
+        -:    3:
+        1:    4:int main(int argc, char *argv[])
+        -:    5:{
+        1:    6:    if (argc >=2) {
+    #####:    7:        printf("=====argc>=2\n");
+    #####:    8:        return 0;
+        -:    9:    }
+        1:   10:    printf("helloworld begin\n");
+        -:   11:
+        1:   12:    if (argc <2){
+        1:   13:        printf("=====argc<2\n");
+        1:   14:        return 0;
+        -:   15:    }
+    #####:   16:    return 0;
+        -:   17:}
