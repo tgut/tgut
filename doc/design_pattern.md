@@ -1,7 +1,39 @@
-c++ version
+<!-- vscode-markdown-toc -->
+	* 1. [设计模式的原则(todo)](#todo)
+* 1. [创建型模式](#)
+	* 1.1. [singleton 单例模式](#singleton)
+	* 1.2. [简单工厂模式->工厂方法->模板工厂（todo）](#--todo)
+		* 1.2.1. [工厂方法](#-1)
+	* 1.3. [原型模式](#-1)
+	* 1.4. [建造模式](#-1)
+* 2. [结构型模式](#-1)
+	* 2.1. [适配器模式](#-1)
+	* 2.2. [代理模式](#-1)
+	* 2.3. [享元模式](#-1)
+	* 2.4. [组合模式](#-1)
+	* 2.5. [桥接模式](#-1)
+	* 2.6. [装饰模式](#-1)
+	* 2.7. [外观模式](#-1)
+* 3. [行为模式](#-1)
+	* 3.1. [中介模式](#-1)
+	* 3.2. [职责链模式](#-1)
+	* 3.3. [状态模式](#-1)
+	* 3.4. [命令模式](#-1)
+	* 3.5. [策略模式](#-1)
+	* 3.6. [模板方法模式（todo）](#todo-1)
+	* 3.7. [观察者模式](#-1)
+	* 3.8. [备忘录模式](#-1)
+	* 3.9. [迭代器模式（看不懂设计模式的代码和网上的示例代码,todo）](#todo-1)
+	* 3.10. [访问者模式（todo）](#todo-1)
+	* 3.11. [解释器模式（todo）](#todo-1)
 
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
-### 设计模式的原则(todo)
+###  1. <a name='todo'></a>设计模式的原则(todo)
 
 [开放-封闭原则](https://www.cnblogs.com/gaochundong/p/open_closed_principle.html)
 
@@ -16,23 +48,26 @@ c++ version
 |DIP|依赖倒置原则|Dependency Inversion Principle|
 |LKP|最少知识原则|Least Knowledge Principle|
 
-## 创建型模式
+##  1. <a name=''></a>创建型模式
 
-### singleton 单例模式
+###  1.1. <a name='singleton'></a>singleton 单例模式
 
-内部静态变量的懒汉单例模式，[代码](../c%2B%2B/singleton.cpp)
+内部静态变量的懒汉单例模式，[代码](../c%2B%2B/singleton_lazy.cpp)
+内部静态变量的饿汉单例模式，[代码](../c++/singleton_eager.cpp)
  
 [单例模式](https://zhuanlan.zhihu.com/p/37469260)
 [使用锁机制来保护](https://zhuanlan.zhihu.com/p/83539039)
 
-### 简单工厂模式->工厂方法->模板工厂（todo）
+###  1.2. <a name='--todo'></a>简单工厂模式->工厂方法->模板工厂（todo）
 [简单工厂](../c%2B%2B/simple_factor.cpp)->[工厂方法](../c%2B%2B/factor_method.cpp)->[模板工厂](../c%2B%2B/template_factory.cpp)
+
+![uml](../pic/design_pattern/Factory.png)
 
 [深入浅出工厂模式](https://zhuanlan.zhihu.com/p/83535678)
 
 以上方法扩展建立在开发－封闭原则基础上。
 
-#### 工厂方法
+####  1.2.1. <a name='-1'></a>工厂方法
 
 工厂方法（Factory Method）又称虚拟构造函数(Virtual COnstructor)
 
@@ -54,7 +89,7 @@ c++ version
 
 
 
-### 原型模式
+###  1.3. <a name='-1'></a>原型模式
 
 原型模式是一种创建型设计模式，使你能复制已有对象，而又无需使代码依赖它们所属的类。
 
@@ -85,7 +120,7 @@ c++ version
 [原型模式](https://zhuanlan.zhihu.com/p/365222623)
 
 
-### 建造模式
+###  1.4. <a name='-1'></a>建造模式
 
 建造模式又叫生成器（builder）模式
 
@@ -123,9 +158,9 @@ c++ version
 >[builder](https://refactoringguru.cn/design-patterns/builder)
 
 
-## 结构型模式
+##  2. <a name='-1'></a>结构型模式
 
-### 适配器模式
+###  2.1. <a name='-1'></a>适配器模式
 
 适配器（Adapter），也称封装器（Wrapper）
 
@@ -161,7 +196,7 @@ c++ version
 
 >[适配器模式](https://refactoringguru.cn/design-patterns/adapter)
 
-### 代理模式
+###  2.2. <a name='-1'></a>代理模式
 
 也称 Proxy,是一种结构型设计模式， 让你能够提供对象的替代品或其占位符。 代理控制着对于原对象的访问， 并允许在将请求提交给对象前后进行一些处理。
 
@@ -197,7 +232,7 @@ c++ version
 [代理模式](https://refactoringguru.cn/design-patterns/proxy)
 
 
-### 享元模式
+###  2.3. <a name='-1'></a>享元模式
 
 
 1. 优缺点
@@ -223,7 +258,7 @@ c++ version
 
 
 
-### 组合模式
+###  2.4. <a name='-1'></a>组合模式
 
 亦称对象树(Object Tree),Composite
 
@@ -259,7 +294,7 @@ c++ version
 
 [组合模式](https://refactoringguru.cn/design-patterns/composite)
 
-### 桥接模式
+###  2.5. <a name='-1'></a>桥接模式
 
 桥接模式是一种结构型设计模式， 可将一个大类或一系列紧密相关的类拆分为抽象和实现两个独立的层次结构， 从而能在开发时分别使用。
 
@@ -293,7 +328,7 @@ c++ version
 
 
 
-### 装饰模式
+###  2.6. <a name='-1'></a>装饰模式
 
  装饰者模式(Decorator)、装饰器模式(Wrapper)
 
@@ -318,7 +353,7 @@ c++ version
 4. 与其他模式的关系
 
 
-### 外观模式
+###  2.7. <a name='-1'></a>外观模式
 
 外观模式(Facade)是一种结构型设计模式， 能为程序库、 框架或其他复杂类提供一个简单的接口。
 
@@ -357,10 +392,10 @@ c++ version
 
 >[Facade](https://refactoringguru.cn/design-patterns/facade)
 
-## 行为模式
+##  3. <a name='-1'></a>行为模式
 
 
-### 中介模式
+###  3.1. <a name='-1'></a>中介模式
 
 1. 优缺点
 
@@ -384,7 +419,7 @@ c++ version
 
 
 
-### 职责链模式
+###  3.2. <a name='-1'></a>职责链模式
 
 又称：责任链模式（Chain of Responsibility）、命令链（CoR，Chain of Command）
 
@@ -413,7 +448,7 @@ c++ version
 
 
 
-### 状态模式
+###  3.3. <a name='-1'></a>状态模式
 
 让你能在一个对象的内部状态变化时改变其行为， 使其看上去就像改变了自身所属的类一样。
 
@@ -441,7 +476,7 @@ c++ version
 状态可被视为策略的扩展。 两者都基于组合机制： 它们都通过将部分工作委派给 “帮手” 对象来改变其在不同情景下的行为。 策略使得这些对象相互之间完全独立， 它们不知道其他对象的存在。 但状态模式没有限制具体状态之间的依赖， 且允许它们自行改变在不同情景下的状态。
 
 
-### 命令模式
+###  3.4. <a name='-1'></a>命令模式
 
 也称动作(Action)，事务(Transaction)，命令（Command）
 
@@ -475,7 +510,7 @@ c++ version
 
 观察者允许接收者动态地订阅或取消接收请求。
 
-### 策略模式
+###  3.5. <a name='-1'></a>策略模式
 
 也称Strategy，策略模式是一种行为设计模式， 它能让你定义一系列算法， 并将每种算法分别放入独立的类中， 以使算法的对象能够相互替换。
 
@@ -515,7 +550,7 @@ c++ version
 
 
 
-### 模板方法模式（todo）
+###  3.6. <a name='todo-1'></a>模板方法模式（todo）
 
 1. 优缺点
 
@@ -537,7 +572,7 @@ c++ version
 
 
 
-### 观察者模式
+###  3.7. <a name='-1'></a>观察者模式
 
 观察者模式（Observer）又称事件订阅者(Event-Subscriber)，监听者(Listener)
 
@@ -578,7 +613,7 @@ c++ version
 >[Observer](https://refactoringguru.cn/design-patterns/observer)
 
 
-### 备忘录模式
+###  3.8. <a name='-1'></a>备忘录模式
 
 备忘录(Memento)模式也称快照（snapshot）.允许在不暴露对象实现细节的情况下保存和恢复对象之前的状态。
 
@@ -610,7 +645,7 @@ c++ version
 
 >[Memento](https://refactoringguru.cn/design-patterns/memento)
 
-### 迭代器模式（看不懂设计模式的代码和网上的示例代码,todo）
+###  3.9. <a name='todo-1'></a>迭代器模式（看不懂设计模式的代码和网上的示例代码,todo）
 
 1. 优缺点
 
@@ -630,7 +665,7 @@ c++ version
 
 4. 与其他模式的关系
 
-### 访问者模式（todo）
+###  3.10. <a name='todo-1'></a>访问者模式（todo）
 
 1. 优缺点
 
@@ -650,7 +685,7 @@ c++ version
 
 4. 与其他模式的关系
 
-### 解释器模式（todo）
+###  3.11. <a name='todo-1'></a>解释器模式（todo）
 
 1. 优缺点
 
@@ -672,3 +707,4 @@ c++ version
 
 
 
+****
