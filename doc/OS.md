@@ -231,3 +231,142 @@ c++ version
 [spin_lock](../c++/OS/spin_lock.cpp)
 
 ### 内存池（todo）
+
+### Performance topic
+
+#### perf 安装/工具使用
+
+##### 安装perf
+
+```shell
+sudo apt update #更新包索引
+sudo apt install linux-tools-common linux-tools-generic linux-tools-`uname -r` #安装 perf 工具
+```
+
+##### 使用
+1. **统计性能数据（perf stat）**：
+   收集和报告整个系统或特定程序的性能计数器数据。
+
+   ```shell
+   perf stat ./your_program
+   ```
+
+2. **记录性能事件（perf record）**：
+   保存应用程序或系统的详细性能事件以便进行后续分析。
+
+   ```shell
+   perf record ./your_program
+   ```
+
+3. **生成性能报告（perf report）**：
+   分析 `perf record` 命令收集的性能数据，并以可交互的方式展示。
+
+   ```shell
+   perf report
+   ```
+
+4. **列出可用事件（perf list）**：
+   展示所有支持的性能事件列表。
+
+   ```shell
+   perf list
+   ```
+
+5. **实时性能监控（perf top）**：
+   显示最耗费 CPU 资源的函数和路径，类似于 `top` 命令。
+
+   ```shell
+   perf top
+   ```
+
+6. **注释源代码（perf annotate）**：
+   展示源代码或汇编代码级别的性能事件详情，帮助分析每行代码的执行表现。
+
+   ```shell
+   perf annotate
+   ```
+
+7. **基准测试（perf bench）**：
+   执行一系列微基准测试来评估不同子系统的性能。
+
+   ```shell
+   perf bench
+   ```
+
+8. **系统调用跟踪（perf trace）**：
+   追踪系统调用和其他关键事件，相似于 `strace` 工具。
+
+   ```shell
+   perf trace
+   ```
+
+```bash
+perf top #执行perf top命令打印如下内容。
+
+# Samples: 89K of event 'cpu-clock:pppH', 4000 Hz, Event count (approx.): 19688881782 lost: 0/0 drop: 0/0
+# Overhead  Shared Object                                  Symbol
+#    2.77%  node                                           [.] Builtins_RecordWriteSaveFP
+#    2.37%  node                                           [.] v8::internal::ConcurrentMarking::RunMajor
+#    1.93%  node                                           [.] Builtins_GetProperty
+#    1.77%  node                                           [.] Builtins_RunMicrotasks
+#    1.74%  node                                           [.] v8::internal::ScavengerCollector::CollectGarbage
+#    1.71%  node                                           [.] v8::internal::MarkingVisitorBase<v8::internal::ConcurrentMarkingVisi
+#    1.51%  node                                           [.] v8::internal::Scavenger::ScavengeObject<v8::internal::FullHeapObject
+#    1.15%  node                                           [.] v8::internal::String::ComputeAndSetRawHash
+#    1.14%  node                                           [.] Builtins_ResumeGeneratorTrampoline
+#    1.11%  node                                           [.] v8::String::Utf8Length
+#    1.03%  libc-2.27.so                                   [.] __memchr_avx2
+#    1.02%  node                                           [.] Builtins_LoadIC
+#    1.00%  node                                           [.] v8::internal::JSObject::MigrateToMap
+#    1.00%  node                                           [.] v8::internal::ConcurrentMarkingVisitor::ShouldVisit
+#    0.96%  node                                           [.] v8::internal::LookupIterator::LookupInRegularHolder<false>
+#    0.92%  node                                           [.] v8::internal::Sweeper::RawSweep
+#    0.91%  node                                           [.] Builtins_AsyncGeneratorAwaitUncaught
+#    0.89%  node                                           [.] Builtins_PerformPromiseThen
+#    0.80%  node                                           [.] Builtins_EnqueueMicrotask
+#    0.75%  node                                           [.] Builtins_FulfillPromise
+#    0.68%  node                                           [.] Builtins_AsyncFromSyncIteratorPrototypeNext
+#    0.66%  node                                           [.] v8::internal::CopyImpl<16ul, unsigned long>
+#    0.66%  node                                           [.] v8::String::WriteUtf8
+#    0.66%  node                                           [.] Builtins_AsyncGeneratorYieldWithAwait
+#    0.64%  node                                           [.] v8::internal::Factory::AllocateRaw
+#    0.63%  node                                           [.] std::__detail::_Map_base<v8::internal::MemoryCh
+
+
+######上下选中进程，再“回车”进去可以看到进程的调用栈
+
+
+
+# /root/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/node
+#  7997e8  79c000 g _init                                                                                                         ◆
+#  799820  799830 g _ITM_addUserCommitAction@plt                                                                                  ▒
+#  799830  799840 g dlerror@plt                                                                                                   ▒
+#  799840  799850 g setbuf@plt                                                                                                    ▒
+#  799850  799860 g strdup@plt                                                                                                    ▒
+#  799860  799870 g std::basic_streambuf<char, std::char_traits<char> >::pbackfail@plt                                            ▒
+#  799870  799880 g readv@plt                                                                                                     ▒
+#  799880  799890 g getsockname@plt                                                                                               ▒
+#  799890  7998a0 g std::__throw_logic_error@plt                                                                                  ▒
+#  7998a0  7998b0 g uname@plt                                                                                                     ▒
+#  7998b0  7998c0 g feof@plt                                                                                                      ▒
+#  7998c0  7998d0 g lchown@plt                                                                                                    ▒
+#  7998d0  7998e0 g epoll_ctl@plt                                                                                                 ▒
+#  7998e0  7998f0 g __cxa_begin_catch@plt                                                                                         ▒
+#  7998f0  799900 g printf@plt                                                                                                    ▒
+#  799900  799910 g fdopen@plt                                                                                                    ▒
+#  799910  799920 g std::exception::~exception@plt                                                                                ▒
+#  799920  799930 g symlink@plt                                                                                                   ▒
+#  799930  799940 g select@plt                                                                                                    ▒
+#  799940  799950 g std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string@plt                      ▒
+#  799950  799960 g memcpy@plt                                                                                                    ▒
+#  799960  799970 g __once_proxy@plt                                                                                              ▒
+#  799970  799980 g mprotect@plt                                                                                                  ▒
+#  799980  799990 g __lxstat64@plt                                                                                                ▒
+#  799990  7999a0 g pthread_rwlock_wrlock@plt                                                                                     ▒
+#  7999a0  7999b0 g std::__throw_bad_alloc@plt                                                                                    ▒
+#  7999b0  7999c0 g __isoc99_sscanf@plt                                                                                           ▒
+#  7999c0  7999d0 g exp@plt                                                                                                       ▒
+#  7999d0  7999e0 g realloc@plt                                      
+```
+
+

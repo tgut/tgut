@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: tgut
+ * @Date: 2024-03-10 21:42:26
+ * @LastEditors: tgut
+ * @LastEditTime: 2024-07-18 19:10:42
+-->
 ### 分布式原语
 P2P 
 1. send
@@ -44,3 +52,4 @@ collective communication
 
 #### 参考
 [一文弄懂Pytorch的DataLoader, DataSet, Sampler之间的关系](https://zhuanlan.zhihu.com/p/76893455)
+

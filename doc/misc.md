@@ -254,3 +254,37 @@ Shift JIS
 
 日本的一种字符编码方式，适用于日文。
 这些只是众多字符编码中的一部分，存在着其他许多专门为特定语言或用途设计的字符编码。随着时间的发展，全球化和互联网的普及使得基于 Unicode 标准的编码（如 UTF-8、UTF-16、UTF-32）变得更加流���，因为它们致力于支持全世界所有语言的字符表述。
+
+### 识别表格中的指定颜色数量
+
+在Excel中统计某种颜色的单元格数量通常不能直接用内置函数完成，但可以通过使用VBA宏或条件格式配合辅助功能来实现。以下是两种方法：
+
+### 方法一：使用VBA宏
+
+1. 按 `Alt + F11` 打开VBA编辑器。
+2. 选择 `插入` > `模块` 来创建一个新的模块。
+3. 在模块窗口中粘贴以下代码：
+    ```vba
+    Function CountColorCells(rData As Range, cellRefColor As Range) As Long
+        Dim count As Long
+        Dim dataCell As Range
+        
+        Application.Volatile
+        count = 0
+        
+        For Each dataCell In rData
+            If dataCell.Interior.Color = cellRefColor.Interior.Color Then
+                count = count + 1
+            End If
+        Next dataCell
+        
+        CountColorCells = count
+    End Function
+    ```
+4. 关闭VBA编辑器并返回到Excel工作表。
+5. 在一个单元格里输入公式 `=CountColorCells(范围, 参考单元格)`。其中“范围”是你想要统计颜色的单元格区域，“参考单元格”是具有你想要统计的颜色的单元格。
+
+例如，如果你想统计A1:A10这个范围内所有与B1单元格颜色相同的单元格的数量，那么你可以使用这样的公式：
+```
+=CountColorCells(A1:A10, B1)
+```
