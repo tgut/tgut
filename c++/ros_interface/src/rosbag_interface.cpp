@@ -1,3 +1,5 @@
+//运行命令
+//g++ -o rosbag_interface rosbag_interface.cpp $(pkg-config --cflags --libs roscpp rosbag roslib std_msgs)
 #include <ros/ros.h>
 #include <rosbag/bag.h>
 #include <ros/package.h>
@@ -14,7 +16,7 @@ int main(int argc, char **argv)
     // 创建bag对象
     rosbag::Bag bag;
     // 打开文件
-    bag.open(bagsPath+"/test.bag", rosbag::BagMode::Write);
+    bag.open(bagsPath+"/test.bag", rosbag::bagmode::Write);
     // 写文件
     std_msgs::String msg;
     msg.data = "hello world";

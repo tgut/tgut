@@ -32,3 +32,20 @@ git stash pop stash@{n}
 ```
 
 请注意，stash 的编号是从 0 开始的，最新的 stash 的编号是 0。
+
+### config配置
+
+```bash
+git config --global core.pager ''  #配置git log/ branch显示不使用分页器;恢复的话配置为'less'
+```
+```bash
+git config --global pager.branch false #只想禁用特定命令的分页（例如 git branch），可以使用
+```
+
+### git cherry-pick常用命令
+
+```bash
+git cherry-pick commit1..commit2  # 不包括 commit1
+
+git cherry-pick commit1 commit2 commit3 # 你可以同时拣选多个提交，通过空格分隔它们的哈希值
+```

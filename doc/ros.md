@@ -46,3 +46,24 @@ Catkin是ROS的官方构建系统，它简化了源码编译和安装过程。
 6. **参与社区**：加入ROS社区，向他人学习，也可以贡献你自己的经验。
 
 如果你有任何问题或者需要详细解释某个主题，请随时告诉我，我很乐意帮助你继续你的ROS学习之旅！
+
+# rosbag中结构体
+
+namespace rosbag {
+    struct ConnectionInfo {
+        std::string topic;
+        // 其他连接相关的信息
+    };
+
+    struct ChunkInfo {
+        std::map<uint32_t, uint32_t> connection_counts;
+        // 其他块相关的信息
+    };
+
+    class Bag {
+    public:
+        std::vector<ChunkInfo> chunks;
+        std::map<uint32_t, ConnectionInfo*> connections;
+        // 其他成员和方法
+    };
+}

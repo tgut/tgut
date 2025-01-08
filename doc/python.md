@@ -1,6 +1,6 @@
 ### python如何调试
 
-使用pdb,用例如下：
+#### 使用pdb,用例如下：
 
 ```python
 import pdb
@@ -22,6 +22,8 @@ def copy_common_spec(self):
             shutil.copytree(item, target_dir / item.name, dirs_exist_ok=True)
 ```
 
+#### 使用vscode的工具
+    https://blog.csdn.net/qq_16555103/article/details/136938822
 ### python使用pandas
 
 [pandas知识点超全总结](https://blog.csdn.net/Itsme_MrJJ/article/details/126101002)
