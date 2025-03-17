@@ -586,3 +586,28 @@ Citations:
 [4] https://www.cnblogs.com/werr370/p/16993372.html
 [5] https://blog.csdn.net/h836384379/article/details/100043548
 [6] https://blog.csdn.net/COCO56/article/details/99176024
+
+# vscode的vscode-cpptools空间清理
+
+/root/.cache/vscode-cpptools中某一天突然占满root目录，使用du命令排查到vscode-cpptools已经占了50%。
+```bash
+#排序，并且显示隐藏文件
+du -ah . | sort -h
+
+```
+目前看来主要因为cpp的索引和缓存太大导致的。可以使用 "C_Cpp.files.exclude" 和 "files.exclude" 排除目录，减少索引和缓存大小
+
+在 settings.json 中，可以使用 "C_Cpp.files.exclude" 和 "files.exclude" 排除目录，减少索引和缓存大小。 示例：
+
+```JSON
+{
+    "files.exclude": { // 通用文件排除，VS Code 所有功能生效
+        "**/build/**": true, // 排除所有 "build" 目录及其子目录
+        "**/Debug/**": true  // 排除 "Debug" 目录
+    },
+    "C_Cpp.files.exclude": { // C/C++ 扩展专属排除，仅影响 C/C++ 功能
+        "**/external_libs/**": true, // 排除外部库目录
+        "**/third_party/**": true     // 排除第三方库目录
+    }
+}
+```s

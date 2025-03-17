@@ -379,3 +379,378 @@ int main() {
 >ref
 
 [RTTI](https://www.geeksforgeeks.org/rtti-run-time-type-information-in-cpp/)
+
+
+### learning c++ source code
+thinking
+
+学习和理解 GNU libstdc++ 库（GNU Standard C++ Library）的源码，是深入掌握 C++ 标准库实现的绝妙方式。这不仅能帮助你了解 STL 容器、算法和迭代器的底层机制，还能提升你的C++编码能力。以下是详细的学习步骤和方法：
+
+#### 1. 准备工作
+
+##### 获取源码
+首先，你需要获取 GNU libstdc++ 的源码。可以从 GitHub 的 gcc-mirror 仓库下载：
+
+```sh
+git clone https://github.com/gcc-mirror/gcc.git
+cd gcc/libstdc++-v3
+```
+
+##### 系统准备
+确保你的开发环境准备就绪，包括安装必要的软件包（如编译器、构建工具）：
+
+```sh
+sudo apt-get update
+sudo apt-get install build-essential g++ git
+```
+
+#### 2. 理解 C++ 标准库的结构
+
+##### 目录和文件
+GNU libstdc++ 库的结构包含多个目录和文件，每个目录和文件都有其特定作用。熟悉这些目录的结构有助于理解库的整体架构：
+
+- **`include/`**：包含头文件，实现了 C++ 标准库的接口。
+- **`src/`**：包含库的源文件，实现了具体的库功能。
+- **`src/c++98` 和 `src/c++11`**：按 C++ 标准版本划分的实现文件。
+- **`testsuite/`**：包含测试文件，验证库功能的正确性。
+
+#### 3. 学习头文件和实现文件
+
+##### 从容器开始
+容器类是 C++ 标准库的核心组件之一，建议从容器（如 vector, list, map 等）开始学习。这些容器在头文件和实现文件中有详细的实现：
+
+- **头文件**：`include/bits/stl_vector.h`, `include/bits/stl_list.h`, `include/bits/stl_map.h`
+- **实现文件**：`src/c++11/vector.cc`, `src/c++11/list.cc`, `src/c++11/map.cc`
+
+##### 示例：学习 `std::vector`
+
+**头文件**：
+```cpp
+#ifndef _STL_VECTOR_H
+#define _STL_VECTOR_H 1
+
+#include <bits/stl_algobase.h>
+#include <bits/stl_iterator.h>
+#include <ext/alloc_traits.h>
+
+_GLIBCXX_BEGIN_NAMESPACE(std)
+
+  template<typename _Tp, typename _Alloc = allocator<_Tp> >
+    class vector
+    {
+      // Vector implementation...
+    };
+
+_GLIBCXX_END_NAMESPACE
+
+#endif /* _STL_VECTOR_H */
+```
+
+**实现文件**：
+```cpp
+#include <vector>
+#include <bits/stl_vector.h>
+#include <bits/stl_construct.h>
+
+namespace std
+{
+  template<typename _Tp, typename _Alloc>
+    vector<_Tp, _Alloc>::vector() : /* Implementation... */ {}
+}
+```
+
+#### 4. 阅读和理解
+
+##### 阅读代码
+系统地阅读所有核心组件的源码，关注以下方面：
+- 容器的内部数据结构。
+- 成员函数实现。
+- 内存管理策略。
+- 异常和边界情况处理机制。
+
+##### 编译测试
+在深入研究源码时，尝试编译和测试库。可以从 GNU libstdc++ 自带的 `testsuite/` 目录中运行测试用例：
+
+```sh
+cd testsuite
+make check
+```
+
+#### 5. 使用 debug 工具
+
+利用调试工具进一步理解库的实现。例如，使用 GDB 跟踪函数调用栈并观察变量变化：
+
+```sh
+g++ -g your_test_file.cpp -o your_test_file
+gdb your_test_file
+```
+
+在调试过程中，可以设置断点、单步执行、查看变量值等，深入理解代码的运行机制：
+
+```gdb
+(gdb) break stl_vector.h:200
+(gdb) run
+(gdb) next
+(gdb) print var_name
+```
+
+#### 6. 阅读文档和标准
+
+##### 标准参考
+- 熟悉C++标准文档（如ISO/IEC 14882）。
+- 参考 `cppreference.com` 和 `cplusplus.com` 等在线资源。
+
+##### 学术论文和书籍
+- 阅读相关的学术论文和书籍，如《The C++ Programming Language》 (Bjarne Stroustrup) 和《Effective STL》 (Scott Meyers)。
+
+#### 7. 参与社区
+
+##### 贡献代码
+- 尝试贡献代码或修复 issue。
+- 参与源码审查，了解社区对代码质量的要求。
+
+#### 小结
+
+- **熟悉源码结构**：了解库的目录结构和各个模块的作用。
+- **从容器开始**：重点研究容器的头文件和实现文件。
+- **编译测试**：通过编译和测试用例验证理解的正确性。
+- **调试工具**：利用GDB等调试工具深入分析运行机制。
+- **阅读标准文档**：结合C++标准文档和相关书籍深入理解设计初衷。
+- **参与社区**：通过贡献代码和参与讨论，更好地理解和提升。
+
+希望这些步骤能帮助你深入理解 GNU libstdc++ 代码库。如果有更多问题或需要详细信息，请随时告诉我。
+
+thinking ends
+
+学习和理解 GNU libstdc++ 库（GNU Standard C++ Library）源码是深入掌握 C++ 标准库的重要途径。以下是详细的学习步骤和方法：
+
+#### 1. 准备工作
+
+##### 获取源码
+从 GitHub 的 gcc-mirror 仓库下载源码：
+```sh
+git clone https://github.com/gcc-mirror/gcc.git
+cd gcc/libstdc++-v3
+```
+
+##### 安装必要的软件包
+确保你的开发环境已准备就绪：
+```sh
+sudo apt-get update
+sudo apt-get install build-essential g++ git
+```
+
+#### 2. 理解库的结构
+
+##### 目录和文件
+- **`include/`**：包含头文件，实现了标准库接口。
+- **`src/`**：包含库的实现文件。
+- **`src/c++98` 和 `src/c++11`**：按 C++ 标准版本划分的实现文件。
+- **`testsuite/`**：包含测试文件，验证库功能。
+
+#### 3. 学习头文件和实现文件
+
+##### 从容器开始
+容器类是学习的重点，如 `vector`、`list`、`map` 等。
+
+- **头文件**：`include/bits/stl_vector.h`
+- **实现文件**：`src/c++11/vector.cc`
+
+##### 示例：`std::vector`
+
+**头文件 `include/bits/stl_vector.h`**
+```cpp
+#ifndef _STL_VECTOR_H
+#define _STL_VECTOR_H 1
+
+#include <bits/stl_algobase.h>
+#include <bits/stl_iterator.h>
+#include <ext/alloc_traits.h>
+
+_GLIBCXX_BEGIN_NAMESPACE(std)
+
+template<typename _Tp, typename _Alloc = allocator<_Tp> >
+class vector
+{
+    // Vector implementation...
+};
+
+_GLIBCXX_END_NAMESPACE
+
+#endif /* _STL_VECTOR_H */
+```
+
+**实现文件 `src/c++11/vector.cc`**
+```cpp
+#include <vector>
+#include <bits/stl_vector.h>
+#include <bits/stl_construct.h>
+
+namespace std
+{
+    template<typename _Tp, typename _Alloc>
+    vector<_Tp, _Alloc>::vector() : /* Implementation... */ {}
+}
+```
+
+#### 4. 阅读和理解
+
+##### 阅读代码
+系统地阅读所有核心组件的源码，关注：
+- 容器的数据结构。
+- 成员函数实现。
+- 内存管理策略。
+- 异常和边界情况处理。
+
+##### 编译测试
+在研究源码时，尝试编译和测试库：
+```sh
+cd testsuite
+make check
+```
+
+#### 5. 使用调试工具
+
+使用 GDB 等调试工具进一步理解库的实现：
+```sh
+g++ -g your_test_file.cpp -o your_test_file
+gdb your_test_file
+```
+在 GDB 中设置断点、单步执行、查看变量值等：
+```gdb
+(gdb) break stl_vector.h:200
+(gdb) run
+(gdb) next
+(gdb) print var_name
+```
+
+#### 6. 阅读文档和标准
+
+##### 标准参考
+- 熟悉 C++ 标准文档。
+- 参考 `cppreference.com` 和 `cplusplus.com`。
+
+##### 学术论文和书籍
+- 阅读《The C++ Programming Language》和《Effective STL》。
+
+#### 7. 参与社区
+
+##### 贡献代码
+- 参与贡献代码或修复 issue。
+- 参与源码审查。
+
+#### 总结
+
+- **熟悉源码结构**：了解库的目录结构和各模块的作用。
+- **重点学习容器**：关注容器的头文件和实现。
+- **编译测试**：通过测试验证理解。
+- **使用调试工具**：深入分析运行机制。
+- **阅读标准文档**：结合 C++ 标准文档深入理解。
+- **参与社区**：通过贡献代码和讨论提升理解。
+
+希望这些步骤能帮助你深入理解 GNU libstdc++ 库。如果有进一步的问题或需要详细信息，请随时告诉我。
+
+### LD_PRELOAD
+`LD_PRELOAD` 是一个环境变量，用于在运行时强行加载共享库。这在调试、性能分析、或改变已有程序的行为时非常有用。通过 `LD_PRELOAD`，你可以重载某些函数，使得在程序执行过程中，使用你自定义的版本。
+
+#### 典型用途
+1. **拦截系统调用**：你可以重载标准库函数，例如 `malloc`、`free` 等，以监控内存分配。
+2. **调试和性能分析**：通过插入代码，你可以收集更多的性能数据。
+3. **修改现有应用行为**：无需更改应用源代码，通过预加载库来调整应用功能。
+
+#### 如何在 C++ 中使用
+
+假设我们希望重载 `malloc` 函数，进行简单的日志记录。以下是实现步骤：
+
+##### 1. 创建一个共享库
+首先，编写一个新的 `malloc` 实现，并将其编译成共享库。
+
+**my_malloc.cpp**:
+```cpp
+#define _GNU_SOURCE
+#include <iostream>
+#include <dlfcn.h> // for dlsym
+#include <cstdlib> // for malloc
+
+// Define function pointer to original malloc
+typedef void* (*malloc_t)(size_t);
+
+// Wrapper function for malloc
+extern "C" void* malloc(size_t size) {
+    static malloc_t original_malloc = (malloc_t)dlsym(RTLD_NEXT, "malloc");
+    
+    std::cout << "malloc(" << size << ") called" << std::endl;
+    
+    return original_malloc(size);
+}
+```
+
+编译成共享库：
+```sh
+g++ -fPIC -shared -o libmymalloc.so my_malloc.cpp -ldl
+```
+
+##### 2. 使用 LD_PRELOAD 运行目标程序
+假设你有一个目标程序 `target_program`，可以使用以下命令运行它，并让它使用你的新 `malloc` 实现：
+
+```sh
+LD_PRELOAD=./libmymalloc.so ./target_program
+```
+
+这样，每次 `target_program` 调用 `malloc` 时，实际上调用的是你定义的 `malloc`，并输出日志信息。
+
+#### 示例：完整操作流程
+
+1. **创建 `my_malloc.cpp` 文件**
+    ```cpp
+    #define _GNU_SOURCE
+    #include <iostream>
+    #include <dlfcn.h> // for dlsym
+    #include <cstdlib> // for malloc
+
+    typedef void* (*malloc_t)(size_t);
+
+    extern "C" void* malloc(size_t size) {
+        static malloc_t original_malloc = (malloc_t)dlsym(RTLD_NEXT, "malloc");
+        
+        std::cout << "malloc(" << size << ") called" << std::endl;
+        
+        return original_malloc(size);
+    }
+    ```
+
+2. **编译成共享库**
+    ```sh
+    g++ -fPIC -shared -o libmymalloc.so my_malloc.cpp -ldl
+    ```
+
+3. **创建一个简单的测试程序**
+
+    **test_program.cpp**:
+    ```cpp
+    #include <iostream>
+    #include <cstdlib>
+
+    int main() {
+        int* p = (int*)malloc(10 * sizeof(int));
+        free(p);
+        return 0;
+    }
+    ```
+
+4. **编译测试程序**
+    ```sh
+    g++ -o test_program test_program.cpp
+    ```
+
+5. **使用 `LD_PRELOAD` 运行测试程序**
+    ```sh
+    LD_PRELOAD=./libmymalloc.so ./test_program
+    ```
+
+#### 注意事项
+- 确保函数签名完全匹配。
+- 在重载函数中调用原始函数时，避免无限递归。
+- 调试时，可以使用 `LD_DEBUG=libs` 环境变量来获取更详细的信息。
+
+通过上述方法，你可以很方便地在 C++ 程序中利用 `LD_PRELOAD` 技术，进行各种高级功能的实现和调试。

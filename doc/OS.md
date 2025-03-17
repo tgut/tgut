@@ -368,5 +368,40 @@ perf top #执行perf top命令打印如下内容。
 #  7999c0  7999d0 g exp@plt                                                                                                       ▒
 #  7999d0  7999e0 g realloc@plt                                      
 ```
+#### [如何读懂火焰图](https://www.ruanyifeng.com/blog/2017/09/flame-graph.html)
 
+### qnx下的优化命令
 
+qnx下的性能调试命令：
+
+slay -P  <pri> $pid #设置优先级
+
+mtop -P  <pid>  -u 0  -V #查看进程的线程情况
+
+slog2info # 查看系统log
+
+hogs命令#**`hogs`** 命令在 QNX 操作系统中用于显示当前系统中占用 CPU 资源最多的进程
+
+### docker 空间清理
+
+```Bash
+# 清理 Docker 镜像、容器和卷: 使用 Docker 命令清理不再使用的资源，释放空间：
+# 清理未使用的镜像 (dangling images):
+
+docker image prune -a
+# 清理所有未使用的镜像 (包括没有被任何容器使用的镜像，请谨慎使用):
+
+docker image prune -f -a
+# 清理停止的容器:
+
+docker container prune
+# 清理未使用的卷:
+
+docker volume prune
+# 清理构建缓存 (build cache):
+
+docker builder prune -a
+# 清理所有未使用的系统资源 (镜像, 容器, 网络, 卷, build cache - 谨慎使用):
+
+docker system prune -a
+```

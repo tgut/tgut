@@ -1,0 +1,43 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++: g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+              {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+              }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file"
+          },
+        {
+            "name": "Python 调试一",         // 可自定义
+            "type": "debugpy",
+            "request": "launch",
+            "program": "运行脚本的程序",  // 使用.py 脚本路径(相对路径)、which torchrun、which deepspeed等命令查看位置
+            "console": "integratedTerminal",
+            "justMyCode": false,       // 调试允许进入他人的代码
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}" // 设置vscode家路径为项目根路径, 搜索包时优先从该目录进行,防止发生import包错误
+            },
+            "args": [               // 参数，每个参数的参数值无论是否是数字都需用引号
+        "0904b552-7166-4543-8e11-cdcfd14bde9f"    
+        ]
+        }
+    ]
+}
