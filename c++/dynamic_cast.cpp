@@ -6,6 +6,9 @@ public:
     void foo(){
         cout<<"Base foo()"<<endl;
     }
+    virtual ~Base() {
+        cout << "Base destructor" << endl;
+    }
 };
 
 class Derived : public Base {
@@ -19,10 +22,11 @@ public:
 int main() {
     Base* b = new Derived;
     b->foo();
-    // Derived* d = dynamic_cast<Derived*>(b);
-    // if (d != nullptr) {
-    //     d->foo();
-    // }
-    // delete d;
-    delete b;
+    std::cout << "Dynamic cast example:" << std::endl;
+    Derived* d = dynamic_cast<Derived*>(b);
+    if (d != nullptr) {
+        d->foo();
+    }
+    delete d;
+    // delete b;
 }

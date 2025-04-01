@@ -23,6 +23,22 @@
     map,set，multimap,multiset(order(*),unordered(unordered_*))
     以上容器的复杂度
 
+#### Set 容器类型对比
+| 集合 | 底层实现 | 是否有序 | 数值是否可以重复 | 能否更改数值 | 查询效率 | 增删效率 |
+|------|----------|----------|----------------|-------------|---------|---------|
+| std::set | 红黑树 | 有序 | 否 | 否 | O(log n) | O(log n) |
+| std::multiset | 红黑树 | 有序 | 是 | 否 | O(log n) | O(log n) |
+| std::unordered_set | 哈希表 | 无序 | 否 | 否 | O(1) | O(1) |
+std::unordered_set底层实现为哈希表，std::set 和std::multiset 的底层实现是红黑树，红黑树是一种平衡二叉搜索树，所key值是有序的，但key不可以修改，改动key值会导致整棵树的错乱，所以只能删除和增加。
+#### Map 容器类型对比
+| 映射 | 底层实现 | 是否有序 | 数值是否可以重复 | 能否更改数值 | 查询效率 | 增删效率 |
+|------|----------|----------|----------------|-------------|---------|---------|
+| std::map | 红黑树 | key有序 | key不可重复 | key不可修改 | O(log n) | O(log n) |
+| std::multimap | 红黑树 | key有序 | key可重复 | key不可修改 | O(log n) | O(log n) |
+| std::unordered_map | 哈希表 | key无序 | key不可重复 | key不可修改 | O(1) | O(1) |
+
+参考[carl哈希表理论基础](https://programmercarl.com/%E5%93%88%E5%B8%8C%E8%A1%A8%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html#%E5%93%88%E5%B8%8C%E8%A1%A8)
+
 ####  stack 属于哪一类
     不属于序列容器，因为其没有iterator，所以不属于sequence容器。也没有关联容器的。属于容器适配器。
 
@@ -50,7 +66,8 @@ test_const_cast.cpp:6:26: error: expected ‘)’ before ‘;’ token
 test_const_cast.cpp:6:26: error: invalid use of const_cast with type ‘int’, which is not a pointer, reference, nor a pointer-to-data-member type
 ```
 
-4. reinterpreter_cast 用于不同类型之间的位模式转换，例如将指针类型转换为整型或将整型转换为浮点型等。
+4. reinterpreter_cast 用于不同类型之间的位模式转换，例如将指针类型转换为整型或将整型转换为浮点型等。位模式指的是数据在内存中的二进制表示方式，该转换不会改变底层的二进制数据，只是改变了解释这些数据的方式。这是一种非常底层的转换，使用时需要格外小心，因为它可能导致类型安全问题。
+
 
 [reinterpret_cast.cpp](../c%2B%2B/reinterpret_cast.cpp)
 
@@ -754,3 +771,17 @@ LD_PRELOAD=./libmymalloc.so ./target_program
 - 调试时，可以使用 `LD_DEBUG=libs` 环境变量来获取更详细的信息。
 
 通过上述方法，你可以很方便地在 C++ 程序中利用 `LD_PRELOAD` 技术，进行各种高级功能的实现和调试。
+
+### c++八股文
+todo
+
+[C++面试八股文：技术勘误](https://blog.51cto.com/binarch/6602027)
+
+### 多态的深度挖掘
+多态的使用需满足两个条件：
+- 有虚函数；
+- 通过基类指针或者引用访问基类方法
+
+还有介绍抽象类，多态的原理，覆盖，重载
+
+[深度挖掘多态](https://blog.csdn.net/weixin_67596609/article/details/131839669?sharetype=blog&shareId=131839669&sharerefer=APP&sharesource=intellectualman&sharefrom=link)
