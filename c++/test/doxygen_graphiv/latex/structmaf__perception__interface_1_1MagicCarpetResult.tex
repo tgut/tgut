@@ -1,0 +1,173 @@
+\hypertarget{structmaf__perception__interface_1_1MagicCarpetResult}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Magic\+Carpet\+Result Struct Reference}
+\label{structmaf__perception__interface_1_1MagicCarpetResult}\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+maf\+\_\+std\+::\+Header \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a98ccdffc14abc9edb82157abfd099df1}{header} \{\}
+\begin{DoxyCompactList}\small\item\em 消息头 \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetMeta}{Magic\+Carpet\+Meta} $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a8789b70501b926a9abe9501acf96c323}{camera\+\_\+meta} \{\}
+\begin{DoxyCompactList}\small\item\em 相机\+Meta，多个相机源会有多个\+Meta \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetObject}{Magic\+Carpet\+Object} $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_ab7a37523b3b06dd9c8330a1970ad607b}{left\+\_\+front\+\_\+objects} \{\}
+\begin{DoxyCompactList}\small\item\em 左前方道路目标物，首个为最近目标物 \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetObject}{Magic\+Carpet\+Object} $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_afccb6e5f5cbf6a26748b255db5ce4619}{right\+\_\+front\+\_\+objects} \{\}
+\begin{DoxyCompactList}\small\item\em 右前方道路目标物，首个为最近目标物 \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a5bfb2eaabbe0f545939d4089173e02ef}{left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm} \{\}
+\begin{DoxyCompactList}\small\item\em 左轮高程曲线，单位cm，密度0.1m \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_ab98b26a3bab116751f170cc521ff5895}{right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm} \{\}
+\begin{DoxyCompactList}\small\item\em 右轮高程曲线，单位cm，密度0.1m \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetRawObject}{Magic\+Carpet\+Raw\+Object} $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a69e174f29c95a347dc99ebf6b0357e56}{raw\+\_\+objects} \{\}
+\begin{DoxyCompactList}\small\item\em 模型原始输出，用于可视化及调试 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a8738b1fec8887d0605a082d396328b38}{system\+\_\+status} \{\}
+\begin{DoxyCompactList}\small\item\em 系统状态，暂留字段 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a26fef8fd993cb4432c566ce9fae36d50}{road\+\_\+scene} \{\}
+\begin{DoxyCompactList}\small\item\em 道路场景，暂留字段 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a236faf20e1c618951efcee5ae0d2a84d}{source} \{\}
+\begin{DoxyCompactList}\small\item\em 感知来源，调试用（vision / lidar） \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a637ba284ff9f22f1f4fe5f7ba2d84734}{left\+\_\+wheel\+\_\+traj} \{\}
+\begin{DoxyCompactList}\small\item\em 左轮预测轨迹 \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} $>$ \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_a310792355df64c11094628534f79d042}{right\+\_\+wheel\+\_\+traj} \{\}
+\begin{DoxyCompactList}\small\item\em 右轮预测轨迹 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult_aa5ee38fc1e76d77d3baace0530b2afc9}{reserved} \{\}
+\begin{DoxyCompactList}\small\item\em 预留 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a8789b70501b926a9abe9501acf96c323}\label{structmaf__perception__interface_1_1MagicCarpetResult_a8789b70501b926a9abe9501acf96c323}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!camera\+\_\+meta@{camera\+\_\+meta}}
+\index{camera\+\_\+meta@{camera\+\_\+meta}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{camera\+\_\+meta}{camera\_meta}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1MagicCarpetMeta}{Magic\+Carpet\+Meta}$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::camera\+\_\+meta \{\}}
+
+
+
+相机\+Meta，多个相机源会有多个\+Meta 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a98ccdffc14abc9edb82157abfd099df1}\label{structmaf__perception__interface_1_1MagicCarpetResult_a98ccdffc14abc9edb82157abfd099df1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!header@{header}}
+\index{header@{header}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily maf\+\_\+std\+::\+Header maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::header \{\}}
+
+
+
+消息头 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a5bfb2eaabbe0f545939d4089173e02ef}\label{structmaf__perception__interface_1_1MagicCarpetResult_a5bfb2eaabbe0f545939d4089173e02ef}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm@{left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm}}
+\index{left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm@{left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm}{left\_front\_elevation\_points\_cm}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::left\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm \{\}}
+
+
+
+左轮高程曲线，单位cm，密度0.1m 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_ab7a37523b3b06dd9c8330a1970ad607b}\label{structmaf__perception__interface_1_1MagicCarpetResult_ab7a37523b3b06dd9c8330a1970ad607b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!left\+\_\+front\+\_\+objects@{left\+\_\+front\+\_\+objects}}
+\index{left\+\_\+front\+\_\+objects@{left\+\_\+front\+\_\+objects}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{left\+\_\+front\+\_\+objects}{left\_front\_objects}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1MagicCarpetObject}{Magic\+Carpet\+Object}$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::left\+\_\+front\+\_\+objects \{\}}
+
+
+
+左前方道路目标物，首个为最近目标物 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a637ba284ff9f22f1f4fe5f7ba2d84734}\label{structmaf__perception__interface_1_1MagicCarpetResult_a637ba284ff9f22f1f4fe5f7ba2d84734}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!left\+\_\+wheel\+\_\+traj@{left\+\_\+wheel\+\_\+traj}}
+\index{left\+\_\+wheel\+\_\+traj@{left\+\_\+wheel\+\_\+traj}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{left\+\_\+wheel\+\_\+traj}{left\_wheel\_traj}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::left\+\_\+wheel\+\_\+traj \{\}}
+
+
+
+左轮预测轨迹 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a69e174f29c95a347dc99ebf6b0357e56}\label{structmaf__perception__interface_1_1MagicCarpetResult_a69e174f29c95a347dc99ebf6b0357e56}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!raw\+\_\+objects@{raw\+\_\+objects}}
+\index{raw\+\_\+objects@{raw\+\_\+objects}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{raw\+\_\+objects}{raw\_objects}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1MagicCarpetRawObject}{Magic\+Carpet\+Raw\+Object}$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::raw\+\_\+objects \{\}}
+
+
+
+模型原始输出，用于可视化及调试 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_aa5ee38fc1e76d77d3baace0530b2afc9}\label{structmaf__perception__interface_1_1MagicCarpetResult_aa5ee38fc1e76d77d3baace0530b2afc9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!reserved@{reserved}}
+\index{reserved@{reserved}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::reserved \{\}}
+
+
+
+预留 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_ab98b26a3bab116751f170cc521ff5895}\label{structmaf__perception__interface_1_1MagicCarpetResult_ab98b26a3bab116751f170cc521ff5895}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm@{right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm}}
+\index{right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm@{right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm}{right\_front\_elevation\_points\_cm}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::right\+\_\+front\+\_\+elevation\+\_\+points\+\_\+cm \{\}}
+
+
+
+右轮高程曲线，单位cm，密度0.1m 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_afccb6e5f5cbf6a26748b255db5ce4619}\label{structmaf__perception__interface_1_1MagicCarpetResult_afccb6e5f5cbf6a26748b255db5ce4619}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!right\+\_\+front\+\_\+objects@{right\+\_\+front\+\_\+objects}}
+\index{right\+\_\+front\+\_\+objects@{right\+\_\+front\+\_\+objects}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{right\+\_\+front\+\_\+objects}{right\_front\_objects}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1MagicCarpetObject}{Magic\+Carpet\+Object}$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::right\+\_\+front\+\_\+objects \{\}}
+
+
+
+右前方道路目标物，首个为最近目标物 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a310792355df64c11094628534f79d042}\label{structmaf__perception__interface_1_1MagicCarpetResult_a310792355df64c11094628534f79d042}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!right\+\_\+wheel\+\_\+traj@{right\+\_\+wheel\+\_\+traj}}
+\index{right\+\_\+wheel\+\_\+traj@{right\+\_\+wheel\+\_\+traj}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{right\+\_\+wheel\+\_\+traj}{right\_wheel\_traj}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::right\+\_\+wheel\+\_\+traj \{\}}
+
+
+
+右轮预测轨迹 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a26fef8fd993cb4432c566ce9fae36d50}\label{structmaf__perception__interface_1_1MagicCarpetResult_a26fef8fd993cb4432c566ce9fae36d50}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!road\+\_\+scene@{road\+\_\+scene}}
+\index{road\+\_\+scene@{road\+\_\+scene}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{road\+\_\+scene}{road\_scene}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::road\+\_\+scene \{\}}
+
+
+
+道路场景，暂留字段 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a236faf20e1c618951efcee5ae0d2a84d}\label{structmaf__perception__interface_1_1MagicCarpetResult_a236faf20e1c618951efcee5ae0d2a84d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!source@{source}}
+\index{source@{source}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::source \{\}}
+
+
+
+感知来源，调试用（vision / lidar） 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1MagicCarpetResult_a8738b1fec8887d0605a082d396328b38}\label{structmaf__perception__interface_1_1MagicCarpetResult_a8738b1fec8887d0605a082d396328b38}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}!system\+\_\+status@{system\+\_\+status}}
+\index{system\+\_\+status@{system\+\_\+status}!maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}}
+\subsubsection{\texorpdfstring{system\+\_\+status}{system\_status}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result\+::system\+\_\+status \{\}}
+
+
+
+系统状态，暂留字段 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

@@ -1,3 +1,4 @@
+//题目：有3个线程A，B， C， 请用多线程编程实现在屏幕上循环打印10次ABCABC...， 其中A线程打印“A”， B线程打印“B”， C线程打印“C”
 #include <iostream>
 #include <thread>
 #include <condition_variable>
@@ -20,10 +21,9 @@ void print_fun(char ch)
 		std::cout << (char)(ch_ + 'A');
 		g_ch = (ch_ + 1) % 3;
 		ulk.unlock();
- 
-		cvar.notify_all();
 	}
-}
+			cvar.notify_all();	
+	}
  
 int main()
 {

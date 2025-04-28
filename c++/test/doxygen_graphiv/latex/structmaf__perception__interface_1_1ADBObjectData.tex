@@ -1,0 +1,198 @@
+\hypertarget{structmaf__perception__interface_1_1ADBObjectData}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:A\+D\+B\+Object\+Data Struct Reference}
+\label{structmaf__perception__interface_1_1ADBObjectData}\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+
+
+adb object for A\+DB function  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:A\+D\+B\+Object\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1ADBObjectData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{Object\+Track\+Info} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a929e150a184f87e8b99d9fc0db58066b}{track\+\_\+info} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_aca45ec13e62265d41986522c3e79a5d8}{type\+\_\+info} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_addb22efb58cd99de0a4be915587ed44e}{shape} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a0cf0ecdf9fde50b286884e9d360e1084}{relative\+\_\+position} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a30c52d9746436c9b491fc7ba5b0de95f}{relative\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a32df009730d011c0fee72913572d8a93}{relative\+\_\+acceleration} \{\}
+\begin{DoxyCompactList}\small\item\em ego-\/vehicle coordinate(m/s$^\wedge$2) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a40449c2ea82629a30148b20e8d26fd29}{relative\+\_\+heading\+\_\+yaw} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(rad, range\+:-\/2$\ast$pi$\sim$2$\ast$pi) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1ADBObjectData_ae5ae9ae7888cde5de5119387d7cc40bd}{score} \{\}
+\begin{DoxyCompactList}\small\item\em existence score of the object \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectConfidenceEnum}{Object\+Confidence\+Enum} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_adc1c8476533cffb5d2cf6c02cc802624}{confidence\+\_\+level} \{\}
+\begin{DoxyCompactList}\small\item\em confidence level of the object \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a0fc4d8dbdebf49c60f932cd38b511492}{relative\+\_\+distance} \{\}
+\begin{DoxyCompactList}\small\item\em ego-\/vehicle-\/coordinate(m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1DirectionEnum}{Direction\+Enum} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_ac8cc9c84af4a0ab479bbfe4424bec58b}{direction} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a8e3a2a2d306342ae3a1a3eb0af3ce0b8}{horizontal\+\_\+angle} \{\}
+\begin{DoxyCompactList}\small\item\em x\+: left side angle, y\+: right side angle \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_af6ba2d38a3ea97dc573e20ab2b622b06}{horizontal\+\_\+angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em right side angular velocity(rad/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_a6f1d687f5b10f42b9ddfc58ff2876513}{vertical\+\_\+angle} \{\}
+\begin{DoxyCompactList}\small\item\em x\+: top side angle, y\+: bottom side angle \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} \hyperlink{structmaf__perception__interface_1_1ADBObjectData_ac61ecf1747162b7a65841d3838a8014e}{vertical\+\_\+angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em bottom side angular velocity(rad/s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+adb object for A\+DB function 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_adc1c8476533cffb5d2cf6c02cc802624}\label{structmaf__perception__interface_1_1ADBObjectData_adc1c8476533cffb5d2cf6c02cc802624}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!confidence\+\_\+level@{confidence\+\_\+level}}
+\index{confidence\+\_\+level@{confidence\+\_\+level}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{confidence\+\_\+level}{confidence\_level}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectConfidenceEnum}{Object\+Confidence\+Enum} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::confidence\+\_\+level \{\}}
+
+
+
+confidence level of the object 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_ac8cc9c84af4a0ab479bbfe4424bec58b}\label{structmaf__perception__interface_1_1ADBObjectData_ac8cc9c84af4a0ab479bbfe4424bec58b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!direction@{direction}}
+\index{direction@{direction}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1DirectionEnum}{Direction\+Enum} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::direction \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a8e3a2a2d306342ae3a1a3eb0af3ce0b8}\label{structmaf__perception__interface_1_1ADBObjectData_a8e3a2a2d306342ae3a1a3eb0af3ce0b8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!horizontal\+\_\+angle@{horizontal\+\_\+angle}}
+\index{horizontal\+\_\+angle@{horizontal\+\_\+angle}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{horizontal\+\_\+angle}{horizontal\_angle}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::horizontal\+\_\+angle \{\}}
+
+
+
+x\+: left side angle, y\+: right side angle 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_af6ba2d38a3ea97dc573e20ab2b622b06}\label{structmaf__perception__interface_1_1ADBObjectData_af6ba2d38a3ea97dc573e20ab2b622b06}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!horizontal\+\_\+angular\+\_\+velocity@{horizontal\+\_\+angular\+\_\+velocity}}
+\index{horizontal\+\_\+angular\+\_\+velocity@{horizontal\+\_\+angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{horizontal\+\_\+angular\+\_\+velocity}{horizontal\_angular\_velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::horizontal\+\_\+angular\+\_\+velocity \{\}}
+
+
+
+right side angular velocity(rad/s) 
+
+x\+: left side angular velocity(rad/s), y\+: \mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a32df009730d011c0fee72913572d8a93}\label{structmaf__perception__interface_1_1ADBObjectData_a32df009730d011c0fee72913572d8a93}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!relative\+\_\+acceleration@{relative\+\_\+acceleration}}
+\index{relative\+\_\+acceleration@{relative\+\_\+acceleration}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+acceleration}{relative\_acceleration}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::relative\+\_\+acceleration \{\}}
+
+
+
+ego-\/vehicle coordinate(m/s$^\wedge$2) 
+
+objects acceleration in \mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a0fc4d8dbdebf49c60f932cd38b511492}\label{structmaf__perception__interface_1_1ADBObjectData_a0fc4d8dbdebf49c60f932cd38b511492}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!relative\+\_\+distance@{relative\+\_\+distance}}
+\index{relative\+\_\+distance@{relative\+\_\+distance}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+distance}{relative\_distance}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::relative\+\_\+distance \{\}}
+
+
+
+ego-\/vehicle-\/coordinate(m) 
+
+distance to ego-\/vehicle in \mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a40449c2ea82629a30148b20e8d26fd29}\label{structmaf__perception__interface_1_1ADBObjectData_a40449c2ea82629a30148b20e8d26fd29}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}}
+\index{relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+heading\+\_\+yaw}{relative\_heading\_yaw}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::relative\+\_\+heading\+\_\+yaw \{\}}
+
+
+
+coordinate(rad, range\+:-\/2$\ast$pi$\sim$2$\ast$pi) 
+
+objects heading yaw in ego-\/vehicle \mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a0cf0ecdf9fde50b286884e9d360e1084}\label{structmaf__perception__interface_1_1ADBObjectData_a0cf0ecdf9fde50b286884e9d360e1084}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!relative\+\_\+position@{relative\+\_\+position}}
+\index{relative\+\_\+position@{relative\+\_\+position}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+position}{relative\_position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::relative\+\_\+position \{\}}
+
+
+
+coordinate(m) 
+
+objects position in ego-\/vehicle \mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a30c52d9746436c9b491fc7ba5b0de95f}\label{structmaf__perception__interface_1_1ADBObjectData_a30c52d9746436c9b491fc7ba5b0de95f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!relative\+\_\+velocity@{relative\+\_\+velocity}}
+\index{relative\+\_\+velocity@{relative\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+velocity}{relative\_velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::relative\+\_\+velocity \{\}}
+
+
+
+coordinate(m/s) 
+
+objects velocity in ego-\/vehicle \mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_ae5ae9ae7888cde5de5119387d7cc40bd}\label{structmaf__perception__interface_1_1ADBObjectData_ae5ae9ae7888cde5de5119387d7cc40bd}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::score \{\}}
+
+
+
+existence score of the object 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_addb22efb58cd99de0a4be915587ed44e}\label{structmaf__perception__interface_1_1ADBObjectData_addb22efb58cd99de0a4be915587ed44e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!shape@{shape}}
+\index{shape@{shape}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::shape \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a929e150a184f87e8b99d9fc0db58066b}\label{structmaf__perception__interface_1_1ADBObjectData_a929e150a184f87e8b99d9fc0db58066b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!track\+\_\+info@{track\+\_\+info}}
+\index{track\+\_\+info@{track\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{track\+\_\+info}{track\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{Object\+Track\+Info} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::track\+\_\+info \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_aca45ec13e62265d41986522c3e79a5d8}\label{structmaf__perception__interface_1_1ADBObjectData_aca45ec13e62265d41986522c3e79a5d8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::type\+\_\+info \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_a6f1d687f5b10f42b9ddfc58ff2876513}\label{structmaf__perception__interface_1_1ADBObjectData_a6f1d687f5b10f42b9ddfc58ff2876513}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!vertical\+\_\+angle@{vertical\+\_\+angle}}
+\index{vertical\+\_\+angle@{vertical\+\_\+angle}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{vertical\+\_\+angle}{vertical\_angle}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::vertical\+\_\+angle \{\}}
+
+
+
+x\+: top side angle, y\+: bottom side angle 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ADBObjectData_ac61ecf1747162b7a65841d3838a8014e}\label{structmaf__perception__interface_1_1ADBObjectData_ac61ecf1747162b7a65841d3838a8014e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}!vertical\+\_\+angular\+\_\+velocity@{vertical\+\_\+angular\+\_\+velocity}}
+\index{vertical\+\_\+angular\+\_\+velocity@{vertical\+\_\+angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{vertical\+\_\+angular\+\_\+velocity}{vertical\_angular\_velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data\+::vertical\+\_\+angular\+\_\+velocity \{\}}
+
+
+
+bottom side angular velocity(rad/s) 
+
+x\+: top side angular velocity(rad/s), y\+: 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

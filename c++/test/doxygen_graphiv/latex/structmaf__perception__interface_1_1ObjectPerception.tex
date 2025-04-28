@@ -1,0 +1,118 @@
+\hypertarget{structmaf__perception__interface_1_1ObjectPerception}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Object\+Perception Struct Reference}
+\label{structmaf__perception__interface_1_1ObjectPerception}\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}
+
+
+Vision object perception.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Object\+Perception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structmaf__perception__interface_1_1ObjectPerception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabeab9a469eae84533c0c5d4905395c48852}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT} = 1, 
+\hyperlink{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabead58ed62c5b1816f2f0c4581a5ad4adb5}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+maf\+\_\+std\+::\+Header \hyperlink{structmaf__perception__interface_1_1ObjectPerception_a9c8c24eacf22f4b2f37527ceb92929ea}{header} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp to public this message. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} \hyperlink{structmaf__perception__interface_1_1ObjectPerception_ab5225f547104d9b0531ecb85774b48bc}{meta} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1ObjectPerception_a4379a53196a3e274607c391348fde4ee}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Available or not. 0\+: not available, 1\+: available. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Object}{Object} $>$ \hyperlink{structmaf__perception__interface_1_1ObjectPerception_a5a1f2ebb040a0db3cf3c9d04068d2ba0}{objects} \{\}
+\begin{DoxyCompactList}\small\item\em All objects. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1ObjectPerception_a46cd33ff2391fefe278f531b746a0730}{reserved\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em Reserved info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vision object perception. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabe}\label{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabe}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabeab9a469eae84533c0c5d4905395c48852}\label{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabeab9a469eae84533c0c5d4905395c48852}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabead58ed62c5b1816f2f0c4581a5ad4adb5}\label{structmaf__perception__interface_1_1ObjectPerception_aaf0034a17096af5e0ab25dabb2f9dabead58ed62c5b1816f2f0c4581a5ad4adb5}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_a4379a53196a3e274607c391348fde4ee}\label{structmaf__perception__interface_1_1ObjectPerception_a4379a53196a3e274607c391348fde4ee}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception\+::available \{\}}
+
+
+
+Available or not. 0\+: not available, 1\+: available. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_a9c8c24eacf22f4b2f37527ceb92929ea}\label{structmaf__perception__interface_1_1ObjectPerception_a9c8c24eacf22f4b2f37527ceb92929ea}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!header@{header}}
+\index{header@{header}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily maf\+\_\+std\+::\+Header maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception\+::header \{\}}
+
+
+
+Time\+Stamp to public this message. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_ab5225f547104d9b0531ecb85774b48bc}\label{structmaf__perception__interface_1_1ObjectPerception_ab5225f547104d9b0531ecb85774b48bc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!meta@{meta}}
+\index{meta@{meta}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}
+\subsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception\+::meta \{\}}
+
+
+
+Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_a5a1f2ebb040a0db3cf3c9d04068d2ba0}\label{structmaf__perception__interface_1_1ObjectPerception_a5a1f2ebb040a0db3cf3c9d04068d2ba0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!objects@{objects}}
+\index{objects@{objects}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}
+\subsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Object}{Object}$>$ maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception\+::objects \{\}}
+
+
+
+All objects. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ObjectPerception_a46cd33ff2391fefe278f531b746a0730}\label{structmaf__perception__interface_1_1ObjectPerception_a46cd33ff2391fefe278f531b746a0730}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}!reserved\+\_\+infos@{reserved\+\_\+infos}}
+\index{reserved\+\_\+infos@{reserved\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}}
+\subsubsection{\texorpdfstring{reserved\+\_\+infos}{reserved\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception\+::reserved\+\_\+infos \{\}}
+
+
+
+Reserved info. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

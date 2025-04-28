@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstring>
-using namespace std;
 class string
 {
 public:
@@ -20,7 +19,7 @@ public:
 
         if (*this != (s))
         {
-            strcopy(m_str, s.m_str);
+            strcpy(m_str, s.m_str);
         }
 
         return *this;
@@ -35,5 +34,5 @@ int main()
     string s1("abc");
     string s2;
     s2 = s1;
-    cout << s2.m_str;
+    std::cout << s2.m_str;
 }

@@ -1,0 +1,15 @@
+<map id="maf_perception_interface::BasicRadarPerceptionObjectData" name="maf_perception_interface::BasicRadarPerceptionObjectData">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1ObjectTypeInfo.html" title="Object type information struct. " alt="" coords="351,332,519,373"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1VRUAniSubTypeEnum.html" title="Enum to the type of VRU Animal. " alt="" coords="9,5,177,47"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1VehicleTypeEnum.html" title="Enum to the type of vehicle. " alt="" coords="9,71,177,112"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1VRUPedSubTypeEnum.html" title="Enum to the type of VRU Pedestrian. " alt="" coords="9,136,177,177"/>
+<area shape="rect" id="node6" href="$structmaf__perception__interface_1_1GeneralObjectTypeEnum.html" title="Enum to the type of general object (usually means road debris) " alt="" coords="5,201,181,243"/>
+<area shape="rect" id="node7" href="$structmaf__perception__interface_1_1VRUTypeEnum.html" title="Enum to the type of VRU. " alt="" coords="9,267,177,308"/>
+<area shape="rect" id="node8" href="$structmaf__perception__interface_1_1VehicleSubTypeEnum.html" title="Enum to the detailed subtype of vehicle. " alt="" coords="9,332,177,373"/>
+<area shape="rect" id="node9" href="$structmaf__perception__interface_1_1TrafficBarrierTypeEnum.html" title="Enum to the the traffic barrier(Static Objects) type. " alt="" coords="9,397,177,439"/>
+<area shape="rect" id="node10" href="$structmaf__perception__interface_1_1TrafficLightTypeEnum.html" title="maf_perception_interface\l::TrafficLightTypeEnum" alt="" coords="9,463,177,504"/>
+<area shape="rect" id="node11" href="$structmaf__perception__interface_1_1VRUSubTypeEnum.html" title="Enum to the detailed subtype of VRU. " alt="" coords="9,528,177,569"/>
+<area shape="rect" id="node12" href="$structmaf__perception__interface_1_1AvoidObjectTypeEnum.html" title="Enum to the type of object should be avoided (usually in engineering scene) " alt="" coords="9,593,177,635"/>
+<area shape="rect" id="node13" href="$structmaf__perception__interface_1_1ObjectTypeEnum.html" title="Enum to the type of object. " alt="" coords="9,659,177,700"/>
+<area shape="rect" id="node14" href="$structmaf__perception__interface_1_1Point3d.html" title="point position in three&#45;dimensional coordinates(m) {m} " alt="" coords="351,397,519,439"/>
+</map>

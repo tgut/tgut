@@ -1,0 +1,370 @@
+\hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Perception\+Fusion\+Object\+Data Struct Reference}
+\label{structmaf__perception__interface_1_1PerceptionFusionObjectData}\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Perception\+Fusion\+Object\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1PerceptionFusionObjectData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a79c5c197d0e37d2472e3f08da6160ac0}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects track id \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a3781c3926ef31b59787172183fd5f9d9}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects type info \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1BarrierStateInfo}{Barrier\+State\+Info} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a61332d846c19f9387fc712c2475ee065}{barrier\+\_\+state\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em The state information for barrier. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_af802e7b68d24fa404c4824e338cc85e5}{is\+\_\+static} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects whether or not be static \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae6415783ba35a3811bbac2b47ba1eab3}{static\+\_\+confidence} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects static confidence score \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1VehicleStateInfo}{Vehicle\+State\+Info} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a404e5584551dfe48164b0bd3ca88b5d5}{vehicle\+\_\+state\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em vehicle state information \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a74b50d39e755ffc4cdb0ad8b33dbef8b}{shape} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects shape in world coordinate(m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a5fb6c92ffe11fb186cf2fb2c4d6537aa}{position} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects position in world coordinate(m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a26935c37590d0d739ea29755d41e9502}{velocity} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects velocity in world coordinate(m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a87b0856f76006c29c3bda15294dde594}{acceleration} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects acceleration in world coordinate(m/s$^\wedge$2) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a9f15d9ba0b355185f3e3faa0fbc3b672}{heading\+\_\+yaw} \{\}
+\begin{DoxyCompactList}\small\item\em world coordinate(radian) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a1b7de8c10ac6ab4b7b4be10200044dd0}{angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(radian/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae231ba0ee7663d4d09c076833773f944}{relative\+\_\+position} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ac670db450165d5dd16ea6caece3abbe1}{relative\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a40c68870e0a630b45053062ce0d5905e}{relative\+\_\+acceleration} \{\}
+\begin{DoxyCompactList}\small\item\em ego-\/vehicle coordinate(m/s$^\wedge$2) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a9426ce7f44091ab1c205d51889235381}{relative\+\_\+heading\+\_\+yaw} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate(rad, range\+:-\/2$\ast$pi$\sim$2$\ast$pi) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a948589a5038eb722b35fd217a8b789ad}{relative\+\_\+angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em ego-\/vehicle coordinate(rad/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a7a9928094aad4d8c61b022ba61ae0e4b}{velocity\+\_\+relative\+\_\+to\+\_\+ground} \{\}
+\begin{DoxyCompactList}\small\item\em ground(m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a12523cd30976350ef0ce2fd92ea15f23}{acceleration\+\_\+relative\+\_\+to\+\_\+ground} \{\}
+\begin{DoxyCompactList}\small\item\em relative to ground(m/s$^\wedge$2) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a42adc9ff343b47058061d06588262709}{score} \{\}
+\begin{DoxyCompactList}\small\item\em existence score of the object \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a8bcc15ddd4ccea3974f7729e939092c2}{crash\+\_\+risk\+\_\+ttc} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects crash ris ttc(s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae1f80e92a22895583134dd58daf73f65}{polygon\+\_\+bottom} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects shape in ego-\/vehicle coordinate \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a28f29670e2f830763fdaa01f0560b049}{polygon\+\_\+top} \{\}
+\begin{DoxyCompactList}\small\item\em fusion objects shape in ego-\/vehicle coordinate \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ad4e3b8b2ba44a282992837813900cf4f}{available} \{\}
+\begin{DoxyCompactList}\small\item\em is available for fusion object data \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1PerceptionObjectTypeEnum}{Perception\+Object\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae493f50eb8819869dc36d341ec6ee977}{object\+\_\+type} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1PerceptionSceneTypeEnum}{Perception\+Scene\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ab8f7aa4dcf3d1949c3436a3cc6763e8a}{scene\+\_\+type} \{\}
+\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_a5b185804a90a0110da5d16b574be5d39}{scene\+\_\+confidence} \{\}
+\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_aaaa376210ccfaf70bdb36d1c89c8916c}{source\+\_\+sensor} \{\}
+\item 
+double \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ac1aece1cb75d2e5eef04f6b7dfea8027}{source\+\_\+timestamp} \{\}
+\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_ab0bcd083940f87615d4663ad9224dee4}{visibility} \{\}
+\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData_afff173ea49305a170dbb493d2fb555dc}{extra\+\_\+json} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a87b0856f76006c29c3bda15294dde594}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a87b0856f76006c29c3bda15294dde594}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!acceleration@{acceleration}}
+\index{acceleration@{acceleration}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration}{acceleration}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::acceleration \{\}}
+
+
+
+fusion objects acceleration in world coordinate(m/s$^\wedge$2) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a12523cd30976350ef0ce2fd92ea15f23}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a12523cd30976350ef0ce2fd92ea15f23}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!acceleration\+\_\+relative\+\_\+to\+\_\+ground@{acceleration\+\_\+relative\+\_\+to\+\_\+ground}}
+\index{acceleration\+\_\+relative\+\_\+to\+\_\+ground@{acceleration\+\_\+relative\+\_\+to\+\_\+ground}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration\+\_\+relative\+\_\+to\+\_\+ground}{acceleration\_relative\_to\_ground}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::acceleration\+\_\+relative\+\_\+to\+\_\+ground \{\}}
+
+
+
+relative to ground(m/s$^\wedge$2) 
+
+fusion objects acceleration \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a1b7de8c10ac6ab4b7b4be10200044dd0}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a1b7de8c10ac6ab4b7b4be10200044dd0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!angular\+\_\+velocity@{angular\+\_\+velocity}}
+\index{angular\+\_\+velocity@{angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{angular\+\_\+velocity}{angular\_velocity}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::angular\+\_\+velocity \{\}}
+
+
+
+coordinate(radian/s) 
+
+fusion objects angular velocity in world \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ad4e3b8b2ba44a282992837813900cf4f}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ad4e3b8b2ba44a282992837813900cf4f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::available \{\}}
+
+
+
+is available for fusion object data 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a61332d846c19f9387fc712c2475ee065}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a61332d846c19f9387fc712c2475ee065}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!barrier\+\_\+state\+\_\+info@{barrier\+\_\+state\+\_\+info}}
+\index{barrier\+\_\+state\+\_\+info@{barrier\+\_\+state\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{barrier\+\_\+state\+\_\+info}{barrier\_state\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1BarrierStateInfo}{Barrier\+State\+Info} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::barrier\+\_\+state\+\_\+info \{\}}
+
+
+
+The state information for barrier. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a8bcc15ddd4ccea3974f7729e939092c2}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a8bcc15ddd4ccea3974f7729e939092c2}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!crash\+\_\+risk\+\_\+ttc@{crash\+\_\+risk\+\_\+ttc}}
+\index{crash\+\_\+risk\+\_\+ttc@{crash\+\_\+risk\+\_\+ttc}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{crash\+\_\+risk\+\_\+ttc}{crash\_risk\_ttc}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::crash\+\_\+risk\+\_\+ttc \{\}}
+
+
+
+fusion objects crash ris ttc(s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_afff173ea49305a170dbb493d2fb555dc}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_afff173ea49305a170dbb493d2fb555dc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!extra\+\_\+json@{extra\+\_\+json}}
+\index{extra\+\_\+json@{extra\+\_\+json}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{extra\+\_\+json}{extra\_json}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::extra\+\_\+json \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a9f15d9ba0b355185f3e3faa0fbc3b672}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a9f15d9ba0b355185f3e3faa0fbc3b672}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!heading\+\_\+yaw@{heading\+\_\+yaw}}
+\index{heading\+\_\+yaw@{heading\+\_\+yaw}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{heading\+\_\+yaw}{heading\_yaw}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::heading\+\_\+yaw \{\}}
+
+
+
+world coordinate(radian) 
+
+Heading angle from fusion objects to the x axis in \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_af802e7b68d24fa404c4824e338cc85e5}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_af802e7b68d24fa404c4824e338cc85e5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!is\+\_\+static@{is\+\_\+static}}
+\index{is\+\_\+static@{is\+\_\+static}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{is\+\_\+static}{is\_static}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::is\+\_\+static \{\}}
+
+
+
+fusion objects whether or not be static 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae493f50eb8819869dc36d341ec6ee977}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae493f50eb8819869dc36d341ec6ee977}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!object\+\_\+type@{object\+\_\+type}}
+\index{object\+\_\+type@{object\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{object\+\_\+type}{object\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1PerceptionObjectTypeEnum}{Perception\+Object\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::object\+\_\+type \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae1f80e92a22895583134dd58daf73f65}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae1f80e92a22895583134dd58daf73f65}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!polygon\+\_\+bottom@{polygon\+\_\+bottom}}
+\index{polygon\+\_\+bottom@{polygon\+\_\+bottom}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{polygon\+\_\+bottom}{polygon\_bottom}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::polygon\+\_\+bottom \{\}}
+
+
+
+fusion objects shape in ego-\/vehicle coordinate 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a28f29670e2f830763fdaa01f0560b049}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a28f29670e2f830763fdaa01f0560b049}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!polygon\+\_\+top@{polygon\+\_\+top}}
+\index{polygon\+\_\+top@{polygon\+\_\+top}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{polygon\+\_\+top}{polygon\_top}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::polygon\+\_\+top \{\}}
+
+
+
+fusion objects shape in ego-\/vehicle coordinate 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a5fb6c92ffe11fb186cf2fb2c4d6537aa}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a5fb6c92ffe11fb186cf2fb2c4d6537aa}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!position@{position}}
+\index{position@{position}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::position \{\}}
+
+
+
+fusion objects position in world coordinate(m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a40c68870e0a630b45053062ce0d5905e}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a40c68870e0a630b45053062ce0d5905e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!relative\+\_\+acceleration@{relative\+\_\+acceleration}}
+\index{relative\+\_\+acceleration@{relative\+\_\+acceleration}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+acceleration}{relative\_acceleration}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::relative\+\_\+acceleration \{\}}
+
+
+
+ego-\/vehicle coordinate(m/s$^\wedge$2) 
+
+fusion objects acceleration in \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a948589a5038eb722b35fd217a8b789ad}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a948589a5038eb722b35fd217a8b789ad}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!relative\+\_\+angular\+\_\+velocity@{relative\+\_\+angular\+\_\+velocity}}
+\index{relative\+\_\+angular\+\_\+velocity@{relative\+\_\+angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+angular\+\_\+velocity}{relative\_angular\_velocity}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::relative\+\_\+angular\+\_\+velocity \{\}}
+
+
+
+ego-\/vehicle coordinate(rad/s) 
+
+fusion objects angular velocity in \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a9426ce7f44091ab1c205d51889235381}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a9426ce7f44091ab1c205d51889235381}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}}
+\index{relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+heading\+\_\+yaw}{relative\_heading\_yaw}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::relative\+\_\+heading\+\_\+yaw \{\}}
+
+
+
+coordinate(rad, range\+:-\/2$\ast$pi$\sim$2$\ast$pi) 
+
+fusion objects heading yaw in ego-\/vehicle \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae231ba0ee7663d4d09c076833773f944}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae231ba0ee7663d4d09c076833773f944}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!relative\+\_\+position@{relative\+\_\+position}}
+\index{relative\+\_\+position@{relative\+\_\+position}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+position}{relative\_position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::relative\+\_\+position \{\}}
+
+
+
+coordinate(m) 
+
+fusion objects position in ego-\/vehicle \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ac670db450165d5dd16ea6caece3abbe1}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ac670db450165d5dd16ea6caece3abbe1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!relative\+\_\+velocity@{relative\+\_\+velocity}}
+\index{relative\+\_\+velocity@{relative\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+velocity}{relative\_velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::relative\+\_\+velocity \{\}}
+
+
+
+coordinate(m/s) 
+
+fusion objects velocity in ego-\/vehicle \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a5b185804a90a0110da5d16b574be5d39}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a5b185804a90a0110da5d16b574be5d39}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!scene\+\_\+confidence@{scene\+\_\+confidence}}
+\index{scene\+\_\+confidence@{scene\+\_\+confidence}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{scene\+\_\+confidence}{scene\_confidence}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::scene\+\_\+confidence \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ab8f7aa4dcf3d1949c3436a3cc6763e8a}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ab8f7aa4dcf3d1949c3436a3cc6763e8a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!scene\+\_\+type@{scene\+\_\+type}}
+\index{scene\+\_\+type@{scene\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{scene\+\_\+type}{scene\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1PerceptionSceneTypeEnum}{Perception\+Scene\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::scene\+\_\+type \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a42adc9ff343b47058061d06588262709}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a42adc9ff343b47058061d06588262709}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::score \{\}}
+
+
+
+existence score of the object 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a74b50d39e755ffc4cdb0ad8b33dbef8b}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a74b50d39e755ffc4cdb0ad8b33dbef8b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!shape@{shape}}
+\index{shape@{shape}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::shape \{\}}
+
+
+
+fusion objects shape in world coordinate(m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_aaaa376210ccfaf70bdb36d1c89c8916c}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_aaaa376210ccfaf70bdb36d1c89c8916c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!source\+\_\+sensor@{source\+\_\+sensor}}
+\index{source\+\_\+sensor@{source\+\_\+sensor}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{source\+\_\+sensor}{source\_sensor}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::source\+\_\+sensor \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ac1aece1cb75d2e5eef04f6b7dfea8027}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ac1aece1cb75d2e5eef04f6b7dfea8027}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!source\+\_\+timestamp@{source\+\_\+timestamp}}
+\index{source\+\_\+timestamp@{source\+\_\+timestamp}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{source\+\_\+timestamp}{source\_timestamp}}
+{\footnotesize\ttfamily double maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::source\+\_\+timestamp \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae6415783ba35a3811bbac2b47ba1eab3}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ae6415783ba35a3811bbac2b47ba1eab3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!static\+\_\+confidence@{static\+\_\+confidence}}
+\index{static\+\_\+confidence@{static\+\_\+confidence}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{static\+\_\+confidence}{static\_confidence}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::static\+\_\+confidence \{\}}
+
+
+
+fusion objects static confidence score 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a79c5c197d0e37d2472e3f08da6160ac0}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a79c5c197d0e37d2472e3f08da6160ac0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::track\+\_\+id \{\}}
+
+
+
+fusion objects track id 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a3781c3926ef31b59787172183fd5f9d9}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a3781c3926ef31b59787172183fd5f9d9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::type\+\_\+info \{\}}
+
+
+
+fusion objects type info 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a404e5584551dfe48164b0bd3ca88b5d5}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a404e5584551dfe48164b0bd3ca88b5d5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!vehicle\+\_\+state\+\_\+info@{vehicle\+\_\+state\+\_\+info}}
+\index{vehicle\+\_\+state\+\_\+info@{vehicle\+\_\+state\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{vehicle\+\_\+state\+\_\+info}{vehicle\_state\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1VehicleStateInfo}{Vehicle\+State\+Info} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::vehicle\+\_\+state\+\_\+info \{\}}
+
+
+
+vehicle state information 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a26935c37590d0d739ea29755d41e9502}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a26935c37590d0d739ea29755d41e9502}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!velocity@{velocity}}
+\index{velocity@{velocity}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::velocity \{\}}
+
+
+
+fusion objects velocity in world coordinate(m/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_a7a9928094aad4d8c61b022ba61ae0e4b}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_a7a9928094aad4d8c61b022ba61ae0e4b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!velocity\+\_\+relative\+\_\+to\+\_\+ground@{velocity\+\_\+relative\+\_\+to\+\_\+ground}}
+\index{velocity\+\_\+relative\+\_\+to\+\_\+ground@{velocity\+\_\+relative\+\_\+to\+\_\+ground}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity\+\_\+relative\+\_\+to\+\_\+ground}{velocity\_relative\_to\_ground}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::velocity\+\_\+relative\+\_\+to\+\_\+ground \{\}}
+
+
+
+ground(m/s) 
+
+fusion objects velocity relative to \mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionObjectData_ab0bcd083940f87615d4663ad9224dee4}\label{structmaf__perception__interface_1_1PerceptionFusionObjectData_ab0bcd083940f87615d4663ad9224dee4}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}!visibility@{visibility}}
+\index{visibility@{visibility}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}}
+\subsubsection{\texorpdfstring{visibility}{visibility}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data\+::visibility \{\}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

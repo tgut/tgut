@@ -1,0 +1,7 @@
+<map id="maf_perception_interface::Lane" name="maf_perception_interface::Lane">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1LaneTypeEnum.html" title="Enum to the type of lane line. " alt="" coords="11,5,179,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1CameraSourceEnum.html" title="Enum to the camera source. " alt="" coords="11,71,179,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1LaneColorEnum.html" title="Enum to the color of lane line. " alt="" coords="11,136,179,177"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1LaneHorizontalTypeEnum.html" title="Enum to the horizontal line type of lane line. " alt="" coords="5,201,185,243"/>
+<area shape="rect" id="node6" href="$structmaf__perception__interface_1_1CameraModelEnum.html" title="Enum to the camera model. " alt="" coords="11,267,179,308"/>
+</map>

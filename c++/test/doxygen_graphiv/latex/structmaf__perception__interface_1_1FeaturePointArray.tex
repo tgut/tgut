@@ -1,0 +1,137 @@
+\hypertarget{structmaf__perception__interface_1_1FeaturePointArray}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Feature\+Point\+Array Struct Reference}
+\label{structmaf__perception__interface_1_1FeaturePointArray}\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_a0e4defbbd6989cfaf50a1bf702a01c7f}{tag} \{\}
+\begin{DoxyCompactList}\small\item\em Camera name. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_ac1e6f64b23956e4cb567312f4bf3b599}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Data valid flag. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_a937530b23373c7501c54b560312ed27c}{num\+\_\+point} \{\}
+\begin{DoxyCompactList}\small\item\em Number of feature points. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_a89af7c5009bac73ed1c9339062672660}{track\+\_\+ids} \{\}
+\begin{DoxyCompactList}\small\item\em Feature id. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_ad3eb5be9b05d8457a0e5f81205eb19f9}{point\+\_\+xs} \{\}
+\begin{DoxyCompactList}\small\item\em x component of 2D pixel coordinates \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_aa2ab3d6d3f464861254f53f09e5ed486}{point\+\_\+ys} \{\}
+\begin{DoxyCompactList}\small\item\em y component of 2D pixel coordinates \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_a513f064fcb9555d169c8c2507149d9a7}{descriptor\+\_\+size} \{\}
+\begin{DoxyCompactList}\small\item\em Dimension of descriptor. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_a689dde20900776d299cad56f822a56ad}{descriptors} \{\}
+\begin{DoxyCompactList}\small\item\em Descriptor vector. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_a14872ef34f155ad1b88c6ab8e73b3593}{log\+\_\+info\+\_\+2d} \{\}
+\begin{DoxyCompactList}\small\item\em used to record log information \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1FeaturePointArray_adf7c66106f22edc027babe314b65ec58}{reserved\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em reserved information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_ac1e6f64b23956e4cb567312f4bf3b599}\label{structmaf__perception__interface_1_1FeaturePointArray_ac1e6f64b23956e4cb567312f4bf3b599}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::available \{\}}
+
+
+
+Data valid flag. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_a513f064fcb9555d169c8c2507149d9a7}\label{structmaf__perception__interface_1_1FeaturePointArray_a513f064fcb9555d169c8c2507149d9a7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!descriptor\+\_\+size@{descriptor\+\_\+size}}
+\index{descriptor\+\_\+size@{descriptor\+\_\+size}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{descriptor\+\_\+size}{descriptor\_size}}
+{\footnotesize\ttfamily int32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::descriptor\+\_\+size \{\}}
+
+
+
+Dimension of descriptor. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_a689dde20900776d299cad56f822a56ad}\label{structmaf__perception__interface_1_1FeaturePointArray_a689dde20900776d299cad56f822a56ad}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!descriptors@{descriptors}}
+\index{descriptors@{descriptors}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{descriptors}{descriptors}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::descriptors \{\}}
+
+
+
+Descriptor vector. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_a14872ef34f155ad1b88c6ab8e73b3593}\label{structmaf__perception__interface_1_1FeaturePointArray_a14872ef34f155ad1b88c6ab8e73b3593}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!log\+\_\+info\+\_\+2d@{log\+\_\+info\+\_\+2d}}
+\index{log\+\_\+info\+\_\+2d@{log\+\_\+info\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{log\+\_\+info\+\_\+2d}{log\_info\_2d}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::log\+\_\+info\+\_\+2d \{\}}
+
+
+
+used to record log information 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_a937530b23373c7501c54b560312ed27c}\label{structmaf__perception__interface_1_1FeaturePointArray_a937530b23373c7501c54b560312ed27c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!num\+\_\+point@{num\+\_\+point}}
+\index{num\+\_\+point@{num\+\_\+point}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{num\+\_\+point}{num\_point}}
+{\footnotesize\ttfamily int32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::num\+\_\+point \{\}}
+
+
+
+Number of feature points. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_ad3eb5be9b05d8457a0e5f81205eb19f9}\label{structmaf__perception__interface_1_1FeaturePointArray_ad3eb5be9b05d8457a0e5f81205eb19f9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!point\+\_\+xs@{point\+\_\+xs}}
+\index{point\+\_\+xs@{point\+\_\+xs}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{point\+\_\+xs}{point\_xs}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::point\+\_\+xs \{\}}
+
+
+
+x component of 2D pixel coordinates 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_aa2ab3d6d3f464861254f53f09e5ed486}\label{structmaf__perception__interface_1_1FeaturePointArray_aa2ab3d6d3f464861254f53f09e5ed486}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!point\+\_\+ys@{point\+\_\+ys}}
+\index{point\+\_\+ys@{point\+\_\+ys}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{point\+\_\+ys}{point\_ys}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::point\+\_\+ys \{\}}
+
+
+
+y component of 2D pixel coordinates 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_adf7c66106f22edc027babe314b65ec58}\label{structmaf__perception__interface_1_1FeaturePointArray_adf7c66106f22edc027babe314b65ec58}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!reserved\+\_\+info@{reserved\+\_\+info}}
+\index{reserved\+\_\+info@{reserved\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{reserved\+\_\+info}{reserved\_info}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::reserved\+\_\+info \{\}}
+
+
+
+reserved information 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_a0e4defbbd6989cfaf50a1bf702a01c7f}\label{structmaf__perception__interface_1_1FeaturePointArray_a0e4defbbd6989cfaf50a1bf702a01c7f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!tag@{tag}}
+\index{tag@{tag}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::tag \{\}}
+
+
+
+Camera name. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FeaturePointArray_a89af7c5009bac73ed1c9339062672660}\label{structmaf__perception__interface_1_1FeaturePointArray_a89af7c5009bac73ed1c9339062672660}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}!track\+\_\+ids@{track\+\_\+ids}}
+\index{track\+\_\+ids@{track\+\_\+ids}!maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array@{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}}
+\subsubsection{\texorpdfstring{track\+\_\+ids}{track\_ids}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+::track\+\_\+ids \{\}}
+
+
+
+Feature id. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

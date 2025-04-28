@@ -1,0 +1,6 @@
+<map id="maf_perception_interface::TrafficLightPerception" name="maf_perception_interface::TrafficLightPerception">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1PerceptionMeta.html" title="maf_perception_interface\l::PerceptionMeta" alt="" coords="383,5,551,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1TrafficLightPerceptionResult.html" title="Trafficlight payload. " alt="" coords="369,71,564,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1HDMapTafficLightInformation.html" title="Structure to represent information of hdmap intersections. " alt="" coords="5,37,207,79"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1TrafficLightInFov.html" title="Enum whether worldmodel traffic light in cam fov. " alt="" coords="22,103,190,144"/>
+</map>

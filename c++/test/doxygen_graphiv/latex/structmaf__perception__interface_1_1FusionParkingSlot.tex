@@ -1,0 +1,87 @@
+\hypertarget{structmaf__perception__interface_1_1FusionParkingSlot}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Fusion\+Parking\+Slot Struct Reference}
+\label{structmaf__perception__interface_1_1FusionParkingSlot}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Fusion\+Parking\+Slot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{structmaf__perception__interface_1_1FusionParkingSlot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a6f1ca6014d4a260470cbf6eaf003171f}{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+D\+A\+TA} = 1, 
+\hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a18aaa692f65c224e0c6a389fb286f6e9}{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+E\+G\+O\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+OT} = 2, 
+\hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a747a9ebdf823b452c9bf2aae6debca73}{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+FO} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_a7fc483585f5a8ad8bc3f641f37a6c5a7}{available} \{\}
+\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1FusionParkingSlotData}{Fusion\+Parking\+Slot\+Data} $>$ \hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_af4af9f11c9b18b027915ca3d26cdbfed}{parking\+\_\+slot\+\_\+data} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1EgoParkingSlot}{Ego\+Parking\+Slot} \hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_a5f6a7680d5fb46b922327d49d1be57bc}{ego\+\_\+parking\+\_\+slot} \{\}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1FusionParkingSlot_a0cfe2d838c1727c0594c675c9e99565e}{reserved\+\_\+info} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509}\label{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+D\+A\+TA@{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+D\+A\+TA}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+D\+A\+TA@{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+D\+A\+TA}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a6f1ca6014d4a260470cbf6eaf003171f}\label{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a6f1ca6014d4a260470cbf6eaf003171f}} 
+F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+D\+A\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+E\+G\+O\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+OT@{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+E\+G\+O\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+OT}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+E\+G\+O\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+OT@{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+E\+G\+O\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+OT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a18aaa692f65c224e0c6a389fb286f6e9}\label{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a18aaa692f65c224e0c6a389fb286f6e9}} 
+F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+E\+G\+O\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+OT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+FO@{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+FO}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+FO@{F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+FO}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a747a9ebdf823b452c9bf2aae6debca73}\label{structmaf__perception__interface_1_1FusionParkingSlot_a01968bcb5d4b40e847741bf6ea66a509a747a9ebdf823b452c9bf2aae6debca73}} 
+F\+U\+S\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+FO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a7fc483585f5a8ad8bc3f641f37a6c5a7}\label{structmaf__perception__interface_1_1FusionParkingSlot_a7fc483585f5a8ad8bc3f641f37a6c5a7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+::available \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a5f6a7680d5fb46b922327d49d1be57bc}\label{structmaf__perception__interface_1_1FusionParkingSlot_a5f6a7680d5fb46b922327d49d1be57bc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!ego\+\_\+parking\+\_\+slot@{ego\+\_\+parking\+\_\+slot}}
+\index{ego\+\_\+parking\+\_\+slot@{ego\+\_\+parking\+\_\+slot}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{ego\+\_\+parking\+\_\+slot}{ego\_parking\_slot}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1EgoParkingSlot}{Ego\+Parking\+Slot} maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+::ego\+\_\+parking\+\_\+slot \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_af4af9f11c9b18b027915ca3d26cdbfed}\label{structmaf__perception__interface_1_1FusionParkingSlot_af4af9f11c9b18b027915ca3d26cdbfed}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!parking\+\_\+slot\+\_\+data@{parking\+\_\+slot\+\_\+data}}
+\index{parking\+\_\+slot\+\_\+data@{parking\+\_\+slot\+\_\+data}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{parking\+\_\+slot\+\_\+data}{parking\_slot\_data}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1FusionParkingSlotData}{Fusion\+Parking\+Slot\+Data}$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+::parking\+\_\+slot\+\_\+data \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionParkingSlot_a0cfe2d838c1727c0594c675c9e99565e}\label{structmaf__perception__interface_1_1FusionParkingSlot_a0cfe2d838c1727c0594c675c9e99565e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}!reserved\+\_\+info@{reserved\+\_\+info}}
+\index{reserved\+\_\+info@{reserved\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{reserved\+\_\+info}{reserved\_info}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+::reserved\+\_\+info \{\}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

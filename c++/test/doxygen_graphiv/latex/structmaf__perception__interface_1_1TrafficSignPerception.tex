@@ -1,0 +1,85 @@
+\hypertarget{structmaf__perception__interface_1_1TrafficSignPerception}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Traffic\+Sign\+Perception Struct Reference}
+\label{structmaf__perception__interface_1_1TrafficSignPerception}\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}}
+
+
+traffic sign perception struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42a2d150431e0655d8a0e83c03e00d926ff}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+U\+LT}, 
+\hyperlink{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42a3748d1e14f2b9c64df222a2e275878a6}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1TrafficSignPerception_a93a923b825027b1c5386480d7f36706a}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Availability of traffic sign perception. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1TrafficSign}{Traffic\+Sign} $>$ \hyperlink{structmaf__perception__interface_1_1TrafficSignPerception_aaa1cf5b102db66d00a1e49d3d1fd28b7}{traffic\+\_\+signs} \{\}
+\begin{DoxyCompactList}\small\item\em Perception results of traffic signs \{10000\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1TrafficSignPerception_a4a4e11fb4a4534d22b322b2433a1affa}{reserved\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em Reserved infos of traffic signs \{10000\}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+traffic sign perception struct 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42}\label{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+U\+LT}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+U\+LT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42a2d150431e0655d8a0e83c03e00d926ff}\label{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42a2d150431e0655d8a0e83c03e00d926ff}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+U\+LT&traffic signs from vision perception \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42a3748d1e14f2b9c64df222a2e275878a6}\label{structmaf__perception__interface_1_1TrafficSignPerception_a4238a6b8a0f7547a267c7a3ac8438d42a3748d1e14f2b9c64df222a2e275878a6}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+T\+R\+A\+F\+F\+I\+C\+\_\+\+S\+I\+G\+N\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS&reserved infos of traffic signs \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSignPerception_a93a923b825027b1c5386480d7f36706a}\label{structmaf__perception__interface_1_1TrafficSignPerception_a93a923b825027b1c5386480d7f36706a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception\+::available \{\}}
+
+
+
+Availability of traffic sign perception. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSignPerception_a4a4e11fb4a4534d22b322b2433a1affa}\label{structmaf__perception__interface_1_1TrafficSignPerception_a4a4e11fb4a4534d22b322b2433a1affa}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}!reserved\+\_\+infos@{reserved\+\_\+infos}}
+\index{reserved\+\_\+infos@{reserved\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}}
+\subsubsection{\texorpdfstring{reserved\+\_\+infos}{reserved\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception\+::reserved\+\_\+infos \{\}}
+
+
+
+Reserved infos of traffic signs \{10000\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSignPerception_aaa1cf5b102db66d00a1e49d3d1fd28b7}\label{structmaf__perception__interface_1_1TrafficSignPerception_aaa1cf5b102db66d00a1e49d3d1fd28b7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}!traffic\+\_\+signs@{traffic\+\_\+signs}}
+\index{traffic\+\_\+signs@{traffic\+\_\+signs}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}}
+\subsubsection{\texorpdfstring{traffic\+\_\+signs}{traffic\_signs}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1TrafficSign}{Traffic\+Sign}$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception\+::traffic\+\_\+signs \{\}}
+
+
+
+Perception results of traffic signs \{10000\}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

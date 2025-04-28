@@ -1,0 +1,270 @@
+\hypertarget{structmaf__perception__interface_1_1Object}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Object Struct Reference}
+\label{structmaf__perception__interface_1_1Object}\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} struct.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1Object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1Object_a3c364be7536d73c6323d3f317c4ebc4b}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em Source camera name. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1Object_a469d36c62b09056c0246aeaacf31cd23}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em Camera model, pinhole, cylinder, or raw, e.\+t.\+c. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} \hyperlink{structmaf__perception__interface_1_1Object_a34c3c4467c522ad910b4e3e671dda51d}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} type info. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Object_aa84395f058f2aaf3862b8a351952941e}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Score of an object existing. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Object_a18a3205b770225fdd5d7ec3660176397}{visibility\+\_\+2d} \{\}
+\begin{DoxyCompactList}\small\item\em Visible ratio from 2d image. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Rect4f}{Rect4f} \hyperlink{structmaf__perception__interface_1_1Object_ab802b7a36f646b3e65d108b91ec0324b}{bounding\+\_\+box\+\_\+2d} \{\}
+\begin{DoxyCompactList}\small\item\em 2D Bbox in image \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{Object\+Track\+Info} \hyperlink{structmaf__perception__interface_1_1Object_a036ef252370b473cb48ecc51e830af10}{track\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Tracking information. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectReIDFeature}{Object\+Re\+I\+D\+Feature} \hyperlink{structmaf__perception__interface_1_1Object_af30ab1b06d4e65ec0f702c76d7c722d8}{reid\+\_\+feature} \{\}
+\begin{DoxyCompactList}\small\item\em Re\+ID feature embedding. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1VehicleStateInfo}{Vehicle\+State\+Info} \hyperlink{structmaf__perception__interface_1_1Object_a5fa4ed2e336f320531b68c914a2f78e4}{vehicle\+\_\+state\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em The state information for vehilce. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1BarrierStateInfo}{Barrier\+State\+Info} \hyperlink{structmaf__perception__interface_1_1Object_a6a0b2fe6674f22fbe489b441450167e7}{barrier\+\_\+state\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em The state information for barrier. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} \hyperlink{structmaf__perception__interface_1_1Object_a16a8ff82478181154a2fb21a383f55bc}{shape\+\_\+3d} \{\}
+\begin{DoxyCompactList}\small\item\em The shape of an object. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Object_acb144a5dab282251e08c3f9ce3f4a44b}{heading\+\_\+theta\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em Heading theta of an object in B\+EV. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} \hyperlink{structmaf__perception__interface_1_1Object_a73ab1027c805920082515f2c7d8a3d41}{velocity\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em Velocity of an object in B\+EV. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} \hyperlink{structmaf__perception__interface_1_1Object_a9b8648e0191d4fcae492e3356a5d91a4}{location\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em Location of an object in B\+EV. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectAEBFeature}{Object\+A\+E\+B\+Feature} \hyperlink{structmaf__perception__interface_1_1Object_a1358bb68ae9ab88dabfc67a8576d7182}{aeb\+\_\+feature} \{\}
+\begin{DoxyCompactList}\small\item\em The A\+EB feature embedding. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Object_ab33d2b5861c8b6c26a9e8af8a63b34f1}{ttc} \{\}
+\begin{DoxyCompactList}\small\item\em Time to collision. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1Object_a89183ecb09490234c2975d1f499aaf0a}{is\+\_\+cipv} \{\}
+\begin{DoxyCompactList}\small\item\em Whether is C\+I\+PV. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1VehicleVPBInfo}{Vehicle\+V\+P\+B\+Info} \hyperlink{structmaf__perception__interface_1_1Object_a846982eb56e78775ac1282f5620a1579}{vehicle\+\_\+vpb\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em V\+P\+B(\+Visible Polygon Boundary) of vehicle. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1Object_ab9fff48b838ba6c8ced1001aeb6985d9}{available} \{true\}
+\item 
+float \hyperlink{structmaf__perception__interface_1_1Object_a061b06ea6f694f218e51e8c3d84d91a5}{subtype\+\_\+score} \{\}
+\begin{DoxyCompactList}\small\item\em Score of an object subtype. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} struct. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a1358bb68ae9ab88dabfc67a8576d7182}\label{structmaf__perception__interface_1_1Object_a1358bb68ae9ab88dabfc67a8576d7182}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!aeb\+\_\+feature@{aeb\+\_\+feature}}
+\index{aeb\+\_\+feature@{aeb\+\_\+feature}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{aeb\+\_\+feature}{aeb\_feature}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectAEBFeature}{Object\+A\+E\+B\+Feature} maf\+\_\+perception\+\_\+interface\+::\+Object\+::aeb\+\_\+feature \{\}}
+
+
+
+The A\+EB feature embedding. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_ab9fff48b838ba6c8ced1001aeb6985d9}\label{structmaf__perception__interface_1_1Object_ab9fff48b838ba6c8ced1001aeb6985d9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Object\+::available \{true\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a6a0b2fe6674f22fbe489b441450167e7}\label{structmaf__perception__interface_1_1Object_a6a0b2fe6674f22fbe489b441450167e7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!barrier\+\_\+state\+\_\+info@{barrier\+\_\+state\+\_\+info}}
+\index{barrier\+\_\+state\+\_\+info@{barrier\+\_\+state\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{barrier\+\_\+state\+\_\+info}{barrier\_state\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1BarrierStateInfo}{Barrier\+State\+Info} maf\+\_\+perception\+\_\+interface\+::\+Object\+::barrier\+\_\+state\+\_\+info \{\}}
+
+
+
+The state information for barrier. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_ab802b7a36f646b3e65d108b91ec0324b}\label{structmaf__perception__interface_1_1Object_ab802b7a36f646b3e65d108b91ec0324b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!bounding\+\_\+box\+\_\+2d@{bounding\+\_\+box\+\_\+2d}}
+\index{bounding\+\_\+box\+\_\+2d@{bounding\+\_\+box\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{bounding\+\_\+box\+\_\+2d}{bounding\_box\_2d}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Rect4f}{Rect4f} maf\+\_\+perception\+\_\+interface\+::\+Object\+::bounding\+\_\+box\+\_\+2d \{\}}
+
+
+
+2D Bbox in image 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a469d36c62b09056c0246aeaacf31cd23}\label{structmaf__perception__interface_1_1Object_a469d36c62b09056c0246aeaacf31cd23}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Object\+::camera\+\_\+model \{\}}
+
+
+
+Camera model, pinhole, cylinder, or raw, e.\+t.\+c. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a3c364be7536d73c6323d3f317c4ebc4b}\label{structmaf__perception__interface_1_1Object_a3c364be7536d73c6323d3f317c4ebc4b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Object\+::camera\+\_\+source \{\}}
+
+
+
+Source camera name. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_acb144a5dab282251e08c3f9ce3f4a44b}\label{structmaf__perception__interface_1_1Object_acb144a5dab282251e08c3f9ce3f4a44b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!heading\+\_\+theta\+\_\+bv@{heading\+\_\+theta\+\_\+bv}}
+\index{heading\+\_\+theta\+\_\+bv@{heading\+\_\+theta\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{heading\+\_\+theta\+\_\+bv}{heading\_theta\_bv}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Object\+::heading\+\_\+theta\+\_\+bv \{\}}
+
+
+
+Heading theta of an object in B\+EV. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a89183ecb09490234c2975d1f499aaf0a}\label{structmaf__perception__interface_1_1Object_a89183ecb09490234c2975d1f499aaf0a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!is\+\_\+cipv@{is\+\_\+cipv}}
+\index{is\+\_\+cipv@{is\+\_\+cipv}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{is\+\_\+cipv}{is\_cipv}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Object\+::is\+\_\+cipv \{\}}
+
+
+
+Whether is C\+I\+PV. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a9b8648e0191d4fcae492e3356a5d91a4}\label{structmaf__perception__interface_1_1Object_a9b8648e0191d4fcae492e3356a5d91a4}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!location\+\_\+bv@{location\+\_\+bv}}
+\index{location\+\_\+bv@{location\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{location\+\_\+bv}{location\_bv}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} maf\+\_\+perception\+\_\+interface\+::\+Object\+::location\+\_\+bv \{\}}
+
+
+
+Location of an object in B\+EV. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_af30ab1b06d4e65ec0f702c76d7c722d8}\label{structmaf__perception__interface_1_1Object_af30ab1b06d4e65ec0f702c76d7c722d8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!reid\+\_\+feature@{reid\+\_\+feature}}
+\index{reid\+\_\+feature@{reid\+\_\+feature}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{reid\+\_\+feature}{reid\_feature}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectReIDFeature}{Object\+Re\+I\+D\+Feature} maf\+\_\+perception\+\_\+interface\+::\+Object\+::reid\+\_\+feature \{\}}
+
+
+
+Re\+ID feature embedding. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_aa84395f058f2aaf3862b8a351952941e}\label{structmaf__perception__interface_1_1Object_aa84395f058f2aaf3862b8a351952941e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Object\+::score \{\}}
+
+
+
+Score of an object existing. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a16a8ff82478181154a2fb21a383f55bc}\label{structmaf__perception__interface_1_1Object_a16a8ff82478181154a2fb21a383f55bc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!shape\+\_\+3d@{shape\+\_\+3d}}
+\index{shape\+\_\+3d@{shape\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{shape\+\_\+3d}{shape\_3d}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} maf\+\_\+perception\+\_\+interface\+::\+Object\+::shape\+\_\+3d \{\}}
+
+
+
+The shape of an object. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a061b06ea6f694f218e51e8c3d84d91a5}\label{structmaf__perception__interface_1_1Object_a061b06ea6f694f218e51e8c3d84d91a5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!subtype\+\_\+score@{subtype\+\_\+score}}
+\index{subtype\+\_\+score@{subtype\+\_\+score}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{subtype\+\_\+score}{subtype\_score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Object\+::subtype\+\_\+score \{\}}
+
+
+
+Score of an object subtype. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a036ef252370b473cb48ecc51e830af10}\label{structmaf__perception__interface_1_1Object_a036ef252370b473cb48ecc51e830af10}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!track\+\_\+info@{track\+\_\+info}}
+\index{track\+\_\+info@{track\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{track\+\_\+info}{track\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{Object\+Track\+Info} maf\+\_\+perception\+\_\+interface\+::\+Object\+::track\+\_\+info \{\}}
+
+
+
+Tracking information. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_ab33d2b5861c8b6c26a9e8af8a63b34f1}\label{structmaf__perception__interface_1_1Object_ab33d2b5861c8b6c26a9e8af8a63b34f1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!ttc@{ttc}}
+\index{ttc@{ttc}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{ttc}{ttc}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Object\+::ttc \{\}}
+
+
+
+Time to collision. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a34c3c4467c522ad910b4e3e671dda51d}\label{structmaf__perception__interface_1_1Object_a34c3c4467c522ad910b4e3e671dda51d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} maf\+\_\+perception\+\_\+interface\+::\+Object\+::type\+\_\+info \{\}}
+
+
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} type info. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a5fa4ed2e336f320531b68c914a2f78e4}\label{structmaf__perception__interface_1_1Object_a5fa4ed2e336f320531b68c914a2f78e4}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!vehicle\+\_\+state\+\_\+info@{vehicle\+\_\+state\+\_\+info}}
+\index{vehicle\+\_\+state\+\_\+info@{vehicle\+\_\+state\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{vehicle\+\_\+state\+\_\+info}{vehicle\_state\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1VehicleStateInfo}{Vehicle\+State\+Info} maf\+\_\+perception\+\_\+interface\+::\+Object\+::vehicle\+\_\+state\+\_\+info \{\}}
+
+
+
+The state information for vehilce. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a846982eb56e78775ac1282f5620a1579}\label{structmaf__perception__interface_1_1Object_a846982eb56e78775ac1282f5620a1579}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!vehicle\+\_\+vpb\+\_\+info@{vehicle\+\_\+vpb\+\_\+info}}
+\index{vehicle\+\_\+vpb\+\_\+info@{vehicle\+\_\+vpb\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{vehicle\+\_\+vpb\+\_\+info}{vehicle\_vpb\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1VehicleVPBInfo}{Vehicle\+V\+P\+B\+Info} maf\+\_\+perception\+\_\+interface\+::\+Object\+::vehicle\+\_\+vpb\+\_\+info \{\}}
+
+
+
+V\+P\+B(\+Visible Polygon Boundary) of vehicle. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a73ab1027c805920082515f2c7d8a3d41}\label{structmaf__perception__interface_1_1Object_a73ab1027c805920082515f2c7d8a3d41}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!velocity\+\_\+bv@{velocity\+\_\+bv}}
+\index{velocity\+\_\+bv@{velocity\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{velocity\+\_\+bv}{velocity\_bv}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} maf\+\_\+perception\+\_\+interface\+::\+Object\+::velocity\+\_\+bv \{\}}
+
+
+
+Velocity of an object in B\+EV. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Object_a18a3205b770225fdd5d7ec3660176397}\label{structmaf__perception__interface_1_1Object_a18a3205b770225fdd5d7ec3660176397}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}!visibility\+\_\+2d@{visibility\+\_\+2d}}
+\index{visibility\+\_\+2d@{visibility\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Object}}
+\subsubsection{\texorpdfstring{visibility\+\_\+2d}{visibility\_2d}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Object\+::visibility\+\_\+2d \{\}}
+
+
+
+Visible ratio from 2d image. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

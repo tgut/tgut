@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::RoadEdge" name="maf_perception_interface::RoadEdge">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1CameraSourceEnum.html" title="Enum to the camera source. " alt="" coords="13,5,181,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1LidarRoadEdgeTypeEnum.html" title="Enum to the lidar road edge type. " alt="" coords="5,71,188,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1CameraModelEnum.html" title="Enum to the camera model. " alt="" coords="13,136,181,177"/>
+</map>

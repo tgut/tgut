@@ -1,0 +1,6 @@
+<map id="maf_perception_interface::ParkingSlotCenterPoint" name="maf_perception_interface::ParkingSlotCenterPoint">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1ParkingSlotChargeTypeEnum.html" title="Enum to the charge type of parking slot. " alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1ParkingSlotSpecialTypeEnum.html" title="Enum to the special type of parking slot. " alt="" coords="5,71,208,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1Point2f.html" title="maf_perception_interface\l::Point2f" alt="" coords="23,136,191,177"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1ParkingSlotTypeEnum.html" title="Enum to the type of parking slot. " alt="" coords="23,201,191,243"/>
+</map>

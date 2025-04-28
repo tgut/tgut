@@ -1,0 +1,254 @@
+\hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Lidar\+B\+E\+V\+Grid\+Map\+Result Struct Reference}
+\label{structmaf__perception__interface_1_1LidarBEVGridMapResult}\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Lidar\+B\+E\+V\+Grid\+Map\+Result\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{structmaf__perception__interface_1_1LidarBEVGridMapResult__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+maf\+\_\+std\+::\+Header \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a91a2468b8888e598ff5c87e91a869355}{header} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1LidarPerceptionResultMeta}{Lidar\+Perception\+Result\+Meta} \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a31299f47d5944abde543ec5907e40063}{meta} \{\}
+\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a655870c3e8b23b9134ee5138327adc5b}{available} \{\}
+\item 
+uint32\+\_\+t \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a3b8e4f459d30418443e278d59561b37e}{width} \{\}
+\begin{DoxyCompactList}\small\item\em width of grid map (pixel) \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_aeb5585a7cc2839e5f905143780e77f0b}{height} \{\}
+\begin{DoxyCompactList}\small\item\em height of grid map (pixel) \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a8d899df66d38d9985e77211d53fcbf7c}{sparse\+\_\+flag} \{\}
+\begin{DoxyCompactList}\small\item\em flag to control sparse expression \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a12d15d22f9daea6c3b74a7b5b4d999ff}{score} \{\}
+\begin{DoxyCompactList}\small\item\em grid score \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a8a5cb4ae0efeca22fe19a6f1f19e0f49}{visibility} \{\}
+\begin{DoxyCompactList}\small\item\em visible score \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a92eadedd3dfc0af6726894e189b36f1e}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em grid type info \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Vector2d}{Vector2d} $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a78c415a3bf40f9a7b17168ca6a476001}{velocity} \{\}
+\begin{DoxyCompactList}\small\item\em speed prediction of grid (m/s)  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a9c7e982dcb19b2e6b978e7407b7c3bbf}{angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em angular velocity of grid (radian/s) \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_ab8a60289c1db1d57efdfc24329ee4b62}{grid\+\_\+height} \{\}
+\begin{DoxyCompactList}\small\item\em grid point height \end{DoxyCompactList}\item 
+std\+::vector$<$ uint16\+\_\+t $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_ac8df709af55b054a691f6dd52841e021}{sparse\+\_\+x} \{\}
+\begin{DoxyCompactList}\small\item\em x coodinate \end{DoxyCompactList}\item 
+std\+::vector$<$ uint16\+\_\+t $>$ \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a5fa90f42bf9145c388a1771b4084e9a3}{sparse\+\_\+y} \{\}
+\begin{DoxyCompactList}\small\item\em y coodinate \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_aa2066f095a913f8b8e31244321f99b63}{front} \{\}
+\begin{DoxyCompactList}\small\item\em front distance from ego-\/vehicle \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a7a9a5a184928479f6da8e8b6fad8881b}{back} \{\}
+\begin{DoxyCompactList}\small\item\em back distance from ego-\/vehicle \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_ab32e1a854087694d6af92bd5eef499e8}{left} \{\}
+\begin{DoxyCompactList}\small\item\em left distance from ego-\/vehicle \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a421a0f479d444277338bfc300cc7e0fa}{right} \{\}
+\begin{DoxyCompactList}\small\item\em right distance from ego-\/vehicle \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_a0a516ad7a2661309b68c7d316e23714c}{grid\+\_\+size\+\_\+w} \{\}
+\begin{DoxyCompactList}\small\item\em grid size (m) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult_ad669b4f62c5664ce3960fce6a7b59521}{grid\+\_\+size\+\_\+h} \{\}
+\begin{DoxyCompactList}\small\item\em grid size (m) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a9c7e982dcb19b2e6b978e7407b7c3bbf}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a9c7e982dcb19b2e6b978e7407b7c3bbf}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!angular\+\_\+velocity@{angular\+\_\+velocity}}
+\index{angular\+\_\+velocity@{angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{angular\+\_\+velocity}{angular\_velocity}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::angular\+\_\+velocity \{\}}
+
+
+
+angular velocity of grid (radian/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a655870c3e8b23b9134ee5138327adc5b}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a655870c3e8b23b9134ee5138327adc5b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::available \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a7a9a5a184928479f6da8e8b6fad8881b}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a7a9a5a184928479f6da8e8b6fad8881b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!back@{back}}
+\index{back@{back}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{back}{back}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::back \{\}}
+
+
+
+back distance from ego-\/vehicle 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_aa2066f095a913f8b8e31244321f99b63}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_aa2066f095a913f8b8e31244321f99b63}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!front@{front}}
+\index{front@{front}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{front}{front}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::front \{\}}
+
+
+
+front distance from ego-\/vehicle 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_ab8a60289c1db1d57efdfc24329ee4b62}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_ab8a60289c1db1d57efdfc24329ee4b62}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!grid\+\_\+height@{grid\+\_\+height}}
+\index{grid\+\_\+height@{grid\+\_\+height}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{grid\+\_\+height}{grid\_height}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::grid\+\_\+height \{\}}
+
+
+
+grid point height 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_ad669b4f62c5664ce3960fce6a7b59521}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_ad669b4f62c5664ce3960fce6a7b59521}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!grid\+\_\+size\+\_\+h@{grid\+\_\+size\+\_\+h}}
+\index{grid\+\_\+size\+\_\+h@{grid\+\_\+size\+\_\+h}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{grid\+\_\+size\+\_\+h}{grid\_size\_h}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::grid\+\_\+size\+\_\+h \{\}}
+
+
+
+grid size (m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a0a516ad7a2661309b68c7d316e23714c}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a0a516ad7a2661309b68c7d316e23714c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!grid\+\_\+size\+\_\+w@{grid\+\_\+size\+\_\+w}}
+\index{grid\+\_\+size\+\_\+w@{grid\+\_\+size\+\_\+w}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{grid\+\_\+size\+\_\+w}{grid\_size\_w}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::grid\+\_\+size\+\_\+w \{\}}
+
+
+
+grid size (m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a91a2468b8888e598ff5c87e91a869355}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a91a2468b8888e598ff5c87e91a869355}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!header@{header}}
+\index{header@{header}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily maf\+\_\+std\+::\+Header maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::header \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_aeb5585a7cc2839e5f905143780e77f0b}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_aeb5585a7cc2839e5f905143780e77f0b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!height@{height}}
+\index{height@{height}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily uint32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::height \{\}}
+
+
+
+height of grid map (pixel) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_ab32e1a854087694d6af92bd5eef499e8}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_ab32e1a854087694d6af92bd5eef499e8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!left@{left}}
+\index{left@{left}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::left \{\}}
+
+
+
+left distance from ego-\/vehicle 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a31299f47d5944abde543ec5907e40063}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a31299f47d5944abde543ec5907e40063}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!meta@{meta}}
+\index{meta@{meta}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1LidarPerceptionResultMeta}{Lidar\+Perception\+Result\+Meta} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::meta \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a421a0f479d444277338bfc300cc7e0fa}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a421a0f479d444277338bfc300cc7e0fa}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!right@{right}}
+\index{right@{right}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::right \{\}}
+
+
+
+right distance from ego-\/vehicle 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a12d15d22f9daea6c3b74a7b5b4d999ff}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a12d15d22f9daea6c3b74a7b5b4d999ff}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::score \{\}}
+
+
+
+grid score 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a8d899df66d38d9985e77211d53fcbf7c}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a8d899df66d38d9985e77211d53fcbf7c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!sparse\+\_\+flag@{sparse\+\_\+flag}}
+\index{sparse\+\_\+flag@{sparse\+\_\+flag}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{sparse\+\_\+flag}{sparse\_flag}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::sparse\+\_\+flag \{\}}
+
+
+
+flag to control sparse expression 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_ac8df709af55b054a691f6dd52841e021}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_ac8df709af55b054a691f6dd52841e021}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!sparse\+\_\+x@{sparse\+\_\+x}}
+\index{sparse\+\_\+x@{sparse\+\_\+x}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{sparse\+\_\+x}{sparse\_x}}
+{\footnotesize\ttfamily std\+::vector$<$uint16\+\_\+t$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::sparse\+\_\+x \{\}}
+
+
+
+x coodinate 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a5fa90f42bf9145c388a1771b4084e9a3}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a5fa90f42bf9145c388a1771b4084e9a3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!sparse\+\_\+y@{sparse\+\_\+y}}
+\index{sparse\+\_\+y@{sparse\+\_\+y}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{sparse\+\_\+y}{sparse\_y}}
+{\footnotesize\ttfamily std\+::vector$<$uint16\+\_\+t$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::sparse\+\_\+y \{\}}
+
+
+
+y coodinate 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a92eadedd3dfc0af6726894e189b36f1e}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a92eadedd3dfc0af6726894e189b36f1e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info}$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::type\+\_\+info \{\}}
+
+
+
+grid type info 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a78c415a3bf40f9a7b17168ca6a476001}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a78c415a3bf40f9a7b17168ca6a476001}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!velocity@{velocity}}
+\index{velocity@{velocity}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Vector2d}{Vector2d}$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::velocity \{\}}
+
+
+
+speed prediction of grid (m/s)  
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a8a5cb4ae0efeca22fe19a6f1f19e0f49}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a8a5cb4ae0efeca22fe19a6f1f19e0f49}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!visibility@{visibility}}
+\index{visibility@{visibility}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{visibility}{visibility}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::visibility \{\}}
+
+
+
+visible score 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarBEVGridMapResult_a3b8e4f459d30418443e278d59561b37e}\label{structmaf__perception__interface_1_1LidarBEVGridMapResult_a3b8e4f459d30418443e278d59561b37e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}!width@{width}}
+\index{width@{width}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily uint32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result\+::width \{\}}
+
+
+
+width of grid map (pixel) 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

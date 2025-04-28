@@ -1,0 +1,11 @@
+<map id="maf_perception_interface::PhysicalTrafficLightSingleFrame" name="maf_perception_interface::PhysicalTrafficLightSingleFrame">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1TrafficLightGroupPropertyEnum.html" title="Physical Trafficlight group property. " alt="" coords="5,5,219,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1Rect4f.html" title="maf_perception_interface\l::Rect4f" alt="" coords="28,71,196,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1Vector2f.html" title="maf_perception_interface\l::Vector2f" alt="" coords="28,136,196,177"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1CameraSourceEnum.html" title="Enum to the camera source. " alt="" coords="28,201,196,243"/>
+<area shape="rect" id="node6" href="$structmaf__perception__interface_1_1Point3f.html" title="maf_perception_interface\l::Point3f" alt="" coords="28,267,196,308"/>
+<area shape="rect" id="node7" href="$structmaf__perception__interface_1_1Shape3f.html" title="maf_perception_interface\l::Shape3f" alt="" coords="28,332,196,373"/>
+<area shape="rect" id="node8" href="$structmaf__perception__interface_1_1TrafficLightGroupShapeEnum.html" title="Physical Trafficlight group shape. " alt="" coords="11,397,213,439"/>
+<area shape="rect" id="node9" href="$structmaf__perception__interface_1_1CameraModelEnum.html" title="Enum to the camera model. " alt="" coords="28,463,196,504"/>
+<area shape="rect" id="node10" href="$structmaf__perception__interface_1_1TrafficLightGroupEnum.html" title="Physical Trafficlight group type. " alt="" coords="28,528,196,569"/>
+</map>

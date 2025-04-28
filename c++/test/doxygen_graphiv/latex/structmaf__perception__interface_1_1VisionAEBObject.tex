@@ -1,0 +1,178 @@
+\hypertarget{structmaf__perception__interface_1_1VisionAEBObject}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Vision\+A\+E\+B\+Object Struct Reference}
+\label{structmaf__perception__interface_1_1VisionAEBObject}\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+
+
+Vision A\+EB object struct.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Vision\+A\+E\+B\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1VisionAEBObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_a92059f230aac537ceedef0bbee641283}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em Camera source. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_ae9170b9ebea5ec6c677fe6fbde5b263c}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em Camera model. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_af35591e21f2415f7a10753a33e16962f}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Type. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_aa50e3debe5da3689804238961a8ef580}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Confidence on whether it is a A\+EB object. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_a1476d909e4ca3b7a4766a2323a668fee}{visibility\+\_\+2d} \{\}
+\begin{DoxyCompactList}\small\item\em Visibility. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Rect4f}{Rect4f} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_a72f32d87e52eabd263af8421be9e58d8}{bounding\+\_\+box\+\_\+2d} \{\}
+\begin{DoxyCompactList}\small\item\em Bbox in the image. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{Object\+Track\+Info} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_a790f251361d1d482a34685637d16481d}{track\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Tracking info. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_a418c51654444b7e99ed88a94acf613f6}{shape\+\_\+3d} \{\}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} 3d shape \{m\}. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_a3924fa788313de08bcbbaf3c9466a729}{heading\+\_\+theta\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em Heading angle from the object heading to the x axis in ego-\/vehicle coordinate \{radian\} \{-\/2$\ast$pi\} \{2$\ast$pi\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_abdd5c78a5ee7c9fd4e639887a985a116}{velocity\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em Relative velocity of object center at bird\textquotesingle{}s-\/eye view \{m/s\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_ab60904c38e8930b4aa545f3d091d7b07}{location\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} center location in ego-\/vehicle coordinate at bird\textquotesingle{}s-\/eye view \{m\}. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1VisionAEBObject_ae353abff6dd10e5840d098c909139cf3}{ttc} \{\}
+\begin{DoxyCompactList}\small\item\em Time to collision \{s\}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vision A\+EB object struct. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_a72f32d87e52eabd263af8421be9e58d8}\label{structmaf__perception__interface_1_1VisionAEBObject_a72f32d87e52eabd263af8421be9e58d8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!bounding\+\_\+box\+\_\+2d@{bounding\+\_\+box\+\_\+2d}}
+\index{bounding\+\_\+box\+\_\+2d@{bounding\+\_\+box\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{bounding\+\_\+box\+\_\+2d}{bounding\_box\_2d}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Rect4f}{Rect4f} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::bounding\+\_\+box\+\_\+2d \{\}}
+
+
+
+Bbox in the image. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_ae9170b9ebea5ec6c677fe6fbde5b263c}\label{structmaf__perception__interface_1_1VisionAEBObject_ae9170b9ebea5ec6c677fe6fbde5b263c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::camera\+\_\+model \{\}}
+
+
+
+Camera model. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_a92059f230aac537ceedef0bbee641283}\label{structmaf__perception__interface_1_1VisionAEBObject_a92059f230aac537ceedef0bbee641283}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::camera\+\_\+source \{\}}
+
+
+
+Camera source. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_a3924fa788313de08bcbbaf3c9466a729}\label{structmaf__perception__interface_1_1VisionAEBObject_a3924fa788313de08bcbbaf3c9466a729}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!heading\+\_\+theta\+\_\+bv@{heading\+\_\+theta\+\_\+bv}}
+\index{heading\+\_\+theta\+\_\+bv@{heading\+\_\+theta\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{heading\+\_\+theta\+\_\+bv}{heading\_theta\_bv}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::heading\+\_\+theta\+\_\+bv \{\}}
+
+
+
+Heading angle from the object heading to the x axis in ego-\/vehicle coordinate \{radian\} \{-\/2$\ast$pi\} \{2$\ast$pi\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_ab60904c38e8930b4aa545f3d091d7b07}\label{structmaf__perception__interface_1_1VisionAEBObject_ab60904c38e8930b4aa545f3d091d7b07}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!location\+\_\+bv@{location\+\_\+bv}}
+\index{location\+\_\+bv@{location\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{location\+\_\+bv}{location\_bv}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::location\+\_\+bv \{\}}
+
+
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} center location in ego-\/vehicle coordinate at bird\textquotesingle{}s-\/eye view \{m\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_aa50e3debe5da3689804238961a8ef580}\label{structmaf__perception__interface_1_1VisionAEBObject_aa50e3debe5da3689804238961a8ef580}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::score \{\}}
+
+
+
+Confidence on whether it is a A\+EB object. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_a418c51654444b7e99ed88a94acf613f6}\label{structmaf__perception__interface_1_1VisionAEBObject_a418c51654444b7e99ed88a94acf613f6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!shape\+\_\+3d@{shape\+\_\+3d}}
+\index{shape\+\_\+3d@{shape\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{shape\+\_\+3d}{shape\_3d}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::shape\+\_\+3d \{\}}
+
+
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} 3d shape \{m\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_a790f251361d1d482a34685637d16481d}\label{structmaf__perception__interface_1_1VisionAEBObject_a790f251361d1d482a34685637d16481d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!track\+\_\+info@{track\+\_\+info}}
+\index{track\+\_\+info@{track\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{track\+\_\+info}{track\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{Object\+Track\+Info} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::track\+\_\+info \{\}}
+
+
+
+Tracking info. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_ae353abff6dd10e5840d098c909139cf3}\label{structmaf__perception__interface_1_1VisionAEBObject_ae353abff6dd10e5840d098c909139cf3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!ttc@{ttc}}
+\index{ttc@{ttc}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{ttc}{ttc}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::ttc \{\}}
+
+
+
+Time to collision \{s\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_af35591e21f2415f7a10753a33e16962f}\label{structmaf__perception__interface_1_1VisionAEBObject_af35591e21f2415f7a10753a33e16962f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::type\+\_\+info \{\}}
+
+
+
+Type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_abdd5c78a5ee7c9fd4e639887a985a116}\label{structmaf__perception__interface_1_1VisionAEBObject_abdd5c78a5ee7c9fd4e639887a985a116}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!velocity\+\_\+bv@{velocity\+\_\+bv}}
+\index{velocity\+\_\+bv@{velocity\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{velocity\+\_\+bv}{velocity\_bv}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3f}{Vector3f} maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::velocity\+\_\+bv \{\}}
+
+
+
+Relative velocity of object center at bird\textquotesingle{}s-\/eye view \{m/s\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1VisionAEBObject_a1476d909e4ca3b7a4766a2323a668fee}\label{structmaf__perception__interface_1_1VisionAEBObject_a1476d909e4ca3b7a4766a2323a668fee}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}!visibility\+\_\+2d@{visibility\+\_\+2d}}
+\index{visibility\+\_\+2d@{visibility\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object@{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}}
+\subsubsection{\texorpdfstring{visibility\+\_\+2d}{visibility\_2d}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object\+::visibility\+\_\+2d \{\}}
+
+
+
+Visibility. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,399 @@
+\hypertarget{maf__perception__interface_8h}{}\section{maf\+\_\+perception\+\_\+interface.\+h File Reference}
+\label{maf__perception__interface_8h}\index{maf\+\_\+perception\+\_\+interface.\+h@{maf\+\_\+perception\+\_\+interface.\+h}}
+{\ttfamily \#include \char`\"{}maf\+\_\+interface/maf\+\_\+std.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for maf\+\_\+perception\+\_\+interface.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{maf__perception__interface_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Rect4f}{maf\+\_\+perception\+\_\+interface\+::\+Rect4f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Shape2d}{maf\+\_\+perception\+\_\+interface\+::\+Shape2d}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Vector3d}{maf\+\_\+perception\+\_\+interface\+::\+Vector3d}
+\begin{DoxyCompactList}\small\item\em velocity in three-\/dimensional coordinates \{m/s\} \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1Shape2f}{maf\+\_\+perception\+\_\+interface\+::\+Shape2f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Point3f}{maf\+\_\+perception\+\_\+interface\+::\+Point3f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{maf\+\_\+perception\+\_\+interface\+::\+Camera\+Source\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the camera source. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1Point3d}{maf\+\_\+perception\+\_\+interface\+::\+Point3d}
+\begin{DoxyCompactList}\small\item\em point position in three-\/dimensional coordinates(m) \{m\} \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{maf\+\_\+perception\+\_\+interface\+::\+Camera\+Model\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the camera model. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1Shape3d}{maf\+\_\+perception\+\_\+interface\+::\+Shape3d}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Point2d}{maf\+\_\+perception\+\_\+interface\+::\+Point2d}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Vector2f}{maf\+\_\+perception\+\_\+interface\+::\+Vector2f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Point2f}{maf\+\_\+perception\+\_\+interface\+::\+Point2f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Shape3f}{maf\+\_\+perception\+\_\+interface\+::\+Shape3f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Vector2d}{maf\+\_\+perception\+\_\+interface\+::\+Vector2d}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Vector3f}{maf\+\_\+perception\+\_\+interface\+::\+Vector3f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1VRUSubTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+V\+R\+U\+Sub\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the detailed subtype of V\+RU. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Type\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectTypePropertyEnum}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Type\+Property\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of object. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1GeneralObjectTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+General\+Object\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of general object (usually means road debris) \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VRUTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+V\+R\+U\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of V\+RU. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleSubTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Sub\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the detailed subtype of vehicle. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VRUAniSubTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+V\+R\+U\+Ani\+Sub\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of V\+RU Animal. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VRUPedSubTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+V\+R\+U\+Ped\+Sub\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of V\+RU Pedestrian. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1DataDesensibilisationTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Data\+Desensibilisation\+Type\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of object. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficBarrierTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Barrier\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the the traffic barrier(\+Static Objects) type. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of vehicle. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleBeamLightEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Beam\+Light\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the vehicle beam light status types. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleBrakeLightEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Brake\+Light\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the vehicle brake light status types. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleTailLightEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Tail\+Light\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the vehicle Tail light status types. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleDoorStateEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Door\+State\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the vehicle door status types. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleCutinStateEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Cutin\+State\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the vehicle cutin status types. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleBlinkLightEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Blink\+Light\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the vehicle bink light status types. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleEgoLaneRelationEnum}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Ego\+Lane\+Relation\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the relation between the target vehicle and ego lane lines (overlap or not observed from the image) \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficBarrierEgoLaneRelationEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Barrier\+Ego\+Lane\+Relation\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the relation between the target traffic barrier and ego lane lines (inside or outside the ego lane, or on the boundary lines of the ego lane) \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficBarrierUsefulEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Barrier\+Useful\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the useful property of the target traffic barrier (useful or unuseful for downstream) \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ContiRadarExistenceProbabilityType}{maf\+\_\+perception\+\_\+interface\+::\+Conti\+Radar\+Existence\+Probability\+Type}
+\begin{DoxyCompactList}\small\item\em Conti Radar Existence Probability type. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1BoschRadarSensorStatus}{maf\+\_\+perception\+\_\+interface\+::\+Bosch\+Radar\+Sensor\+Status}
+\begin{DoxyCompactList}\small\item\em Bosch Radar sensor status. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ContiRadarDynamicProperty}{maf\+\_\+perception\+\_\+interface\+::\+Conti\+Radar\+Dynamic\+Property}
+\begin{DoxyCompactList}\small\item\em Conti Radar Dynamic Property. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RadarPerceptionResultMeta}{maf\+\_\+perception\+\_\+interface\+::\+Radar\+Perception\+Result\+Meta}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1RadarPerceptionResult}{Radar\+Perception\+Result} meta data. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ContiRadarMeasurementState}{maf\+\_\+perception\+\_\+interface\+::\+Conti\+Radar\+Measurement\+State}
+\begin{DoxyCompactList}\small\item\em Conti Radar Measurement State. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionResultMeta}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Result\+Meta}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1EgoParkingSlot}{maf\+\_\+perception\+\_\+interface\+::\+Ego\+Parking\+Slot}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBStateEnum}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+State\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the perception fusion A\+EB state. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightInFov}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+In\+Fov}
+\begin{DoxyCompactList}\small\item\em Enum whether worldmodel traffic light in cam fov. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightOnOffEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+On\+Off\+Enum}
+\begin{DoxyCompactList}\small\item\em Trafficlight O\+N\+O\+FF enum. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightStatusEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Status\+Enum}
+\begin{DoxyCompactList}\small\item\em Trafficlight status enum. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightPatternEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Pattern\+Enum}
+\begin{DoxyCompactList}\small\item\em Trafficlight pattern enum. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightNumberEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Number\+Enum}
+\begin{DoxyCompactList}\small\item\em Trafficlight number enum. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadMarkLabelMap}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Label\+Map}
+\begin{DoxyCompactList}\small\item\em roadmark label map struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1GroundLineTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of ground line. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1GroundLine3dPointTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line3d\+Point\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the source of ground line 3d points. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleVPBInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+V\+P\+B\+Info}
+\begin{DoxyCompactList}\small\item\em 3D visible polygon boundary of vehicles from image view \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectTrackInfo}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Track\+Info}
+\begin{DoxyCompactList}\small\item\em object tracking information struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectAEBFeature}{maf\+\_\+perception\+\_\+interface\+::\+Object\+A\+E\+B\+Feature}
+\begin{DoxyCompactList}\small\item\em object A\+EB feature information struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectReIDFeature}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Re\+I\+D\+Feature}
+\begin{DoxyCompactList}\small\item\em Vehicle Re\+ID feature struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotPointTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Point\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of parking slot point. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of parking slot. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotChargeTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Charge\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the charge type of parking slot. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotSpecialTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Special\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the special type of parking slot. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ImageRetrievalDescriptorPropertyEnum}{maf\+\_\+perception\+\_\+interface\+::\+Image\+Retrieval\+Descriptor\+Property\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PoleLineTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Pole\+Line\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of pole line. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LocationInfo}{maf\+\_\+perception\+\_\+interface\+::\+Location\+Info}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1WheelSpeed}{maf\+\_\+perception\+\_\+interface\+::\+Wheel\+Speed}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1SpeedSignSpeedEnum}{maf\+\_\+perception\+\_\+interface\+::\+Speed\+Sign\+Speed\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the num of speed sign. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1SpeedSignCategoryEnum}{maf\+\_\+perception\+\_\+interface\+::\+Speed\+Sign\+Category\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the category of speed sign. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSignShapeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Shape\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the shape of traffic sign. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSignArrowDirectionEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Arrow\+Direction\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the direction of traffic sign arrow. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSignRegionEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Region\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the region of traffic sign. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSignTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of traffic sign  valid when is\+\_\+speed\+\_\+sign==false \&\& is\+\_\+road\+\_\+mark==false. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadMarkTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of road mark bounding box. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1SpeedSignTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Speed\+Sign\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the speed type of speed sign. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RestrictionSignTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Restriction\+Sign\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of restrinction sign. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ReservedParkingSignSubtypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Reserved\+Parking\+Sign\+Subtype\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FeaturePointArrayPropertyEnum}{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array\+Property\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1ADASPerceptionResult}{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+A\+S\+Perception\+Result}
+\begin{DoxyCompactList}\small\item\em A\+D\+AS Perception result struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LaneSegmentPointEnum}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+Point\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of lane segment point. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LaneTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of lane line. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LaneColorEnum}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Color\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the color of lane line. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LaneHorizontalTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Horizontal\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the horizontal line type of lane line. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1AvoidObjectTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Avoid\+Object\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the type of object should be avoided (usually in engineering scene) \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LidarPerceptionResultMeta}{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Result\+Meta}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FrameMeta}{maf\+\_\+perception\+\_\+interface\+::\+Frame\+Meta}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1Polygon3f}{maf\+\_\+perception\+\_\+interface\+::\+Polygon3f}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Type\+Info}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} type information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleBeamLightInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Beam\+Light\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle beam light information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleBlinkLightInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Blink\+Light\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle blink light information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleBrakeLightInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Brake\+Light\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle brake light information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleTailLightInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Tail\+Light\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle tail light information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleDoorStateInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Door\+State\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle door state information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleCutinStateInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Cutin\+State\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle cutin state information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleEgoLaneRelationInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+Ego\+Lane\+Relation\+Info}
+\begin{DoxyCompactList}\small\item\em Information for the relation of target vehicle and ego lane lines. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficBarrierEgoLaneRelationInfo}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Barrier\+Ego\+Lane\+Relation\+Info}
+\begin{DoxyCompactList}\small\item\em Information for the relation of target barrier and ego lane lines. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionObstacleTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Obstacle\+Type\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionObstaclePointType}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Obstacle\+Point\+Type}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionParkingSlotType}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+Type}
+\begin{DoxyCompactList}\small\item\em Structure to represent fusion slot type. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionSpecialParkingSlotType}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Special\+Parking\+Slot\+Type}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotVirtualPoint}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Virtual\+Point}
+\begin{DoxyCompactList}\small\item\em Structure to represent fusion slot virtual point. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionParkingSlotData}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+Data}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightPositionFeature}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Position\+Feature}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of traffic light position. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightDecision}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Decision}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of Traffic Light Decision Result. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightAssociatedInfo}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Associated\+Info}
+\begin{DoxyCompactList}\small\item\em Traffic\+Light associated information. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightROI}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+R\+OI}
+\begin{DoxyCompactList}\small\item\em Traffic light R\+OI. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadMark}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1RoadMark}{Road\+Mark} struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1GroundLine}{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}
+\begin{DoxyCompactList}\small\item\em ground line struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotPoint}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Point}
+\begin{DoxyCompactList}\small\item\em parking slot 2d point struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotCenterPoint}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Center\+Point}
+\begin{DoxyCompactList}\small\item\em parking slot center point struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotPoint3d}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Point3d}
+\begin{DoxyCompactList}\small\item\em parking slot 3d point struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ImageRetrievalDescriptor}{maf\+\_\+perception\+\_\+interface\+::\+Image\+Retrieval\+Descriptor}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PoleLinePoint}{maf\+\_\+perception\+\_\+interface\+::\+Pole\+Line\+Point}
+\begin{DoxyCompactList}\small\item\em pole line 2d point struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightIndication}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Indication}
+\begin{DoxyCompactList}\small\item\em H\+Dmap trafficlight. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LidarRoadEdgeTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Road\+Edge\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the lidar road edge type. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadEdge}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}
+\begin{DoxyCompactList}\small\item\em Road edge struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSignPoint}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Point}
+\begin{DoxyCompactList}\small\item\em traffic sign 2d point struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FeaturePointArray}{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Array}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1LaneSegment}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Lane}{Lane} segment struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1Lane}{maf\+\_\+perception\+\_\+interface\+::\+Lane}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Lane}{Lane} line struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VehicleStateInfo}{maf\+\_\+perception\+\_\+interface\+::\+Vehicle\+State\+Info}
+\begin{DoxyCompactList}\small\item\em Vehicle state information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1BarrierStateInfo}{maf\+\_\+perception\+\_\+interface\+::\+Barrier\+State\+Info}
+\begin{DoxyCompactList}\small\item\em Barrier state information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ContiRadarPerceptionObjectData}{maf\+\_\+perception\+\_\+interface\+::\+Conti\+Radar\+Perception\+Object\+Data}
+\begin{DoxyCompactList}\small\item\em Conti Radar Perception data infomation. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1BoschRadarPerceptionObjectData}{maf\+\_\+perception\+\_\+interface\+::\+Bosch\+Radar\+Perception\+Object\+Data}
+\begin{DoxyCompactList}\small\item\em Basic Radar Perception data infomation. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1BasicRadarPerceptionObjectData}{maf\+\_\+perception\+\_\+interface\+::\+Basic\+Radar\+Perception\+Object\+Data}
+\begin{DoxyCompactList}\small\item\em Basic Radar Perception data infomation. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionGroundLine}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionParkingSlot}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}
+\begin{DoxyCompactList}\small\item\em A\+EB \hyperlink{structmaf__perception__interface_1_1Object}{Object} data information struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Meta}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of fusion result of the traffic light. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightSingleFrame}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Single\+Frame}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of a single frame result of the traffic light. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VisionAEBObject}{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Object}
+\begin{DoxyCompactList}\small\item\em Vision A\+EB object struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VisionDataDesensibilisationObject}{maf\+\_\+perception\+\_\+interface\+::\+Vision\+Data\+Desensibilisation\+Object}
+\begin{DoxyCompactList}\small\item\em Vision data desensibilisation struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlot}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}
+\begin{DoxyCompactList}\small\item\em parking slot struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PoleLine}{maf\+\_\+perception\+\_\+interface\+::\+Pole\+Line}
+\begin{DoxyCompactList}\small\item\em Pole line struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightDetectTrigger}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Detect\+Trigger}
+\begin{DoxyCompactList}\small\item\em H\+D\+Map trafficlight trigger. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadEdgePerception}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+Perception}
+\begin{DoxyCompactList}\small\item\em road edge perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSign}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}
+\begin{DoxyCompactList}\small\item\em traffic sign struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FeaturePointPerception}{maf\+\_\+perception\+\_\+interface\+::\+Feature\+Point\+Perception}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1LaneSegmentPerception}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+Perception}
+\begin{DoxyCompactList}\small\item\em lane segment perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LanePerception}{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}
+\begin{DoxyCompactList}\small\item\em lane line perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData}{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1RadarPerceptionObjects}{maf\+\_\+perception\+\_\+interface\+::\+Radar\+Perception\+Objects}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1RadarPerceptionObjects}{Radar\+Perception\+Objects} information. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionGroundLineResult}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Result}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionObjectTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Object\+Type\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionSceneTypeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Scene\+Type\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectData}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Data}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1FusionParkingSlotResult}{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Parking\+Slot\+Result}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjects}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Objects}
+\begin{DoxyCompactList}\small\item\em A\+EB objects of perception fusion struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1HDMapIntersectionStopLine}{maf\+\_\+perception\+\_\+interface\+::\+H\+D\+Map\+Intersection\+Stop\+Line}
+\begin{DoxyCompactList}\small\item\em Structure to represent stopline of hdmap intersection. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1HDMapTrafficLight}{maf\+\_\+perception\+\_\+interface\+::\+H\+D\+Map\+Traffic\+Light}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of hdmap traffic light. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1HDMapTrafficLightGroup}{maf\+\_\+perception\+\_\+interface\+::\+H\+D\+Map\+Traffic\+Light\+Group}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of hdmap traffic light group. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1HDMapIntersection}{maf\+\_\+perception\+\_\+interface\+::\+H\+D\+Map\+Intersection}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of hdmap intersection. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1HDMapTafficLightInformation}{maf\+\_\+perception\+\_\+interface\+::\+H\+D\+Map\+Taffic\+Light\+Information}
+\begin{DoxyCompactList}\small\item\em Structure to represent information of hdmap intersections. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightGroupEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Group\+Enum}
+\begin{DoxyCompactList}\small\item\em Physical Trafficlight group type. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightGroupShapeEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Group\+Shape\+Enum}
+\begin{DoxyCompactList}\small\item\em Physical Trafficlight group shape. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightGroupPropertyEnum}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Group\+Property\+Enum}
+\begin{DoxyCompactList}\small\item\em Physical Trafficlight group property. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PhysicalTrafficLightBulb}{maf\+\_\+perception\+\_\+interface\+::\+Physical\+Traffic\+Light\+Bulb}
+\begin{DoxyCompactList}\small\item\em Physical Trafficlight bulb. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PhysicalTrafficLightSingleFrame}{maf\+\_\+perception\+\_\+interface\+::\+Physical\+Traffic\+Light\+Single\+Frame}
+\begin{DoxyCompactList}\small\item\em Physical Trafficlight Single Frame. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PhysicalTrafficLightMultiFrame}{maf\+\_\+perception\+\_\+interface\+::\+Physical\+Traffic\+Light\+Multi\+Frame}
+\begin{DoxyCompactList}\small\item\em Physical Trafficlight Multi Frame. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightPerceptionResult}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Perception\+Result}
+\begin{DoxyCompactList}\small\item\em Trafficlight payload. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}
+\begin{DoxyCompactList}\small\item\em road mark perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VisionAEBPerception}{maf\+\_\+perception\+\_\+interface\+::\+Vision\+A\+E\+B\+Perception}
+\begin{DoxyCompactList}\small\item\em Vision only A\+EB perception. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1VisionDataDesensibilisationPerception}{maf\+\_\+perception\+\_\+interface\+::\+Vision\+Data\+Desensibilisation\+Perception}
+\begin{DoxyCompactList}\small\item\em Vision only data desensibilisation. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1GroundLinePerception}{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}
+\begin{DoxyCompactList}\small\item\em ground line perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1Object}{maf\+\_\+perception\+\_\+interface\+::\+Object}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception}{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}
+\begin{DoxyCompactList}\small\item\em parking slot perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ImageRetrievalDescriptorPerception}{maf\+\_\+perception\+\_\+interface\+::\+Image\+Retrieval\+Descriptor\+Perception}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1PoleLinePerception}{maf\+\_\+perception\+\_\+interface\+::\+Pole\+Line\+Perception}
+\begin{DoxyCompactList}\small\item\em pole line perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficSignPerception}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+Perception}
+\begin{DoxyCompactList}\small\item\em traffic sign perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ADASPerception}{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+A\+S\+Perception}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1RoadLinePerception}{maf\+\_\+perception\+\_\+interface\+::\+Road\+Line\+Perception}
+\begin{DoxyCompactList}\small\item\em road line perception struct \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjects}{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Objects}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1RadarPerceptionResult}{maf\+\_\+perception\+\_\+interface\+::\+Radar\+Perception\+Result}
+\begin{DoxyCompactList}\small\item\em radar perception information \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionObjectResult}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+Object\+Result}
+\begin{DoxyCompactList}\small\item\em perception fusion result Msg \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBResult}{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Result}
+\begin{DoxyCompactList}\small\item\em perception fusion A\+EB result \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1TrafficLightPerception}{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Perception}
+\begin{DoxyCompactList}\small\item\em Trafficlight perception result. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1GeneralFeaturePerception}{maf\+\_\+perception\+\_\+interface\+::\+General\+Feature\+Perception}
+\begin{DoxyCompactList}\small\item\em General feature perception struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectPerception}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Perception}
+\begin{DoxyCompactList}\small\item\em Vision object perception. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1MLocPerception}{maf\+\_\+perception\+\_\+interface\+::\+M\+Loc\+Perception}
+\begin{DoxyCompactList}\small\item\em Vision mloc perception. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1LidarPerceptionResult}{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Result}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1LidarBEVGridMapResult}{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+B\+E\+V\+Grid\+Map\+Result}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1MagicCarpetObject}{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Object}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1MagicCarpetRawObject}{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Raw\+Object}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1MagicCarpetMeta}{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Meta}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1MagicCarpetResult}{maf\+\_\+perception\+\_\+interface\+::\+Magic\+Carpet\+Result}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1ADBSysStatusEnum}{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Sys\+Status\+Enum}
+\begin{DoxyCompactList}\small\item\em Enum to the adb system status. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ObjectConfidenceEnum}{maf\+\_\+perception\+\_\+interface\+::\+Object\+Confidence\+Enum}
+\item 
+struct \hyperlink{structmaf__perception__interface_1_1DirectionEnum}{maf\+\_\+perception\+\_\+interface\+::\+Direction\+Enum}
+\begin{DoxyCompactList}\small\item\em enum to target vehicle for A\+DB function. \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ADBObjectData}{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Object\+Data}
+\begin{DoxyCompactList}\small\item\em adb object for A\+DB function \end{DoxyCompactList}\item 
+struct \hyperlink{structmaf__perception__interface_1_1ADBInfo}{maf\+\_\+perception\+\_\+interface\+::\+A\+D\+B\+Info}
+\begin{DoxyCompactList}\small\item\em adb convertion result for A\+DB function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacemaf__perception__interface}{maf\+\_\+perception\+\_\+interface}
+\end{DoxyCompactItemize}

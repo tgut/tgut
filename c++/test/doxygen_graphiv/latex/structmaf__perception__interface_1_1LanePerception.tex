@@ -1,0 +1,85 @@
+\hypertarget{structmaf__perception__interface_1_1LanePerception}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Lane\+Perception Struct Reference}
+\label{structmaf__perception__interface_1_1LanePerception}\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}}
+
+
+lane line perception struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7aec61c345ac2448cddc87ee468534e50b}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+U\+LT} = 1, 
+\hyperlink{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7ae207a5390a202bd6465fdd51a32e74ef}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1LanePerception_a893260d34b31fca571bce1417770156d}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Availability of lane line perception. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Lane}{Lane} $>$ \hyperlink{structmaf__perception__interface_1_1LanePerception_a63802eaeaa0bcec7c25d01b716d44cea}{lanes} \{\}
+\begin{DoxyCompactList}\small\item\em Perception results of lane lines \{10000\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1LanePerception_ad52bcf43c29fd16c56bbf88709df4605}{reserved\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em Reserved infos of lane lines \{10000\}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+lane line perception struct 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7}\label{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+U\+LT}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+U\+LT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7aec61c345ac2448cddc87ee468534e50b}\label{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7aec61c345ac2448cddc87ee468534e50b}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+U\+LT&\hyperlink{structmaf__perception__interface_1_1Lane}{Lane} lines from vision perception. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7ae207a5390a202bd6465fdd51a32e74ef}\label{structmaf__perception__interface_1_1LanePerception_a39d090ff9366cf355e5dcf4a2c32f5b7ae207a5390a202bd6465fdd51a32e74ef}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+L\+A\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS&Reserved infos of lane lines. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LanePerception_a893260d34b31fca571bce1417770156d}\label{structmaf__perception__interface_1_1LanePerception_a893260d34b31fca571bce1417770156d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception\+::available \{\}}
+
+
+
+Availability of lane line perception. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LanePerception_a63802eaeaa0bcec7c25d01b716d44cea}\label{structmaf__perception__interface_1_1LanePerception_a63802eaeaa0bcec7c25d01b716d44cea}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}!lanes@{lanes}}
+\index{lanes@{lanes}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}}
+\subsubsection{\texorpdfstring{lanes}{lanes}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Lane}{Lane}$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception\+::lanes \{\}}
+
+
+
+Perception results of lane lines \{10000\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LanePerception_ad52bcf43c29fd16c56bbf88709df4605}\label{structmaf__perception__interface_1_1LanePerception_ad52bcf43c29fd16c56bbf88709df4605}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}!reserved\+\_\+infos@{reserved\+\_\+infos}}
+\index{reserved\+\_\+infos@{reserved\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception}}
+\subsubsection{\texorpdfstring{reserved\+\_\+infos}{reserved\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Perception\+::reserved\+\_\+infos \{\}}
+
+
+
+Reserved infos of lane lines \{10000\}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

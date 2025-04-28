@@ -1,0 +1,118 @@
+\hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Parking\+Slot\+Perception Struct Reference}
+\label{structmaf__perception__interface_1_1ParkingSlotPerception}\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}
+
+
+parking slot perception struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Parking\+Slot\+Perception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structmaf__perception__interface_1_1ParkingSlotPerception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5a6fde84c533d53ad5bd75c3a3941c8d5c}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+U\+LT}, 
+\hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5aa37d61fd7a1fb8b12118485bab3e606a}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+maf\+\_\+std\+::\+Header \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_a6c5ea2fea944d3f9612868091f48e735}{header} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp to public this message. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_ab1014a93d374c093b9e9bbc070f92289}{meta} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_abe8c2d9f5acfbf5969a96b89ef84b7ff}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Availability of parking slot perception. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1ParkingSlot}{Parking\+Slot} $>$ \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_ac46ca94e9227689117db96ab16029387}{parking\+\_\+slots} \{\}
+\begin{DoxyCompactList}\small\item\em Perception results of parking slots \{1000\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1ParkingSlotPerception_a9018d6d208bf8a0d43db6ec2c17c4314}{reserved\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em reserved infos of parking slots \{1000\} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+parking slot perception struct 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5}\label{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+U\+LT}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+U\+LT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5a6fde84c533d53ad5bd75c3a3941c8d5c}\label{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5a6fde84c533d53ad5bd75c3a3941c8d5c}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+U\+LT&parking slots from vision perception \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5aa37d61fd7a1fb8b12118485bab3e606a}\label{structmaf__perception__interface_1_1ParkingSlotPerception_addfbb20b727e60d1e539a42b80cd74c5aa37d61fd7a1fb8b12118485bab3e606a}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+L\+O\+T\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS&reserved infos of parking slots \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_abe8c2d9f5acfbf5969a96b89ef84b7ff}\label{structmaf__perception__interface_1_1ParkingSlotPerception_abe8c2d9f5acfbf5969a96b89ef84b7ff}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception\+::available \{\}}
+
+
+
+Availability of parking slot perception. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_a6c5ea2fea944d3f9612868091f48e735}\label{structmaf__perception__interface_1_1ParkingSlotPerception_a6c5ea2fea944d3f9612868091f48e735}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!header@{header}}
+\index{header@{header}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily maf\+\_\+std\+::\+Header maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception\+::header \{\}}
+
+
+
+Time\+Stamp to public this message. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_ab1014a93d374c093b9e9bbc070f92289}\label{structmaf__perception__interface_1_1ParkingSlotPerception_ab1014a93d374c093b9e9bbc070f92289}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!meta@{meta}}
+\index{meta@{meta}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}
+\subsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception\+::meta \{\}}
+
+
+
+Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_ac46ca94e9227689117db96ab16029387}\label{structmaf__perception__interface_1_1ParkingSlotPerception_ac46ca94e9227689117db96ab16029387}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!parking\+\_\+slots@{parking\+\_\+slots}}
+\index{parking\+\_\+slots@{parking\+\_\+slots}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}
+\subsubsection{\texorpdfstring{parking\+\_\+slots}{parking\_slots}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1ParkingSlot}{Parking\+Slot}$>$ maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception\+::parking\+\_\+slots \{\}}
+
+
+
+Perception results of parking slots \{1000\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlotPerception_a9018d6d208bf8a0d43db6ec2c17c4314}\label{structmaf__perception__interface_1_1ParkingSlotPerception_a9018d6d208bf8a0d43db6ec2c17c4314}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}!reserved\+\_\+infos@{reserved\+\_\+infos}}
+\index{reserved\+\_\+infos@{reserved\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception}}
+\subsubsection{\texorpdfstring{reserved\+\_\+infos}{reserved\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+Perception\+::reserved\+\_\+infos \{\}}
+
+
+
+reserved infos of parking slots \{1000\} 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

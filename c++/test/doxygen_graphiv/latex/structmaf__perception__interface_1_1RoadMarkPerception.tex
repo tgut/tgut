@@ -1,0 +1,118 @@
+\hypertarget{structmaf__perception__interface_1_1RoadMarkPerception}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Road\+Mark\+Perception Struct Reference}
+\label{structmaf__perception__interface_1_1RoadMarkPerception}\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}
+
+
+road mark perception struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Road\+Mark\+Perception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structmaf__perception__interface_1_1RoadMarkPerception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72a6714c2ea739d6e0ec1f915fb73f342f6}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+U\+LT}, 
+\hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72aca3a1ac65e4c7da88c5efdabadb752e0}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+maf\+\_\+std\+::\+Header \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a0c850e30926325b583f16206cef5c0ba}{header} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp to public this message. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a303f00fbc2f0ec063914c0ef7e69e468}{meta} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a3ea103da0d702a3fe92bb8d030e43a44}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Availability of roadmark perception. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1RoadMark}{Road\+Mark} $>$ \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a8988519fe6bfdf6968a9c2a547935524}{road\+\_\+marks} \{\}
+\begin{DoxyCompactList}\small\item\em Perception results of road marks \{10000\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1RoadMarkPerception_a0596838f341b23cf60c6a166ba30d5a9}{reserved\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em reserved infos of road marks \{10000\} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+road mark perception struct 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72}\label{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+U\+LT}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+U\+LT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72a6714c2ea739d6e0ec1f915fb73f342f6}\label{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72a6714c2ea739d6e0ec1f915fb73f342f6}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+U\+LT&road mark from vision perception \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72aca3a1ac65e4c7da88c5efdabadb752e0}\label{structmaf__perception__interface_1_1RoadMarkPerception_a686a77ce48006ec68f1906cbc49b2e72aca3a1ac65e4c7da88c5efdabadb752e0}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+R\+O\+A\+D\+\_\+\+M\+A\+R\+K\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS&reserved infos of road mark \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a3ea103da0d702a3fe92bb8d030e43a44}\label{structmaf__perception__interface_1_1RoadMarkPerception_a3ea103da0d702a3fe92bb8d030e43a44}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception\+::available \{\}}
+
+
+
+Availability of roadmark perception. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a0c850e30926325b583f16206cef5c0ba}\label{structmaf__perception__interface_1_1RoadMarkPerception_a0c850e30926325b583f16206cef5c0ba}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!header@{header}}
+\index{header@{header}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily maf\+\_\+std\+::\+Header maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception\+::header \{\}}
+
+
+
+Time\+Stamp to public this message. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a303f00fbc2f0ec063914c0ef7e69e468}\label{structmaf__perception__interface_1_1RoadMarkPerception_a303f00fbc2f0ec063914c0ef7e69e468}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!meta@{meta}}
+\index{meta@{meta}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}
+\subsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception\+::meta \{\}}
+
+
+
+Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a0596838f341b23cf60c6a166ba30d5a9}\label{structmaf__perception__interface_1_1RoadMarkPerception_a0596838f341b23cf60c6a166ba30d5a9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!reserved\+\_\+infos@{reserved\+\_\+infos}}
+\index{reserved\+\_\+infos@{reserved\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}
+\subsubsection{\texorpdfstring{reserved\+\_\+infos}{reserved\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception\+::reserved\+\_\+infos \{\}}
+
+
+
+reserved infos of road marks \{10000\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadMarkPerception_a8988519fe6bfdf6968a9c2a547935524}\label{structmaf__perception__interface_1_1RoadMarkPerception_a8988519fe6bfdf6968a9c2a547935524}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}!road\+\_\+marks@{road\+\_\+marks}}
+\index{road\+\_\+marks@{road\+\_\+marks}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception}}
+\subsubsection{\texorpdfstring{road\+\_\+marks}{road\_marks}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1RoadMark}{Road\+Mark}$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Mark\+Perception\+::road\+\_\+marks \{\}}
+
+
+
+Perception results of road marks \{10000\}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

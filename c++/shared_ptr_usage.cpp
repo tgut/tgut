@@ -17,6 +17,7 @@ int main() {
         std::cout << "before asssign,ptrb.use_count: "<<ptrb.use_count() << std::endl;//1
 
         ptra2 = ptrb; //assign
+        std::cout << "after asssign,ptrb.use_count: "<<ptrb.use_count() << std::endl;//2
         pb = ptrb.get(); //获取原始指针
 
         std::cout  << "ptra2.use_count:"<< ptra2.use_count() << std::endl;//2,ptra2指向ptrb,所以和ptrb的use_count一样。

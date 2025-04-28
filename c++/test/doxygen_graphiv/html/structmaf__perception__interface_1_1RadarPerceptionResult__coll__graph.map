@@ -1,0 +1,4 @@
+<map id="maf_perception_interface::RadarPerceptionResult" name="maf_perception_interface::RadarPerceptionResult">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1RadarPerceptionResultMeta.html" title="RadarPerceptionResult meta data. " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1RadarPerceptionObjects.html" title="RadarPerceptionObjects information. " alt="" coords="17,71,189,112"/>
+</map>

@@ -1,0 +1,418 @@
+\hypertarget{structmaf__perception__interface_1_1TrafficSign}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Traffic\+Sign Struct Reference}
+\label{structmaf__perception__interface_1_1TrafficSign}\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+
+
+traffic sign struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Traffic\+Sign\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1TrafficSign__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a0b32918e9aafff6c16f9da19e35a23a9}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em Camera source. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a90033eb7ae0b05888ab0fdebcd2c9c17}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em Camera model. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1TrafficSign_a77fc9b556659b329e5d84c9a8d7d7213}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Score indicates the traffic sign existing confidence. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1TrafficSignPoint}{Traffic\+Sign\+Point} $>$ \hyperlink{structmaf__perception__interface_1_1TrafficSign_a6c28c8d69d64a2199559159805c95129}{points\+\_\+2d} \{\}
+\item 
+uint32\+\_\+t \hyperlink{structmaf__perception__interface_1_1TrafficSign_aa76e1ceb5d970e0a035bbdc797cc37d8}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em Track id. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1TrafficSignShapeEnum}{Traffic\+Sign\+Shape\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_aaeb595a870312d476562d073d60a9ff0}{shape\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Traffic sign shape information. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Rect4f}{Rect4f} \hyperlink{structmaf__perception__interface_1_1TrafficSign_abde6c105942de8ca3f7e6b130cdc5726}{bounding\+\_\+box\+\_\+2d} \{\}
+\begin{DoxyCompactList}\small\item\em 2d bbox in the image \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a5db2969b358c4e9bac0cf510952f4c70}{is\+\_\+speed\+\_\+sign} \{\}
+\begin{DoxyCompactList}\small\item\em Is speed sign or not. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1SpeedSignTypeEnum}{Speed\+Sign\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a238b29fa9796c29dd7257bb6fbad4f3d}{speed\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Speed type of speed sign. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1SpeedSignSpeedEnum}{Speed\+Sign\+Speed\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a75e468d996231eebfe68f4bae50cf7e7}{speed\+\_\+num} \{\}
+\begin{DoxyCompactList}\small\item\em Speed num of speed sign. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a0d3998525dd4c021906a0f0ed63998eb}{is\+\_\+road\+\_\+mark} \{\}
+\begin{DoxyCompactList}\small\item\em Is road mark or not. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1RoadMarkTypeEnum}{Road\+Mark\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_aea4f9f1e5b1592aff7b76325463db754}{road\+\_\+mark\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Type of road mark. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1TrafficSignTypeEnum}{Traffic\+Sign\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a40cda4bfde2f1847565a5bc41420a05c}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Traffic sign type information. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1SpeedSignCategoryEnum}{Speed\+Sign\+Category\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_ab7ac8a46094081e84a6828f931e07211}{speedsign\+\_\+category} \{\}
+\begin{DoxyCompactList}\small\item\em Category of speed sign, electronic or ordinary. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a83f8068684995dc52de2357b39e542e0}{is\+\_\+restriction\+\_\+sign} \{\}
+\begin{DoxyCompactList}\small\item\em Indicates whether it is a restriction sign or not. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1RestrictionSignTypeEnum}{Restriction\+Sign\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a4b146d93c32699baf4d2e7c1089b9b0e}{restriction\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Type of restriction sign. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1TrafficSign_a01048882b649d179e2ce7a412c2eaa55}{restriction\+\_\+value} \{\}
+\begin{DoxyCompactList}\small\item\em Value associated with the restriction sign. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ReservedParkingSignSubtypeEnum}{Reserved\+Parking\+Sign\+Subtype\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a7a47e581e68229ac39f9c9ffbb94a6fc}{reseved\+\_\+parking\+\_\+subtype} \{\}
+\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a20192c5cf4a53fb0f32b95b6f5ac279b}{is\+\_\+multi\+\_\+cam} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1TrafficSign_ae10c97bcba7615211b4cd2d06c25a929}{position} \{\}
+\begin{DoxyCompactList}\small\item\em 3D position of a sign in ego-\/vehicle coordinate(m) x-\/$>$front; y-\/$>$left; z-\/$>$upper \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1TrafficSignArrowDirectionEnum}{Traffic\+Sign\+Arrow\+Direction\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_ada4b7d66fb86b28ecb1c8160ee8203f5}{arrow\+\_\+direction} \{\}
+\begin{DoxyCompactList}\small\item\em Arrow direction. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1TrafficSignRegionEnum}{Traffic\+Sign\+Region\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficSign_a39886b005257e582e5cbf8ea160dd8a6}{region} \{\}
+\begin{DoxyCompactList}\small\item\em Region of the traffic sign. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_aaa7922686efb04d5669d6b2ddab4edff}{is\+\_\+condition\+\_\+weather} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_af377a044be68f568136f83ef8523152e}{is\+\_\+condition\+\_\+arrow} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_accc48956fbeec753cafe229c6503b7db}{is\+\_\+condition\+\_\+period} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a01f21104464bf8be6ba64e80c7d4cbe1}{is\+\_\+condition\+\_\+ramp} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a30df50d426a272a53f0660aac4f9ad2f}{is\+\_\+condition\+\_\+exit} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_aacf1c1df8138f6b05c333efe419f1970}{is\+\_\+condition\+\_\+vehicle\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a3a00b813632b925238253f18258781c1}{is\+\_\+condition\+\_\+school} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a641b1ff1938d8f7cc3d11b2f533466d2}{is\+\_\+condition\+\_\+arrow\+\_\+left} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_ad5548e67606ba90ba6c71f2f1add3113}{is\+\_\+condition\+\_\+arrow\+\_\+right} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a8418fac33f8396a646a164d5630e3025}{is\+\_\+condition\+\_\+arrow\+\_\+front} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1TrafficSign_a04f6096c85f53d018fbe7321fa101343}{is\+\_\+condition\+\_\+regional} \{\}
+\begin{DoxyCompactList}\small\item\em Speed limit condition type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+traffic sign struct 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_ada4b7d66fb86b28ecb1c8160ee8203f5}\label{structmaf__perception__interface_1_1TrafficSign_ada4b7d66fb86b28ecb1c8160ee8203f5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!arrow\+\_\+direction@{arrow\+\_\+direction}}
+\index{arrow\+\_\+direction@{arrow\+\_\+direction}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{arrow\+\_\+direction}{arrow\_direction}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1TrafficSignArrowDirectionEnum}{Traffic\+Sign\+Arrow\+Direction\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::arrow\+\_\+direction \{\}}
+
+
+
+Arrow direction. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_abde6c105942de8ca3f7e6b130cdc5726}\label{structmaf__perception__interface_1_1TrafficSign_abde6c105942de8ca3f7e6b130cdc5726}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!bounding\+\_\+box\+\_\+2d@{bounding\+\_\+box\+\_\+2d}}
+\index{bounding\+\_\+box\+\_\+2d@{bounding\+\_\+box\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{bounding\+\_\+box\+\_\+2d}{bounding\_box\_2d}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Rect4f}{Rect4f} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::bounding\+\_\+box\+\_\+2d \{\}}
+
+
+
+2d bbox in the image 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a90033eb7ae0b05888ab0fdebcd2c9c17}\label{structmaf__perception__interface_1_1TrafficSign_a90033eb7ae0b05888ab0fdebcd2c9c17}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::camera\+\_\+model \{\}}
+
+
+
+Camera model. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a0b32918e9aafff6c16f9da19e35a23a9}\label{structmaf__perception__interface_1_1TrafficSign_a0b32918e9aafff6c16f9da19e35a23a9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::camera\+\_\+source \{\}}
+
+
+
+Camera source. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_af377a044be68f568136f83ef8523152e}\label{structmaf__perception__interface_1_1TrafficSign_af377a044be68f568136f83ef8523152e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+arrow@{is\+\_\+condition\+\_\+arrow}}
+\index{is\+\_\+condition\+\_\+arrow@{is\+\_\+condition\+\_\+arrow}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+arrow}{is\_condition\_arrow}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+arrow \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a8418fac33f8396a646a164d5630e3025}\label{structmaf__perception__interface_1_1TrafficSign_a8418fac33f8396a646a164d5630e3025}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+arrow\+\_\+front@{is\+\_\+condition\+\_\+arrow\+\_\+front}}
+\index{is\+\_\+condition\+\_\+arrow\+\_\+front@{is\+\_\+condition\+\_\+arrow\+\_\+front}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+arrow\+\_\+front}{is\_condition\_arrow\_front}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+arrow\+\_\+front \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a641b1ff1938d8f7cc3d11b2f533466d2}\label{structmaf__perception__interface_1_1TrafficSign_a641b1ff1938d8f7cc3d11b2f533466d2}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+arrow\+\_\+left@{is\+\_\+condition\+\_\+arrow\+\_\+left}}
+\index{is\+\_\+condition\+\_\+arrow\+\_\+left@{is\+\_\+condition\+\_\+arrow\+\_\+left}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+arrow\+\_\+left}{is\_condition\_arrow\_left}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+arrow\+\_\+left \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_ad5548e67606ba90ba6c71f2f1add3113}\label{structmaf__perception__interface_1_1TrafficSign_ad5548e67606ba90ba6c71f2f1add3113}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+arrow\+\_\+right@{is\+\_\+condition\+\_\+arrow\+\_\+right}}
+\index{is\+\_\+condition\+\_\+arrow\+\_\+right@{is\+\_\+condition\+\_\+arrow\+\_\+right}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+arrow\+\_\+right}{is\_condition\_arrow\_right}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+arrow\+\_\+right \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a30df50d426a272a53f0660aac4f9ad2f}\label{structmaf__perception__interface_1_1TrafficSign_a30df50d426a272a53f0660aac4f9ad2f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+exit@{is\+\_\+condition\+\_\+exit}}
+\index{is\+\_\+condition\+\_\+exit@{is\+\_\+condition\+\_\+exit}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+exit}{is\_condition\_exit}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+exit \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_accc48956fbeec753cafe229c6503b7db}\label{structmaf__perception__interface_1_1TrafficSign_accc48956fbeec753cafe229c6503b7db}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+period@{is\+\_\+condition\+\_\+period}}
+\index{is\+\_\+condition\+\_\+period@{is\+\_\+condition\+\_\+period}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+period}{is\_condition\_period}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+period \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a01f21104464bf8be6ba64e80c7d4cbe1}\label{structmaf__perception__interface_1_1TrafficSign_a01f21104464bf8be6ba64e80c7d4cbe1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+ramp@{is\+\_\+condition\+\_\+ramp}}
+\index{is\+\_\+condition\+\_\+ramp@{is\+\_\+condition\+\_\+ramp}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+ramp}{is\_condition\_ramp}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+ramp \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a04f6096c85f53d018fbe7321fa101343}\label{structmaf__perception__interface_1_1TrafficSign_a04f6096c85f53d018fbe7321fa101343}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+regional@{is\+\_\+condition\+\_\+regional}}
+\index{is\+\_\+condition\+\_\+regional@{is\+\_\+condition\+\_\+regional}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+regional}{is\_condition\_regional}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+regional \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a3a00b813632b925238253f18258781c1}\label{structmaf__perception__interface_1_1TrafficSign_a3a00b813632b925238253f18258781c1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+school@{is\+\_\+condition\+\_\+school}}
+\index{is\+\_\+condition\+\_\+school@{is\+\_\+condition\+\_\+school}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+school}{is\_condition\_school}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+school \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_aacf1c1df8138f6b05c333efe419f1970}\label{structmaf__perception__interface_1_1TrafficSign_aacf1c1df8138f6b05c333efe419f1970}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+vehicle\+\_\+type@{is\+\_\+condition\+\_\+vehicle\+\_\+type}}
+\index{is\+\_\+condition\+\_\+vehicle\+\_\+type@{is\+\_\+condition\+\_\+vehicle\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+vehicle\+\_\+type}{is\_condition\_vehicle\_type}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+vehicle\+\_\+type \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_aaa7922686efb04d5669d6b2ddab4edff}\label{structmaf__perception__interface_1_1TrafficSign_aaa7922686efb04d5669d6b2ddab4edff}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+condition\+\_\+weather@{is\+\_\+condition\+\_\+weather}}
+\index{is\+\_\+condition\+\_\+weather@{is\+\_\+condition\+\_\+weather}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+condition\+\_\+weather}{is\_condition\_weather}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+condition\+\_\+weather \{\}}
+
+
+
+Speed limit condition type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a20192c5cf4a53fb0f32b95b6f5ac279b}\label{structmaf__perception__interface_1_1TrafficSign_a20192c5cf4a53fb0f32b95b6f5ac279b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+multi\+\_\+cam@{is\+\_\+multi\+\_\+cam}}
+\index{is\+\_\+multi\+\_\+cam@{is\+\_\+multi\+\_\+cam}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+multi\+\_\+cam}{is\_multi\_cam}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+multi\+\_\+cam \{\}}
+
+multi camera merged result.  true, the value of camera\+\_\+source will be set to \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum_a50ff50b7fad90eab9dabdd749889ab67ab2d05b69dd6ca25dc20f6255fc8e653d}{Camera\+Source\+Enum\+::\+C\+A\+M\+E\+R\+A\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+F\+R\+O\+N\+T\+\_\+\+F\+AR} \mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a83f8068684995dc52de2357b39e542e0}\label{structmaf__perception__interface_1_1TrafficSign_a83f8068684995dc52de2357b39e542e0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+restriction\+\_\+sign@{is\+\_\+restriction\+\_\+sign}}
+\index{is\+\_\+restriction\+\_\+sign@{is\+\_\+restriction\+\_\+sign}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+restriction\+\_\+sign}{is\_restriction\_sign}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+restriction\+\_\+sign \{\}}
+
+
+
+Indicates whether it is a restriction sign or not. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a0d3998525dd4c021906a0f0ed63998eb}\label{structmaf__perception__interface_1_1TrafficSign_a0d3998525dd4c021906a0f0ed63998eb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+road\+\_\+mark@{is\+\_\+road\+\_\+mark}}
+\index{is\+\_\+road\+\_\+mark@{is\+\_\+road\+\_\+mark}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+road\+\_\+mark}{is\_road\_mark}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+road\+\_\+mark \{\}}
+
+
+
+Is road mark or not. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a5db2969b358c4e9bac0cf510952f4c70}\label{structmaf__perception__interface_1_1TrafficSign_a5db2969b358c4e9bac0cf510952f4c70}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!is\+\_\+speed\+\_\+sign@{is\+\_\+speed\+\_\+sign}}
+\index{is\+\_\+speed\+\_\+sign@{is\+\_\+speed\+\_\+sign}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{is\+\_\+speed\+\_\+sign}{is\_speed\_sign}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::is\+\_\+speed\+\_\+sign \{\}}
+
+
+
+Is speed sign or not. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a6c28c8d69d64a2199559159805c95129}\label{structmaf__perception__interface_1_1TrafficSign_a6c28c8d69d64a2199559159805c95129}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!points\+\_\+2d@{points\+\_\+2d}}
+\index{points\+\_\+2d@{points\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{points\+\_\+2d}{points\_2d}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1TrafficSignPoint}{Traffic\+Sign\+Point}$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::points\+\_\+2d \{\}}
+
+results of a traffic sign expressed by 2d points \{20\} \mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_ae10c97bcba7615211b4cd2d06c25a929}\label{structmaf__perception__interface_1_1TrafficSign_ae10c97bcba7615211b4cd2d06c25a929}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!position@{position}}
+\index{position@{position}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::position \{\}}
+
+
+
+3D position of a sign in ego-\/vehicle coordinate(m) x-\/$>$front; y-\/$>$left; z-\/$>$upper 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a39886b005257e582e5cbf8ea160dd8a6}\label{structmaf__perception__interface_1_1TrafficSign_a39886b005257e582e5cbf8ea160dd8a6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!region@{region}}
+\index{region@{region}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{region}{region}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1TrafficSignRegionEnum}{Traffic\+Sign\+Region\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::region \{\}}
+
+
+
+Region of the traffic sign. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a7a47e581e68229ac39f9c9ffbb94a6fc}\label{structmaf__perception__interface_1_1TrafficSign_a7a47e581e68229ac39f9c9ffbb94a6fc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!reseved\+\_\+parking\+\_\+subtype@{reseved\+\_\+parking\+\_\+subtype}}
+\index{reseved\+\_\+parking\+\_\+subtype@{reseved\+\_\+parking\+\_\+subtype}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{reseved\+\_\+parking\+\_\+subtype}{reseved\_parking\_subtype}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ReservedParkingSignSubtypeEnum}{Reserved\+Parking\+Sign\+Subtype\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::reseved\+\_\+parking\+\_\+subtype \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a4b146d93c32699baf4d2e7c1089b9b0e}\label{structmaf__perception__interface_1_1TrafficSign_a4b146d93c32699baf4d2e7c1089b9b0e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!restriction\+\_\+type@{restriction\+\_\+type}}
+\index{restriction\+\_\+type@{restriction\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{restriction\+\_\+type}{restriction\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1RestrictionSignTypeEnum}{Restriction\+Sign\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::restriction\+\_\+type \{\}}
+
+
+
+Type of restriction sign. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a01048882b649d179e2ce7a412c2eaa55}\label{structmaf__perception__interface_1_1TrafficSign_a01048882b649d179e2ce7a412c2eaa55}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!restriction\+\_\+value@{restriction\+\_\+value}}
+\index{restriction\+\_\+value@{restriction\+\_\+value}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{restriction\+\_\+value}{restriction\_value}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::restriction\+\_\+value \{\}}
+
+
+
+Value associated with the restriction sign. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_aea4f9f1e5b1592aff7b76325463db754}\label{structmaf__perception__interface_1_1TrafficSign_aea4f9f1e5b1592aff7b76325463db754}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!road\+\_\+mark\+\_\+type@{road\+\_\+mark\+\_\+type}}
+\index{road\+\_\+mark\+\_\+type@{road\+\_\+mark\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{road\+\_\+mark\+\_\+type}{road\_mark\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1RoadMarkTypeEnum}{Road\+Mark\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::road\+\_\+mark\+\_\+type \{\}}
+
+
+
+Type of road mark. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a77fc9b556659b329e5d84c9a8d7d7213}\label{structmaf__perception__interface_1_1TrafficSign_a77fc9b556659b329e5d84c9a8d7d7213}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::score \{\}}
+
+
+
+Score indicates the traffic sign existing confidence. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_aaeb595a870312d476562d073d60a9ff0}\label{structmaf__perception__interface_1_1TrafficSign_aaeb595a870312d476562d073d60a9ff0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!shape\+\_\+info@{shape\+\_\+info}}
+\index{shape\+\_\+info@{shape\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{shape\+\_\+info}{shape\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1TrafficSignShapeEnum}{Traffic\+Sign\+Shape\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::shape\+\_\+info \{\}}
+
+
+
+Traffic sign shape information. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a75e468d996231eebfe68f4bae50cf7e7}\label{structmaf__perception__interface_1_1TrafficSign_a75e468d996231eebfe68f4bae50cf7e7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!speed\+\_\+num@{speed\+\_\+num}}
+\index{speed\+\_\+num@{speed\+\_\+num}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{speed\+\_\+num}{speed\_num}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1SpeedSignSpeedEnum}{Speed\+Sign\+Speed\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::speed\+\_\+num \{\}}
+
+
+
+Speed num of speed sign. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a238b29fa9796c29dd7257bb6fbad4f3d}\label{structmaf__perception__interface_1_1TrafficSign_a238b29fa9796c29dd7257bb6fbad4f3d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!speed\+\_\+type@{speed\+\_\+type}}
+\index{speed\+\_\+type@{speed\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{speed\+\_\+type}{speed\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1SpeedSignTypeEnum}{Speed\+Sign\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::speed\+\_\+type \{\}}
+
+
+
+Speed type of speed sign. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_ab7ac8a46094081e84a6828f931e07211}\label{structmaf__perception__interface_1_1TrafficSign_ab7ac8a46094081e84a6828f931e07211}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!speedsign\+\_\+category@{speedsign\+\_\+category}}
+\index{speedsign\+\_\+category@{speedsign\+\_\+category}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{speedsign\+\_\+category}{speedsign\_category}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1SpeedSignCategoryEnum}{Speed\+Sign\+Category\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::speedsign\+\_\+category \{\}}
+
+
+
+Category of speed sign, electronic or ordinary. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_aa76e1ceb5d970e0a035bbdc797cc37d8}\label{structmaf__perception__interface_1_1TrafficSign_aa76e1ceb5d970e0a035bbdc797cc37d8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::track\+\_\+id \{\}}
+
+
+
+Track id. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficSign_a40cda4bfde2f1847565a5bc41420a05c}\label{structmaf__perception__interface_1_1TrafficSign_a40cda4bfde2f1847565a5bc41420a05c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1TrafficSignTypeEnum}{Traffic\+Sign\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Sign\+::type\+\_\+info \{\}}
+
+
+
+Traffic sign type information. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

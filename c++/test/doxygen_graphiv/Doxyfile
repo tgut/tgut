@@ -1,0 +1,24 @@
+# 启用 Graphviz
+HAVE_DOT          = YES
+DOT_PATH          = /usr/bin/dot  # 根据系统 Graphviz 安装路径调整
+
+# 生成结构体协作关系图
+CALL_GRAPH        = YES
+CALLER_GRAPH      = YES
+COLLABORATION_GRAPH = YES
+CLASS_DIAGRAMS    = YES
+
+# 提取所有结构体
+EXTRACT_ALL       = YES
+EXTRACT_STATIC    = YES
+EXTRACT_PRIVATE   = YES
+
+# 显示包含关系（嵌套结构）
+INCLUDED_BY_RELATION = YES
+INCLUDED_FILES    = YES
+
+# 生成 HTML 输出
+GENERATE_HTML     = YES
+# 强制生成层级树状图
+CLAYOUT_TYPE          = "compound"
+DOT_GRAPH_MAX_NODES   = 1000  # 允许更多节点

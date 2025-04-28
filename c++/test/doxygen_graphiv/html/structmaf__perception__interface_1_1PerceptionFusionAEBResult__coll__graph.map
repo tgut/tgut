@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::PerceptionFusionAEBResult" name="maf_perception_interface::PerceptionFusionAEBResult">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1PerceptionFusionAEBStateEnum.html" title="Enum to the perception fusion AEB state. " alt="" coords="5,5,228,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1PerceptionFusionAEBObjects.html" title="AEB objects of perception fusion struct. " alt="" coords="15,71,218,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1PerceptionFusionResultMeta.html" title="maf_perception_interface\l::PerceptionFusionResultMeta" alt="" coords="17,136,216,177"/>
+</map>

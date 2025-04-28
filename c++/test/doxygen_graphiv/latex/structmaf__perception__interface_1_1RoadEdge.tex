@@ -1,0 +1,250 @@
+\hypertarget{structmaf__perception__interface_1_1RoadEdge}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Road\+Edge Struct Reference}
+\label{structmaf__perception__interface_1_1RoadEdge}\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+
+
+Road edge struct.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Road\+Edge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1RoadEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1RoadEdge_af3fbb61f1bbe16ac749ac1c522e6261b}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+source \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1RoadEdge_ab403daf2a34a9c292d53de837d3b9831}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+model \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1RoadEdge_af02e987cda332fdb2e29e3897e520098}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Score indicates the road edge existing confidence. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{structmaf__perception__interface_1_1RoadEdge_ae73688eb555afeae94c720908b64b219}{index} \{\}
+\begin{DoxyCompactList}\small\item\em Index indicates the road edge relative position id. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_a023790b4049e9c0cb79625245894978b}{points\+\_\+2d\+\_\+x} \{\}
+\begin{DoxyCompactList}\small\item\em X coordinate of road edge 2d point, \{pixel\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_aec18b380c98310867e9d19878fd751f5}{points\+\_\+2d\+\_\+y} \{\}
+\begin{DoxyCompactList}\small\item\em Y coordinate of road edge 2d point, \{pixel\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_a4c85d702ac800ec13d5f90180d4a65d0}{points\+\_\+2d\+\_\+v} \{\}
+\begin{DoxyCompactList}\small\item\em Visibility of road edge 2d point. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{structmaf__perception__interface_1_1RoadEdge_a18201dfa0dc9e0287fa212737f8229fb}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em Track id. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_ab52ece3a3271ef2cb71b5e790c672ed6}{coefficient\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em coefficient of 3d road edge \{4\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_ac8f18e65568291f2ec040869878be4dc}{coefficient\+\_\+bv\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em standard deviation of 3d road edge \{4\} \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1RoadEdge_afb9ef48a459cdf5d851d4bdbfcbbddc6}{is\+\_\+failed\+\_\+3d} \{\}
+\begin{DoxyCompactList}\small\item\em Flag brief if road edge 3d result is available. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_ae69e18ec91c5d9c98266faef4c6853d9}{points\+\_\+3d\+\_\+x} \{\}
+\begin{DoxyCompactList}\small\item\em self-\/car coordinate system, \{m\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_a37c4e73177be7748614aa52cf157f446}{points\+\_\+3d\+\_\+y} \{\}
+\begin{DoxyCompactList}\small\item\em self-\/car coordinate system, \{m\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_ad15e8716b53a15933fa3f740f0c16fb6}{points\+\_\+3d\+\_\+z} \{\}
+\begin{DoxyCompactList}\small\item\em self-\/car coordinate system, \{m\} \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1LidarRoadEdgeTypeEnum}{Lidar\+Road\+Edge\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1RoadEdge_aa56662f538f7a70d93efcf36a8dc3c14}{lidar\+\_\+roadedge\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em type of lidar road edge result \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_a20fdf216ffbd8a7033d3575dd290fe0f}{points\+\_\+3d\+\_\+hmi\+\_\+x} \{\}
+\begin{DoxyCompactList}\small\item\em self-\/car coordinate system, \{m\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_aa615fe40c375c34d5068da46faba68a7}{points\+\_\+3d\+\_\+hmi\+\_\+y} \{\}
+\begin{DoxyCompactList}\small\item\em self-\/car coordinate system, \{m\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1RoadEdge_aa4503fdc688ac4a676fac4a90b1be291}{points\+\_\+3d\+\_\+hmi\+\_\+z} \{\}
+\begin{DoxyCompactList}\small\item\em self-\/car coordinate system, \{m\} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Road edge struct. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_ab403daf2a34a9c292d53de837d3b9831}\label{structmaf__perception__interface_1_1RoadEdge_ab403daf2a34a9c292d53de837d3b9831}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::camera\+\_\+model \{\}}
+
+
+
+camera\+\_\+model 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_af3fbb61f1bbe16ac749ac1c522e6261b}\label{structmaf__perception__interface_1_1RoadEdge_af3fbb61f1bbe16ac749ac1c522e6261b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::camera\+\_\+source \{\}}
+
+
+
+camera\+\_\+source 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_ab52ece3a3271ef2cb71b5e790c672ed6}\label{structmaf__perception__interface_1_1RoadEdge_ab52ece3a3271ef2cb71b5e790c672ed6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!coefficient\+\_\+bv@{coefficient\+\_\+bv}}
+\index{coefficient\+\_\+bv@{coefficient\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{coefficient\+\_\+bv}{coefficient\_bv}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::coefficient\+\_\+bv \{\}}
+
+
+
+coefficient of 3d road edge \{4\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_ac8f18e65568291f2ec040869878be4dc}\label{structmaf__perception__interface_1_1RoadEdge_ac8f18e65568291f2ec040869878be4dc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!coefficient\+\_\+bv\+\_\+sigma@{coefficient\+\_\+bv\+\_\+sigma}}
+\index{coefficient\+\_\+bv\+\_\+sigma@{coefficient\+\_\+bv\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{coefficient\+\_\+bv\+\_\+sigma}{coefficient\_bv\_sigma}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::coefficient\+\_\+bv\+\_\+sigma \{\}}
+
+
+
+standard deviation of 3d road edge \{4\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_ae73688eb555afeae94c720908b64b219}\label{structmaf__perception__interface_1_1RoadEdge_ae73688eb555afeae94c720908b64b219}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!index@{index}}
+\index{index@{index}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::index \{\}}
+
+
+
+Index indicates the road edge relative position id. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_afb9ef48a459cdf5d851d4bdbfcbbddc6}\label{structmaf__perception__interface_1_1RoadEdge_afb9ef48a459cdf5d851d4bdbfcbbddc6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!is\+\_\+failed\+\_\+3d@{is\+\_\+failed\+\_\+3d}}
+\index{is\+\_\+failed\+\_\+3d@{is\+\_\+failed\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{is\+\_\+failed\+\_\+3d}{is\_failed\_3d}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::is\+\_\+failed\+\_\+3d \{\}}
+
+
+
+Flag brief if road edge 3d result is available. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_aa56662f538f7a70d93efcf36a8dc3c14}\label{structmaf__perception__interface_1_1RoadEdge_aa56662f538f7a70d93efcf36a8dc3c14}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!lidar\+\_\+roadedge\+\_\+type@{lidar\+\_\+roadedge\+\_\+type}}
+\index{lidar\+\_\+roadedge\+\_\+type@{lidar\+\_\+roadedge\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{lidar\+\_\+roadedge\+\_\+type}{lidar\_roadedge\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1LidarRoadEdgeTypeEnum}{Lidar\+Road\+Edge\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::lidar\+\_\+roadedge\+\_\+type \{\}}
+
+
+
+type of lidar road edge result 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_a4c85d702ac800ec13d5f90180d4a65d0}\label{structmaf__perception__interface_1_1RoadEdge_a4c85d702ac800ec13d5f90180d4a65d0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+2d\+\_\+v@{points\+\_\+2d\+\_\+v}}
+\index{points\+\_\+2d\+\_\+v@{points\+\_\+2d\+\_\+v}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+2d\+\_\+v}{points\_2d\_v}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+2d\+\_\+v \{\}}
+
+
+
+Visibility of road edge 2d point. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_a023790b4049e9c0cb79625245894978b}\label{structmaf__perception__interface_1_1RoadEdge_a023790b4049e9c0cb79625245894978b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+2d\+\_\+x@{points\+\_\+2d\+\_\+x}}
+\index{points\+\_\+2d\+\_\+x@{points\+\_\+2d\+\_\+x}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+2d\+\_\+x}{points\_2d\_x}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+2d\+\_\+x \{\}}
+
+
+
+X coordinate of road edge 2d point, \{pixel\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_aec18b380c98310867e9d19878fd751f5}\label{structmaf__perception__interface_1_1RoadEdge_aec18b380c98310867e9d19878fd751f5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+2d\+\_\+y@{points\+\_\+2d\+\_\+y}}
+\index{points\+\_\+2d\+\_\+y@{points\+\_\+2d\+\_\+y}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+2d\+\_\+y}{points\_2d\_y}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+2d\+\_\+y \{\}}
+
+
+
+Y coordinate of road edge 2d point, \{pixel\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_a20fdf216ffbd8a7033d3575dd290fe0f}\label{structmaf__perception__interface_1_1RoadEdge_a20fdf216ffbd8a7033d3575dd290fe0f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+3d\+\_\+hmi\+\_\+x@{points\+\_\+3d\+\_\+hmi\+\_\+x}}
+\index{points\+\_\+3d\+\_\+hmi\+\_\+x@{points\+\_\+3d\+\_\+hmi\+\_\+x}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+hmi\+\_\+x}{points\_3d\_hmi\_x}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+3d\+\_\+hmi\+\_\+x \{\}}
+
+
+
+self-\/car coordinate system, \{m\} 
+
+X coordinate of road edge 3d point, \mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_aa615fe40c375c34d5068da46faba68a7}\label{structmaf__perception__interface_1_1RoadEdge_aa615fe40c375c34d5068da46faba68a7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+3d\+\_\+hmi\+\_\+y@{points\+\_\+3d\+\_\+hmi\+\_\+y}}
+\index{points\+\_\+3d\+\_\+hmi\+\_\+y@{points\+\_\+3d\+\_\+hmi\+\_\+y}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+hmi\+\_\+y}{points\_3d\_hmi\_y}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+3d\+\_\+hmi\+\_\+y \{\}}
+
+
+
+self-\/car coordinate system, \{m\} 
+
+Y coordinate of road edge 3d point, \mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_aa4503fdc688ac4a676fac4a90b1be291}\label{structmaf__perception__interface_1_1RoadEdge_aa4503fdc688ac4a676fac4a90b1be291}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+3d\+\_\+hmi\+\_\+z@{points\+\_\+3d\+\_\+hmi\+\_\+z}}
+\index{points\+\_\+3d\+\_\+hmi\+\_\+z@{points\+\_\+3d\+\_\+hmi\+\_\+z}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+hmi\+\_\+z}{points\_3d\_hmi\_z}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+3d\+\_\+hmi\+\_\+z \{\}}
+
+
+
+self-\/car coordinate system, \{m\} 
+
+Z coordinate of road edge 3d point, \mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_ae69e18ec91c5d9c98266faef4c6853d9}\label{structmaf__perception__interface_1_1RoadEdge_ae69e18ec91c5d9c98266faef4c6853d9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+3d\+\_\+x@{points\+\_\+3d\+\_\+x}}
+\index{points\+\_\+3d\+\_\+x@{points\+\_\+3d\+\_\+x}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+x}{points\_3d\_x}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+3d\+\_\+x \{\}}
+
+
+
+self-\/car coordinate system, \{m\} 
+
+X coordinate of road edge 3d point, \mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_a37c4e73177be7748614aa52cf157f446}\label{structmaf__perception__interface_1_1RoadEdge_a37c4e73177be7748614aa52cf157f446}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+3d\+\_\+y@{points\+\_\+3d\+\_\+y}}
+\index{points\+\_\+3d\+\_\+y@{points\+\_\+3d\+\_\+y}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+y}{points\_3d\_y}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+3d\+\_\+y \{\}}
+
+
+
+self-\/car coordinate system, \{m\} 
+
+Y coordinate of road edge 3d point, \mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_ad15e8716b53a15933fa3f740f0c16fb6}\label{structmaf__perception__interface_1_1RoadEdge_ad15e8716b53a15933fa3f740f0c16fb6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!points\+\_\+3d\+\_\+z@{points\+\_\+3d\+\_\+z}}
+\index{points\+\_\+3d\+\_\+z@{points\+\_\+3d\+\_\+z}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+z}{points\_3d\_z}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::points\+\_\+3d\+\_\+z \{\}}
+
+
+
+self-\/car coordinate system, \{m\} 
+
+Z coordinate of road edge 3d point, \mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_af02e987cda332fdb2e29e3897e520098}\label{structmaf__perception__interface_1_1RoadEdge_af02e987cda332fdb2e29e3897e520098}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::score \{\}}
+
+
+
+Score indicates the road edge existing confidence. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1RoadEdge_a18201dfa0dc9e0287fa212737f8229fb}\label{structmaf__perception__interface_1_1RoadEdge_a18201dfa0dc9e0287fa212737f8229fb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge@{maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Road\+Edge\+::track\+\_\+id \{\}}
+
+
+
+Track id. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

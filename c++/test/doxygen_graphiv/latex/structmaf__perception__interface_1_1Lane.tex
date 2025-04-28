@@ -1,0 +1,286 @@
+\hypertarget{structmaf__perception__interface_1_1Lane}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Lane Struct Reference}
+\label{structmaf__perception__interface_1_1Lane}\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+
+
+\hyperlink{structmaf__perception__interface_1_1Lane}{Lane} line struct.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Lane\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1Lane__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1Lane_a46d69d28b02fc58192d3065975ca720a}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+source \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1Lane_a7f21fa4eb14ad430f6a8ab607a0b2e23}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+model \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Lane_a5b1aa167d14b50e074a6a8f95c812948}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Score indicates the lane line existing confidence. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{structmaf__perception__interface_1_1Lane_a1a58a3a726bd25eab062c5ed7de74c5e}{index} \{\}
+\begin{DoxyCompactList}\small\item\em Index indicates the lane line relative position id. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_a73f1548b7b4d370d766fda3dc7b06348}{points\+\_\+2d\+\_\+x} \{\}
+\begin{DoxyCompactList}\small\item\em X coordinate of lane 2d point, \{pixel\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_a089e122380b4203eb215760a04f08e85}{points\+\_\+2d\+\_\+y} \{\}
+\begin{DoxyCompactList}\small\item\em Y coordinate of lane 2d point, \{pixel\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_af3e23cd34e5ac715c7a8a6dc7250dfb0}{points\+\_\+2d\+\_\+v} \{\}
+\begin{DoxyCompactList}\small\item\em Visibility of lane 2d point. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{structmaf__perception__interface_1_1Lane_ad4ac2be70c890dad07faa93111788092}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em Track id. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_a3a4ba2802c5d4f3d100984fe5a9d94d7}{coefficient\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em coefficient of 3d lane line \{4\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_a33d3cfd9a6b6d57080c4c05ec29d87c3}{coefficient\+\_\+bv\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em standard deviation of 3d lane line \{4\} \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1Lane_a0eb7529c358035a33a6cdf74ee9b2fc6}{is\+\_\+failed\+\_\+3d} \{\}
+\begin{DoxyCompactList}\small\item\em Flag brief if lane line 3d result is available. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1LaneTypeEnum}{Lane\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1Lane_a103d2ce3dc01738040f457072db00f55}{lane\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Subtype of lane line, solid or dashed. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1LaneColorEnum}{Lane\+Color\+Enum} \hyperlink{structmaf__perception__interface_1_1Lane_a1ae174a0aa6f7bb6c6480f085341ad47}{lane\+\_\+color} \{\}
+\begin{DoxyCompactList}\small\item\em Color of lane line. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Lane_a53918522acbdce5008149b0d262250b2}{lane\+\_\+width} \{\}
+\begin{DoxyCompactList}\small\item\em Width of lane line, \{m\}. \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1Lane_aa2886e6ed7a4ce23cc1c06fc4380869a}{is\+\_\+centerline} \{\}
+\begin{DoxyCompactList}\small\item\em Is centerline or not. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_a2224e219a5c604a64244ec3718fbe3b3}{points\+\_\+3d\+\_\+x} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate system, \{m\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_af124028511b65e931dfa9199c075e9b6}{points\+\_\+3d\+\_\+y} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate system, \{m\} \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1Lane_a12ec89a23e5812e0db23f75790c6135d}{points\+\_\+3d\+\_\+z} \{\}
+\begin{DoxyCompactList}\small\item\em coordinate system, \{m\} \end{DoxyCompactList}\item 
+bool \hyperlink{structmaf__perception__interface_1_1Lane_a1b45d6ce8931a9cd79c9c1fcc7c24cff}{is\+\_\+horizontal\+\_\+line} \{\}
+\begin{DoxyCompactList}\small\item\em Is horizontal line or not. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1LaneHorizontalTypeEnum}{Lane\+Horizontal\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1Lane_a41595cf48743242cdf5087c098114831}{lane\+\_\+horizontal\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Horizontal line type of lane line. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1Lane_a2a3a12e6ced10d0ff67ce4ff62ef5bd8}{stopline\+\_\+depth} \{\}
+\begin{DoxyCompactList}\small\item\em Distance to stopline, \{m\}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structmaf__perception__interface_1_1Lane}{Lane} line struct. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a7f21fa4eb14ad430f6a8ab607a0b2e23}\label{structmaf__perception__interface_1_1Lane_a7f21fa4eb14ad430f6a8ab607a0b2e23}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+::camera\+\_\+model \{\}}
+
+
+
+camera\+\_\+model 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a46d69d28b02fc58192d3065975ca720a}\label{structmaf__perception__interface_1_1Lane_a46d69d28b02fc58192d3065975ca720a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+::camera\+\_\+source \{\}}
+
+
+
+camera\+\_\+source 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a3a4ba2802c5d4f3d100984fe5a9d94d7}\label{structmaf__perception__interface_1_1Lane_a3a4ba2802c5d4f3d100984fe5a9d94d7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!coefficient\+\_\+bv@{coefficient\+\_\+bv}}
+\index{coefficient\+\_\+bv@{coefficient\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{coefficient\+\_\+bv}{coefficient\_bv}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::coefficient\+\_\+bv \{\}}
+
+
+
+coefficient of 3d lane line \{4\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a33d3cfd9a6b6d57080c4c05ec29d87c3}\label{structmaf__perception__interface_1_1Lane_a33d3cfd9a6b6d57080c4c05ec29d87c3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!coefficient\+\_\+bv\+\_\+sigma@{coefficient\+\_\+bv\+\_\+sigma}}
+\index{coefficient\+\_\+bv\+\_\+sigma@{coefficient\+\_\+bv\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{coefficient\+\_\+bv\+\_\+sigma}{coefficient\_bv\_sigma}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::coefficient\+\_\+bv\+\_\+sigma \{\}}
+
+
+
+standard deviation of 3d lane line \{4\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a1a58a3a726bd25eab062c5ed7de74c5e}\label{structmaf__perception__interface_1_1Lane_a1a58a3a726bd25eab062c5ed7de74c5e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!index@{index}}
+\index{index@{index}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lane\+::index \{\}}
+
+
+
+Index indicates the lane line relative position id. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_aa2886e6ed7a4ce23cc1c06fc4380869a}\label{structmaf__perception__interface_1_1Lane_aa2886e6ed7a4ce23cc1c06fc4380869a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!is\+\_\+centerline@{is\+\_\+centerline}}
+\index{is\+\_\+centerline@{is\+\_\+centerline}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{is\+\_\+centerline}{is\_centerline}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Lane\+::is\+\_\+centerline \{\}}
+
+
+
+Is centerline or not. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a0eb7529c358035a33a6cdf74ee9b2fc6}\label{structmaf__perception__interface_1_1Lane_a0eb7529c358035a33a6cdf74ee9b2fc6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!is\+\_\+failed\+\_\+3d@{is\+\_\+failed\+\_\+3d}}
+\index{is\+\_\+failed\+\_\+3d@{is\+\_\+failed\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{is\+\_\+failed\+\_\+3d}{is\_failed\_3d}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Lane\+::is\+\_\+failed\+\_\+3d \{\}}
+
+
+
+Flag brief if lane line 3d result is available. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a1b45d6ce8931a9cd79c9c1fcc7c24cff}\label{structmaf__perception__interface_1_1Lane_a1b45d6ce8931a9cd79c9c1fcc7c24cff}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!is\+\_\+horizontal\+\_\+line@{is\+\_\+horizontal\+\_\+line}}
+\index{is\+\_\+horizontal\+\_\+line@{is\+\_\+horizontal\+\_\+line}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{is\+\_\+horizontal\+\_\+line}{is\_horizontal\_line}}
+{\footnotesize\ttfamily bool maf\+\_\+perception\+\_\+interface\+::\+Lane\+::is\+\_\+horizontal\+\_\+line \{\}}
+
+
+
+Is horizontal line or not. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a1ae174a0aa6f7bb6c6480f085341ad47}\label{structmaf__perception__interface_1_1Lane_a1ae174a0aa6f7bb6c6480f085341ad47}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!lane\+\_\+color@{lane\+\_\+color}}
+\index{lane\+\_\+color@{lane\+\_\+color}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{lane\+\_\+color}{lane\_color}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1LaneColorEnum}{Lane\+Color\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+::lane\+\_\+color \{\}}
+
+
+
+Color of lane line. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a41595cf48743242cdf5087c098114831}\label{structmaf__perception__interface_1_1Lane_a41595cf48743242cdf5087c098114831}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!lane\+\_\+horizontal\+\_\+type@{lane\+\_\+horizontal\+\_\+type}}
+\index{lane\+\_\+horizontal\+\_\+type@{lane\+\_\+horizontal\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{lane\+\_\+horizontal\+\_\+type}{lane\_horizontal\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1LaneHorizontalTypeEnum}{Lane\+Horizontal\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+::lane\+\_\+horizontal\+\_\+type \{\}}
+
+
+
+Horizontal line type of lane line. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a103d2ce3dc01738040f457072db00f55}\label{structmaf__perception__interface_1_1Lane_a103d2ce3dc01738040f457072db00f55}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!lane\+\_\+type@{lane\+\_\+type}}
+\index{lane\+\_\+type@{lane\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{lane\+\_\+type}{lane\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1LaneTypeEnum}{Lane\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+::lane\+\_\+type \{\}}
+
+
+
+Subtype of lane line, solid or dashed. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a53918522acbdce5008149b0d262250b2}\label{structmaf__perception__interface_1_1Lane_a53918522acbdce5008149b0d262250b2}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!lane\+\_\+width@{lane\+\_\+width}}
+\index{lane\+\_\+width@{lane\+\_\+width}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{lane\+\_\+width}{lane\_width}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lane\+::lane\+\_\+width \{\}}
+
+
+
+Width of lane line, \{m\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_af3e23cd34e5ac715c7a8a6dc7250dfb0}\label{structmaf__perception__interface_1_1Lane_af3e23cd34e5ac715c7a8a6dc7250dfb0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!points\+\_\+2d\+\_\+v@{points\+\_\+2d\+\_\+v}}
+\index{points\+\_\+2d\+\_\+v@{points\+\_\+2d\+\_\+v}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{points\+\_\+2d\+\_\+v}{points\_2d\_v}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::points\+\_\+2d\+\_\+v \{\}}
+
+
+
+Visibility of lane 2d point. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a73f1548b7b4d370d766fda3dc7b06348}\label{structmaf__perception__interface_1_1Lane_a73f1548b7b4d370d766fda3dc7b06348}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!points\+\_\+2d\+\_\+x@{points\+\_\+2d\+\_\+x}}
+\index{points\+\_\+2d\+\_\+x@{points\+\_\+2d\+\_\+x}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{points\+\_\+2d\+\_\+x}{points\_2d\_x}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::points\+\_\+2d\+\_\+x \{\}}
+
+
+
+X coordinate of lane 2d point, \{pixel\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a089e122380b4203eb215760a04f08e85}\label{structmaf__perception__interface_1_1Lane_a089e122380b4203eb215760a04f08e85}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!points\+\_\+2d\+\_\+y@{points\+\_\+2d\+\_\+y}}
+\index{points\+\_\+2d\+\_\+y@{points\+\_\+2d\+\_\+y}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{points\+\_\+2d\+\_\+y}{points\_2d\_y}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::points\+\_\+2d\+\_\+y \{\}}
+
+
+
+Y coordinate of lane 2d point, \{pixel\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a2224e219a5c604a64244ec3718fbe3b3}\label{structmaf__perception__interface_1_1Lane_a2224e219a5c604a64244ec3718fbe3b3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!points\+\_\+3d\+\_\+x@{points\+\_\+3d\+\_\+x}}
+\index{points\+\_\+3d\+\_\+x@{points\+\_\+3d\+\_\+x}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+x}{points\_3d\_x}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::points\+\_\+3d\+\_\+x \{\}}
+
+
+
+coordinate system, \{m\} 
+
+X coordinate of lane 3d point, self-\/car \mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_af124028511b65e931dfa9199c075e9b6}\label{structmaf__perception__interface_1_1Lane_af124028511b65e931dfa9199c075e9b6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!points\+\_\+3d\+\_\+y@{points\+\_\+3d\+\_\+y}}
+\index{points\+\_\+3d\+\_\+y@{points\+\_\+3d\+\_\+y}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+y}{points\_3d\_y}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::points\+\_\+3d\+\_\+y \{\}}
+
+
+
+coordinate system, \{m\} 
+
+Y coordinate of lane 3d point, self-\/car \mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a12ec89a23e5812e0db23f75790c6135d}\label{structmaf__perception__interface_1_1Lane_a12ec89a23e5812e0db23f75790c6135d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!points\+\_\+3d\+\_\+z@{points\+\_\+3d\+\_\+z}}
+\index{points\+\_\+3d\+\_\+z@{points\+\_\+3d\+\_\+z}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+z}{points\_3d\_z}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+::points\+\_\+3d\+\_\+z \{\}}
+
+
+
+coordinate system, \{m\} 
+
+Z coordinate of lane 3d point, self-\/car \mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a5b1aa167d14b50e074a6a8f95c812948}\label{structmaf__perception__interface_1_1Lane_a5b1aa167d14b50e074a6a8f95c812948}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lane\+::score \{\}}
+
+
+
+Score indicates the lane line existing confidence. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_a2a3a12e6ced10d0ff67ce4ff62ef5bd8}\label{structmaf__perception__interface_1_1Lane_a2a3a12e6ced10d0ff67ce4ff62ef5bd8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!stopline\+\_\+depth@{stopline\+\_\+depth}}
+\index{stopline\+\_\+depth@{stopline\+\_\+depth}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{stopline\+\_\+depth}{stopline\_depth}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lane\+::stopline\+\_\+depth \{\}}
+
+
+
+Distance to stopline, \{m\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1Lane_ad4ac2be70c890dad07faa93111788092}\label{structmaf__perception__interface_1_1Lane_ad4ac2be70c890dad07faa93111788092}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Lane@{maf\+\_\+perception\+\_\+interface\+::\+Lane}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lane\+::track\+\_\+id \{\}}
+
+
+
+Track id. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{structmaf__perception__interface_1_1GroundLine}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Ground\+Line Struct Reference}
+\label{structmaf__perception__interface_1_1GroundLine}\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+
+
+ground line struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Ground\+Line\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1GroundLine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1GroundLine_a9752c396f2921461b46ed33e04536958}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+source \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1GroundLine_ad914418cfe2504ecc91c20326fc5560a}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+model \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1GroundLine_abfd58567c9045d0e57056f62e4f21040}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Availability of ground line perception. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1GroundLine_a2ae2c5f4b0dd669de6225478eb4f5006}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Score indicates the ground line existing confidence. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1GroundLineTypeEnum}{Ground\+Line\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1GroundLine_a1c29c46eaad71b036c40cd5dbfe483c6}{type} \{\}
+\begin{DoxyCompactList}\small\item\em Subtype of ground line. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point2f}{Point2f} $>$ \hyperlink{structmaf__perception__interface_1_1GroundLine_aca2cb87888547afc660b10c0da59d397}{points} \{\}
+\begin{DoxyCompactList}\small\item\em perception groundline 2d points \{1000000\} \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} $>$ \hyperlink{structmaf__perception__interface_1_1GroundLine_a3f88b0df7ca0125e7b1a86486ffc16a1}{points\+\_\+3d} \{\}
+\begin{DoxyCompactList}\small\item\em perception groundline 3d points \{10000\} \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1GroundLine3dPointTypeEnum}{Ground\+Line3d\+Point\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1GroundLine_ae32e8ce8d84a7e2834f502c72b5be687}{points\+\_\+3d\+\_\+type} \{\}
+\begin{DoxyCompactList}\small\item\em Source of the ground line 3d points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ground line struct 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_abfd58567c9045d0e57056f62e4f21040}\label{structmaf__perception__interface_1_1GroundLine_abfd58567c9045d0e57056f62e4f21040}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::available \{\}}
+
+
+
+Availability of ground line perception. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_ad914418cfe2504ecc91c20326fc5560a}\label{structmaf__perception__interface_1_1GroundLine_ad914418cfe2504ecc91c20326fc5560a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::camera\+\_\+model \{\}}
+
+
+
+camera\+\_\+model 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_a9752c396f2921461b46ed33e04536958}\label{structmaf__perception__interface_1_1GroundLine_a9752c396f2921461b46ed33e04536958}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::camera\+\_\+source \{\}}
+
+
+
+camera\+\_\+source 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_aca2cb87888547afc660b10c0da59d397}\label{structmaf__perception__interface_1_1GroundLine_aca2cb87888547afc660b10c0da59d397}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!points@{points}}
+\index{points@{points}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point2f}{Point2f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::points \{\}}
+
+
+
+perception groundline 2d points \{1000000\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_a3f88b0df7ca0125e7b1a86486ffc16a1}\label{structmaf__perception__interface_1_1GroundLine_a3f88b0df7ca0125e7b1a86486ffc16a1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!points\+\_\+3d@{points\+\_\+3d}}
+\index{points\+\_\+3d@{points\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{points\+\_\+3d}{points\_3d}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::points\+\_\+3d \{\}}
+
+
+
+perception groundline 3d points \{10000\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_ae32e8ce8d84a7e2834f502c72b5be687}\label{structmaf__perception__interface_1_1GroundLine_ae32e8ce8d84a7e2834f502c72b5be687}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!points\+\_\+3d\+\_\+type@{points\+\_\+3d\+\_\+type}}
+\index{points\+\_\+3d\+\_\+type@{points\+\_\+3d\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{points\+\_\+3d\+\_\+type}{points\_3d\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1GroundLine3dPointTypeEnum}{Ground\+Line3d\+Point\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::points\+\_\+3d\+\_\+type \{\}}
+
+
+
+Source of the ground line 3d points. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_a2ae2c5f4b0dd669de6225478eb4f5006}\label{structmaf__perception__interface_1_1GroundLine_a2ae2c5f4b0dd669de6225478eb4f5006}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::score \{\}}
+
+
+
+Score indicates the ground line existing confidence. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLine_a1c29c46eaad71b036c40cd5dbfe483c6}\label{structmaf__perception__interface_1_1GroundLine_a1c29c46eaad71b036c40cd5dbfe483c6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}!type@{type}}
+\index{type@{type}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1GroundLineTypeEnum}{Ground\+Line\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+::type \{\}}
+
+
+
+Subtype of ground line. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

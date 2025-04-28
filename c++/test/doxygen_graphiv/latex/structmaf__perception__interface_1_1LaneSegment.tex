@@ -1,0 +1,98 @@
+\hypertarget{structmaf__perception__interface_1_1LaneSegment}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Lane\+Segment Struct Reference}
+\label{structmaf__perception__interface_1_1LaneSegment}\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+
+
+\hyperlink{structmaf__perception__interface_1_1Lane}{Lane} segment struct.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Lane\+Segment\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1LaneSegment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1LaneSegment_a98ae9c45229a782f28e5b2928ea717c8}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+source \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1LaneSegment_a69c5de9e6bd79886368668e8aba4a0d6}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+model \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point2f}{Point2f} $>$ \hyperlink{structmaf__perception__interface_1_1LaneSegment_af678e56c309a0a96d3730c39fe684e84}{points\+\_\+2d} \{\}
+\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} $>$ \hyperlink{structmaf__perception__interface_1_1LaneSegment_afea460c83a0a87f91a951c53bbe911bb}{points\+\_\+3d} \{\}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \hyperlink{structmaf__perception__interface_1_1LaneSegment_aa9dd724ba5c33a9d1d5ed99b82d504cd}{points\+\_\+track\+\_\+id} \{\}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1LaneSegment_a682d4303bbe77667cf7458e55c2852ed}{points\+\_\+score} \{\}
+\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1LaneSegmentPointEnum}{Lane\+Segment\+Point\+Enum} $>$ \hyperlink{structmaf__perception__interface_1_1LaneSegment_a6606c5cbcda9805836046446bc2c3278}{points\+\_\+type} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structmaf__perception__interface_1_1Lane}{Lane} segment struct. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_a69c5de9e6bd79886368668e8aba4a0d6}\label{structmaf__perception__interface_1_1LaneSegment_a69c5de9e6bd79886368668e8aba4a0d6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::camera\+\_\+model \{\}}
+
+
+
+camera\+\_\+model 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_a98ae9c45229a782f28e5b2928ea717c8}\label{structmaf__perception__interface_1_1LaneSegment_a98ae9c45229a782f28e5b2928ea717c8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::camera\+\_\+source \{\}}
+
+
+
+camera\+\_\+source 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_af678e56c309a0a96d3730c39fe684e84}\label{structmaf__perception__interface_1_1LaneSegment_af678e56c309a0a96d3730c39fe684e84}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!points\+\_\+2d@{points\+\_\+2d}}
+\index{points\+\_\+2d@{points\+\_\+2d}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{points\+\_\+2d}{points\_2d}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point2f}{Point2f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::points\+\_\+2d \{\}}
+
+results of lane segment expressed by 2d points \{20\} \mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_afea460c83a0a87f91a951c53bbe911bb}\label{structmaf__perception__interface_1_1LaneSegment_afea460c83a0a87f91a951c53bbe911bb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!points\+\_\+3d@{points\+\_\+3d}}
+\index{points\+\_\+3d@{points\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{points\+\_\+3d}{points\_3d}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::points\+\_\+3d \{\}}
+
+results of lane segment expressed by 3d points \{20\} \mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_a682d4303bbe77667cf7458e55c2852ed}\label{structmaf__perception__interface_1_1LaneSegment_a682d4303bbe77667cf7458e55c2852ed}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!points\+\_\+score@{points\+\_\+score}}
+\index{points\+\_\+score@{points\+\_\+score}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{points\+\_\+score}{points\_score}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::points\+\_\+score \{\}}
+
+of lane segment points \{20\} \mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_aa9dd724ba5c33a9d1d5ed99b82d504cd}\label{structmaf__perception__interface_1_1LaneSegment_aa9dd724ba5c33a9d1d5ed99b82d504cd}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!points\+\_\+track\+\_\+id@{points\+\_\+track\+\_\+id}}
+\index{points\+\_\+track\+\_\+id@{points\+\_\+track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{points\+\_\+track\+\_\+id}{points\_track\_id}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::points\+\_\+track\+\_\+id \{\}}
+
+id of lane segment \{20\} \mbox{\Hypertarget{structmaf__perception__interface_1_1LaneSegment_a6606c5cbcda9805836046446bc2c3278}\label{structmaf__perception__interface_1_1LaneSegment_a6606c5cbcda9805836046446bc2c3278}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}!points\+\_\+type@{points\+\_\+type}}
+\index{points\+\_\+type@{points\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment@{maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment}}
+\subsubsection{\texorpdfstring{points\+\_\+type}{points\_type}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1LaneSegmentPointEnum}{Lane\+Segment\+Point\+Enum}$>$ maf\+\_\+perception\+\_\+interface\+::\+Lane\+Segment\+::points\+\_\+type \{\}}
+
+of lane segment points \{20\} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

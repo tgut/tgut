@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::BarrierStateInfo" name="maf_perception_interface::BarrierStateInfo">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1TrafficBarrierEgoLaneRelationInfo.html" title="Information for the relation of target barrier and ego lane lines. " alt="" coords="397,39,624,80"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1TrafficBarrierEgoLaneRelationEnum.html" title="Enum to the relation between the target traffic barrier and ego lane lines (inside or outside the ego..." alt="" coords="5,5,244,47"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1TrafficBarrierUsefulEnum.html" title="Enum to the useful property of the target traffic barrier (useful or unuseful for downstream) ..." alt="" coords="36,71,213,112"/>
+</map>

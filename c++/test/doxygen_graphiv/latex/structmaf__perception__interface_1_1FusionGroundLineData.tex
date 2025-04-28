@@ -1,0 +1,151 @@
+\hypertarget{structmaf__perception__interface_1_1FusionGroundLineData}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Fusion\+Ground\+Line\+Data Struct Reference}
+\label{structmaf__perception__interface_1_1FusionGroundLineData}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Fusion\+Ground\+Line\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1FusionGroundLineData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6ca38f26e6663446eb8fe2140268ece244a}{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+I\+S\+ON} = 1, 
+\hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6cadd413339dc1378ad6e14b46cbbc1c963}{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+U\+L\+T\+R\+A\+S\+O\+N\+IC} = 2, 
+\hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6ca820c7f9632817fa59aeac971399bf7ad}{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+D\+U\+SS} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_ade59ee2b94966426a248ddc4d01f60dc}{available} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1GroundLineTypeEnum}{Ground\+Line\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a7f0c77e940a727d2acae77493c74b7a9}{type} \{\}
+\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_ab13ea178b479b3f4f50c376cd33fe9ba}{track\+\_\+id} \{\}
+\item 
+float \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a2b65c4de72259e96a96bbd97ffdd52ee}{score} \{\}
+\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} $>$ \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_acb95d16c931fe64a49b33e13f51aca1a}{points\+\_\+fusion} \{\}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a85b2ec2d9981facafbda4649b5e69a98}{points\+\_\+fusion\+\_\+confidence} \{\}
+\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} $>$ \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a33ee956782c80a8cc13983320212f7c6}{local\+\_\+points\+\_\+fusion} \{\}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a71786b1d175a4931665e1e429a8e446d}{local\+\_\+points\+\_\+fusion\+\_\+confidence} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1FusionObstacleTypeEnum}{Fusion\+Obstacle\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a89dccbd2a1633e9c80f293fbd7a4555a}{obstacle\+\_\+type} \{\}
+\item 
+\hyperlink{structmaf__perception__interface_1_1FusionObstaclePointType}{Fusion\+Obstacle\+Point\+Type} \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a1b8ac58a30855e8502c0d797470e3e3b}{obstacle\+\_\+point\+\_\+type} \{\}
+\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_a23bedaa76aa9d836009ebcb0cd2a2003}{reserved\+\_\+info} \{\}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1FusionGroundLineData_aad0ec304409b71b0e779a3668573674a}{points\+\_\+height} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6c}\label{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6c}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+I\+S\+ON@{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+I\+S\+ON}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+I\+S\+ON@{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+I\+S\+ON}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6ca38f26e6663446eb8fe2140268ece244a}\label{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6ca38f26e6663446eb8fe2140268ece244a}} 
+F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+I\+S\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+U\+L\+T\+R\+A\+S\+O\+N\+IC@{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+U\+L\+T\+R\+A\+S\+O\+N\+IC}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+U\+L\+T\+R\+A\+S\+O\+N\+IC@{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+U\+L\+T\+R\+A\+S\+O\+N\+IC}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6cadd413339dc1378ad6e14b46cbbc1c963}\label{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6cadd413339dc1378ad6e14b46cbbc1c963}} 
+F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+U\+L\+T\+R\+A\+S\+O\+N\+IC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+D\+U\+SS@{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+D\+U\+SS}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+D\+U\+SS@{F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+D\+U\+SS}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6ca820c7f9632817fa59aeac971399bf7ad}\label{structmaf__perception__interface_1_1FusionGroundLineData_abf1a65db0d80106061899593cef55f6ca820c7f9632817fa59aeac971399bf7ad}} 
+F\+U\+S\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+D\+U\+SS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_ade59ee2b94966426a248ddc4d01f60dc}\label{structmaf__perception__interface_1_1FusionGroundLineData_ade59ee2b94966426a248ddc4d01f60dc}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::available \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a33ee956782c80a8cc13983320212f7c6}\label{structmaf__perception__interface_1_1FusionGroundLineData_a33ee956782c80a8cc13983320212f7c6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!local\+\_\+points\+\_\+fusion@{local\+\_\+points\+\_\+fusion}}
+\index{local\+\_\+points\+\_\+fusion@{local\+\_\+points\+\_\+fusion}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{local\+\_\+points\+\_\+fusion}{local\_points\_fusion}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::local\+\_\+points\+\_\+fusion \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a71786b1d175a4931665e1e429a8e446d}\label{structmaf__perception__interface_1_1FusionGroundLineData_a71786b1d175a4931665e1e429a8e446d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!local\+\_\+points\+\_\+fusion\+\_\+confidence@{local\+\_\+points\+\_\+fusion\+\_\+confidence}}
+\index{local\+\_\+points\+\_\+fusion\+\_\+confidence@{local\+\_\+points\+\_\+fusion\+\_\+confidence}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{local\+\_\+points\+\_\+fusion\+\_\+confidence}{local\_points\_fusion\_confidence}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::local\+\_\+points\+\_\+fusion\+\_\+confidence \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a1b8ac58a30855e8502c0d797470e3e3b}\label{structmaf__perception__interface_1_1FusionGroundLineData_a1b8ac58a30855e8502c0d797470e3e3b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!obstacle\+\_\+point\+\_\+type@{obstacle\+\_\+point\+\_\+type}}
+\index{obstacle\+\_\+point\+\_\+type@{obstacle\+\_\+point\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{obstacle\+\_\+point\+\_\+type}{obstacle\_point\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1FusionObstaclePointType}{Fusion\+Obstacle\+Point\+Type} maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::obstacle\+\_\+point\+\_\+type \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a89dccbd2a1633e9c80f293fbd7a4555a}\label{structmaf__perception__interface_1_1FusionGroundLineData_a89dccbd2a1633e9c80f293fbd7a4555a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!obstacle\+\_\+type@{obstacle\+\_\+type}}
+\index{obstacle\+\_\+type@{obstacle\+\_\+type}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{obstacle\+\_\+type}{obstacle\_type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1FusionObstacleTypeEnum}{Fusion\+Obstacle\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::obstacle\+\_\+type \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_acb95d16c931fe64a49b33e13f51aca1a}\label{structmaf__perception__interface_1_1FusionGroundLineData_acb95d16c931fe64a49b33e13f51aca1a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!points\+\_\+fusion@{points\+\_\+fusion}}
+\index{points\+\_\+fusion@{points\+\_\+fusion}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{points\+\_\+fusion}{points\_fusion}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::points\+\_\+fusion \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a85b2ec2d9981facafbda4649b5e69a98}\label{structmaf__perception__interface_1_1FusionGroundLineData_a85b2ec2d9981facafbda4649b5e69a98}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!points\+\_\+fusion\+\_\+confidence@{points\+\_\+fusion\+\_\+confidence}}
+\index{points\+\_\+fusion\+\_\+confidence@{points\+\_\+fusion\+\_\+confidence}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{points\+\_\+fusion\+\_\+confidence}{points\_fusion\_confidence}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::points\+\_\+fusion\+\_\+confidence \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_aad0ec304409b71b0e779a3668573674a}\label{structmaf__perception__interface_1_1FusionGroundLineData_aad0ec304409b71b0e779a3668573674a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!points\+\_\+height@{points\+\_\+height}}
+\index{points\+\_\+height@{points\+\_\+height}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{points\+\_\+height}{points\_height}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::points\+\_\+height \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a23bedaa76aa9d836009ebcb0cd2a2003}\label{structmaf__perception__interface_1_1FusionGroundLineData_a23bedaa76aa9d836009ebcb0cd2a2003}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!reserved\+\_\+info@{reserved\+\_\+info}}
+\index{reserved\+\_\+info@{reserved\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{reserved\+\_\+info}{reserved\_info}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::reserved\+\_\+info \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a2b65c4de72259e96a96bbd97ffdd52ee}\label{structmaf__perception__interface_1_1FusionGroundLineData_a2b65c4de72259e96a96bbd97ffdd52ee}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::score \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_ab13ea178b479b3f4f50c376cd33fe9ba}\label{structmaf__perception__interface_1_1FusionGroundLineData_ab13ea178b479b3f4f50c376cd33fe9ba}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::track\+\_\+id \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1FusionGroundLineData_a7f0c77e940a727d2acae77493c74b7a9}\label{structmaf__perception__interface_1_1FusionGroundLineData_a7f0c77e940a727d2acae77493c74b7a9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}!type@{type}}
+\index{type@{type}!maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1GroundLineTypeEnum}{Ground\+Line\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Fusion\+Ground\+Line\+Data\+::type \{\}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

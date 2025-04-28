@@ -1,0 +1,114 @@
+\hypertarget{structmaf__perception__interface_1_1ParkingSlot}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Parking\+Slot Struct Reference}
+\label{structmaf__perception__interface_1_1ParkingSlot}\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+
+
+parking slot struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Parking\+Slot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1ParkingSlot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1ParkingSlot_a37054b7277f4ab6a3786436eadb377c3}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+source \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1ParkingSlot_a167ac54a9164046b58462d76faa33438}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em camera\+\_\+model \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1ParkingSlot_adfb158b99eeaa553c0cd0eabd7d894a7}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Available Bits. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1ParkingSlotPoint}{Parking\+Slot\+Point} $>$ \hyperlink{structmaf__perception__interface_1_1ParkingSlot_a1283e56785bbd1a5a619f491253b3706}{corner\+\_\+points} \{\}
+\begin{DoxyCompactList}\small\item\em parking slot point in image(uv coordinate,pixel) \{1000\} \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ParkingSlotCenterPoint}{Parking\+Slot\+Center\+Point} \hyperlink{structmaf__perception__interface_1_1ParkingSlot_af02dc320cd3f69aebd5329abaedcfb0f}{center\+\_\+point} \{\}
+\begin{DoxyCompactList}\small\item\em parking slot center point and info \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1Point2f}{Point2f} $>$ \hyperlink{structmaf__perception__interface_1_1ParkingSlot_af687d18557685e3b6b3bad2ab1551a19}{wheel\+\_\+stop\+\_\+points} \{\}
+\begin{DoxyCompactList}\small\item\em wheel stop point in the parking slot(uv coordinate,pixel) \{2\} \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1ParkingSlotPoint3d}{Parking\+Slot\+Point3d} $>$ \hyperlink{structmaf__perception__interface_1_1ParkingSlot_a1883232973850dd00a3143c4923947a5}{points\+\_\+3d} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+parking slot struct 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_adfb158b99eeaa553c0cd0eabd7d894a7}\label{structmaf__perception__interface_1_1ParkingSlot_adfb158b99eeaa553c0cd0eabd7d894a7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::available \{\}}
+
+
+
+Available Bits. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_a167ac54a9164046b58462d76faa33438}\label{structmaf__perception__interface_1_1ParkingSlot_a167ac54a9164046b58462d76faa33438}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::camera\+\_\+model \{\}}
+
+
+
+camera\+\_\+model 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_a37054b7277f4ab6a3786436eadb377c3}\label{structmaf__perception__interface_1_1ParkingSlot_a37054b7277f4ab6a3786436eadb377c3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::camera\+\_\+source \{\}}
+
+
+
+camera\+\_\+source 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_af02dc320cd3f69aebd5329abaedcfb0f}\label{structmaf__perception__interface_1_1ParkingSlot_af02dc320cd3f69aebd5329abaedcfb0f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!center\+\_\+point@{center\+\_\+point}}
+\index{center\+\_\+point@{center\+\_\+point}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{center\+\_\+point}{center\_point}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ParkingSlotCenterPoint}{Parking\+Slot\+Center\+Point} maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::center\+\_\+point \{\}}
+
+
+
+parking slot center point and info 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_a1283e56785bbd1a5a619f491253b3706}\label{structmaf__perception__interface_1_1ParkingSlot_a1283e56785bbd1a5a619f491253b3706}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!corner\+\_\+points@{corner\+\_\+points}}
+\index{corner\+\_\+points@{corner\+\_\+points}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{corner\+\_\+points}{corner\_points}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1ParkingSlotPoint}{Parking\+Slot\+Point}$>$ maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::corner\+\_\+points \{\}}
+
+
+
+parking slot point in image(uv coordinate,pixel) \{1000\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_a1883232973850dd00a3143c4923947a5}\label{structmaf__perception__interface_1_1ParkingSlot_a1883232973850dd00a3143c4923947a5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!points\+\_\+3d@{points\+\_\+3d}}
+\index{points\+\_\+3d@{points\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{points\+\_\+3d}{points\_3d}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1ParkingSlotPoint3d}{Parking\+Slot\+Point3d}$>$ maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::points\+\_\+3d \{\}}
+
+results of a parking slot expressed by 3d points \{8\} \mbox{\Hypertarget{structmaf__perception__interface_1_1ParkingSlot_af687d18557685e3b6b3bad2ab1551a19}\label{structmaf__perception__interface_1_1ParkingSlot_af687d18557685e3b6b3bad2ab1551a19}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}!wheel\+\_\+stop\+\_\+points@{wheel\+\_\+stop\+\_\+points}}
+\index{wheel\+\_\+stop\+\_\+points@{wheel\+\_\+stop\+\_\+points}!maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot@{maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot}}
+\subsubsection{\texorpdfstring{wheel\+\_\+stop\+\_\+points}{wheel\_stop\_points}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1Point2f}{Point2f}$>$ maf\+\_\+perception\+\_\+interface\+::\+Parking\+Slot\+::wheel\+\_\+stop\+\_\+points \{\}}
+
+
+
+wheel stop point in the parking slot(uv coordinate,pixel) \{2\} 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

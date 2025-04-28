@@ -52,7 +52,7 @@
 
 ###  1.1. <a name='singleton'></a>singleton 单例模式
 
-内部静态变量的懒汉单例模式，[代码](../c%2B%2B/singleton_lazy.cpp)
+内部静态变量的懒汉单例模式，是最优雅的写法（在c++11（包含）后才是线程安全）。[代码](../c%2B%2B/singleton_lazy.cpp)
 内部静态变量的饿汉单例模式，[代码](../c++/singleton_eager.cpp)
  
 [单例模式](https://zhuanlan.zhihu.com/p/37469260)

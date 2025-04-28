@@ -1,0 +1,118 @@
+\hypertarget{structmaf__perception__interface_1_1GroundLinePerception}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Ground\+Line\+Perception Struct Reference}
+\label{structmaf__perception__interface_1_1GroundLinePerception}\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}
+
+
+ground line perception struct  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Ground\+Line\+Perception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structmaf__perception__interface_1_1GroundLinePerception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint8\+\_\+t \{ \hyperlink{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74ac952a5f552ccc37a57c99e010724ad8a}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+U\+LT}, 
+\hyperlink{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74a846905c8b3ab955dc24585263ffcc5f6}{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+maf\+\_\+std\+::\+Header \hyperlink{structmaf__perception__interface_1_1GroundLinePerception_a779b28609782a27dc3802d350a4d17cd}{header} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp to public this message. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} \hyperlink{structmaf__perception__interface_1_1GroundLinePerception_ac97f8734f24cc50e5025731a3e0c320f}{meta} \{\}
+\begin{DoxyCompactList}\small\item\em Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1GroundLinePerception_a5a206d53b000bfe78cf04466ef373567}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Availability of ground line perception. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1GroundLine}{Ground\+Line} $>$ \hyperlink{structmaf__perception__interface_1_1GroundLinePerception_acd7c76a21de361cf69791c604e2beaa1}{ground\+\_\+lines} \{\}
+\begin{DoxyCompactList}\small\item\em Perception results of ground lines \{10000\}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmaf__perception__interface_1_1GroundLinePerception_a60d118ccc3db6add394082a6bae2a77c}{reserved\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em reserved infos of ground lines \{10000\} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ground line perception struct 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74}\label{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+U\+LT}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+U\+LT@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+U\+LT}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74ac952a5f552ccc37a57c99e010724ad8a}\label{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74ac952a5f552ccc37a57c99e010724ad8a}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+U\+LT&ground lines from vision perception \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS@{V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS}}}\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74a846905c8b3ab955dc24585263ffcc5f6}\label{structmaf__perception__interface_1_1GroundLinePerception_a50a63fcccbb87c61711780614d6c9d74a846905c8b3ab955dc24585263ffcc5f6}} 
+V\+I\+S\+I\+O\+N\+\_\+\+P\+E\+R\+C\+E\+P\+T\+I\+O\+N\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+\+I\+N\+F\+OS&reserved infos of ground lines \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_a5a206d53b000bfe78cf04466ef373567}\label{structmaf__perception__interface_1_1GroundLinePerception_a5a206d53b000bfe78cf04466ef373567}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception\+::available \{\}}
+
+
+
+Availability of ground line perception. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_acd7c76a21de361cf69791c604e2beaa1}\label{structmaf__perception__interface_1_1GroundLinePerception_acd7c76a21de361cf69791c604e2beaa1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!ground\+\_\+lines@{ground\+\_\+lines}}
+\index{ground\+\_\+lines@{ground\+\_\+lines}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}
+\subsubsection{\texorpdfstring{ground\+\_\+lines}{ground\_lines}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1GroundLine}{Ground\+Line}$>$ maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception\+::ground\+\_\+lines \{\}}
+
+
+
+Perception results of ground lines \{10000\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_a779b28609782a27dc3802d350a4d17cd}\label{structmaf__perception__interface_1_1GroundLinePerception_a779b28609782a27dc3802d350a4d17cd}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!header@{header}}
+\index{header@{header}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily maf\+\_\+std\+::\+Header maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception\+::header \{\}}
+
+
+
+Time\+Stamp to public this message. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_ac97f8734f24cc50e5025731a3e0c320f}\label{structmaf__perception__interface_1_1GroundLinePerception_ac97f8734f24cc50e5025731a3e0c320f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!meta@{meta}}
+\index{meta@{meta}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}
+\subsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1PerceptionMeta}{Perception\+Meta} maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception\+::meta \{\}}
+
+
+
+Time\+Stamp according to perception meta.\+sensor\+\_\+timestamp\+\_\+us. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1GroundLinePerception_a60d118ccc3db6add394082a6bae2a77c}\label{structmaf__perception__interface_1_1GroundLinePerception_a60d118ccc3db6add394082a6bae2a77c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}!reserved\+\_\+infos@{reserved\+\_\+infos}}
+\index{reserved\+\_\+infos@{reserved\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception@{maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception}}
+\subsubsection{\texorpdfstring{reserved\+\_\+infos}{reserved\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ maf\+\_\+perception\+\_\+interface\+::\+Ground\+Line\+Perception\+::reserved\+\_\+infos \{\}}
+
+
+
+reserved infos of ground lines \{10000\} 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

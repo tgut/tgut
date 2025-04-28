@@ -1,0 +1,418 @@
+\hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Lidar\+Perception\+Object\+Data Struct Reference}
+\label{structmaf__perception__interface_1_1LidarPerceptionObjectData}\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Lidar\+Perception\+Object\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1LidarPerceptionObjectData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a63c918c644f861f43a481733b055f3bb}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em Track id of lidar perception object. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a40b20909ebfaf5cc90f7beaef8dfb8f6}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Type of lidar perception object. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a0d4007e94dc78adf856447aa196a6641}{shape} \{\}
+\begin{DoxyCompactList}\small\item\em Shape(length,width, height) of lidar perception object (m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a646fc5eb840ce70b0546ddfa918124d0}{shape\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the shape \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a169e06ecc2edc187920fa20735b7d2bb}{position} \{\}
+\begin{DoxyCompactList}\small\item\em Position(x,y,z) of lidar perception object in world coordinate (m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_aa3c891f5faee1965dfa7e3392b4fac16}{position\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the position \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae1d3a87b602c44b55963562ec8f5b491}{velocity} \{\}
+\begin{DoxyCompactList}\small\item\em Velocity(\+Vx,\+Vy,\+Vz) of lidar perception object in world coordinate (m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a4f13ce0aedba07e55a9081efd1fd5c35}{velocity\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the velocity \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_af16613f77aa0487ea7e73f1e6441757d}{acceleration} \{\}
+\begin{DoxyCompactList}\small\item\em Acceleration(\+Ax,\+Ay,\+Az) of lidar perception object in world coordinate (m/s$^\wedge$2) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a1adc2c7732754ec9908e3ec08f96583a}{acceleration\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the acceleration \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae870d45af3680c177f23904a315c86e6}{heading\+\_\+yaw} \{\}
+\begin{DoxyCompactList}\small\item\em Heading angle from lidar perception object to the x axis in world coordinate(radian) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_ab948118698cdc885c0cac10cbe0c9abb}{heading\+\_\+yaw\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the heading yaw \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a2b62752c9e6cb91089539df4ac9e1d95}{angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em Angular velocity of lidar perception object in world coordinate(radian/s) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a2618cc7a1bbe398bedc470106c57d080}{angular\+\_\+velocity\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the angular velocity \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a77aacd754c08a3de60d463efce691324}{relative\+\_\+position} \{\}
+\begin{DoxyCompactList}\small\item\em Position(x,y,z) of lidar perception object in ego-\/vehicle coordinate (m) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a723e6eba9b09902ee051dd6c7f0cbee9}{relative\+\_\+position\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the relative position \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_aa33e7a11a7d46db9f28fddd635e3b454}{relative\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em Velocity(\+Vx,\+Vy,\+Vz) of lidar perception object in ego-\/vehicle coordinate (m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_aec53fe4d54b19bf8c35cc44eccc9dc01}{relative\+\_\+velocity\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the relative velocity \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_ab2d6bef6152245942f5beafcf887b553}{relative\+\_\+acceleration} \{\}
+\begin{DoxyCompactList}\small\item\em Acceleration(\+Ax,\+Ay,\+Az) of lidar perception object in ego-\/vehicle coordinate (m/s$^\wedge$2) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae9fe80197c88bc4435fd4d2cc5959f02}{relative\+\_\+acceleration\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the relative acceleration \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_aebe0fa46c2cfd9724d9aadd3803538f3}{relative\+\_\+heading\+\_\+yaw} \{\}
+\begin{DoxyCompactList}\small\item\em Heading angle from lidar perception object to the x axis in ego-\/vehicle coordinate(radian) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_aea72d2ba6468f2df27dad2d943375a27}{relative\+\_\+heading\+\_\+yaw\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the relative heading yaw \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a424e7e5180fb6b8cd4efc4e950737ed1}{relative\+\_\+angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em Angular velocity of lidar perception object in ego-\/vehicle coordinate(radian/s) \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_acac950941f55796da6c716c737931cfa}{relative\+\_\+angular\+\_\+velocity\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the relative angular velocity \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a679dfeddb72555a05c171f5c222125e3}{velocity\+\_\+relative\+\_\+to\+\_\+ground} \{\}
+\begin{DoxyCompactList}\small\item\em Velocity of lidar perception object relative to ground(m/s) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a63856fa20bdcebb359aa97e9ea9f1d01}{velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the velocity relative to ground \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae66f7f05776584d611ddb717538bf60b}{acceleration\+\_\+relative\+\_\+to\+\_\+ground} \{\}
+\begin{DoxyCompactList}\small\item\em Acceleration of lidar perception object relative to ground(m/s$^\wedge$2) \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_afa9e7bdb7397da2b1ef0e2a0a7a15bb8}{acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma} \{\}
+\begin{DoxyCompactList}\small\item\em the standard deviation or uncertainty of the acceleration relative to ground \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a020003b46cab727716be5b38d1d621ba}{score} \{\}
+\begin{DoxyCompactList}\small\item\em existence score of the object \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a7cd684310b3e3ce43267f3318eb72b36}{polygon\+\_\+bottom} \{\}
+\begin{DoxyCompactList}\small\item\em bottom polygon of lidar perception object in ego-\/vehicle coordinate \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a7e0c16b1a2c2a2c0edf687416a36d3f2}{polygon\+\_\+top} \{\}
+\begin{DoxyCompactList}\small\item\em top polygon of lidar perception object in ego-\/vehicle coordinate \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_af6c062bcb9aa73bea8f7480d2b46b7dd}{available} \{\}
+\begin{DoxyCompactList}\small\item\em Is data available. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1LidarPerceptionObjectData_a6180a4225aef1ac41520fd9b94b9dd6c}{reserved\+\_\+info} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_af16613f77aa0487ea7e73f1e6441757d}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_af16613f77aa0487ea7e73f1e6441757d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!acceleration@{acceleration}}
+\index{acceleration@{acceleration}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration}{acceleration}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::acceleration \{\}}
+
+
+
+Acceleration(\+Ax,\+Ay,\+Az) of lidar perception object in world coordinate (m/s$^\wedge$2) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae66f7f05776584d611ddb717538bf60b}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae66f7f05776584d611ddb717538bf60b}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!acceleration\+\_\+relative\+\_\+to\+\_\+ground@{acceleration\+\_\+relative\+\_\+to\+\_\+ground}}
+\index{acceleration\+\_\+relative\+\_\+to\+\_\+ground@{acceleration\+\_\+relative\+\_\+to\+\_\+ground}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration\+\_\+relative\+\_\+to\+\_\+ground}{acceleration\_relative\_to\_ground}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::acceleration\+\_\+relative\+\_\+to\+\_\+ground \{\}}
+
+
+
+Acceleration of lidar perception object relative to ground(m/s$^\wedge$2) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_afa9e7bdb7397da2b1ef0e2a0a7a15bb8}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_afa9e7bdb7397da2b1ef0e2a0a7a15bb8}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma@{acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma}}
+\index{acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma@{acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma}{acceleration\_relative\_to\_ground\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::acceleration\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the acceleration relative to ground 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a1adc2c7732754ec9908e3ec08f96583a}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a1adc2c7732754ec9908e3ec08f96583a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!acceleration\+\_\+sigma@{acceleration\+\_\+sigma}}
+\index{acceleration\+\_\+sigma@{acceleration\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration\+\_\+sigma}{acceleration\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::acceleration\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the acceleration 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a2b62752c9e6cb91089539df4ac9e1d95}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a2b62752c9e6cb91089539df4ac9e1d95}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!angular\+\_\+velocity@{angular\+\_\+velocity}}
+\index{angular\+\_\+velocity@{angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{angular\+\_\+velocity}{angular\_velocity}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::angular\+\_\+velocity \{\}}
+
+
+
+Angular velocity of lidar perception object in world coordinate(radian/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a2618cc7a1bbe398bedc470106c57d080}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a2618cc7a1bbe398bedc470106c57d080}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!angular\+\_\+velocity\+\_\+sigma@{angular\+\_\+velocity\+\_\+sigma}}
+\index{angular\+\_\+velocity\+\_\+sigma@{angular\+\_\+velocity\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{angular\+\_\+velocity\+\_\+sigma}{angular\_velocity\_sigma}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::angular\+\_\+velocity\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the angular velocity 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_af6c062bcb9aa73bea8f7480d2b46b7dd}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_af6c062bcb9aa73bea8f7480d2b46b7dd}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!available@{available}}
+\index{available@{available}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{available}{available}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::available \{\}}
+
+
+
+Is data available. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae870d45af3680c177f23904a315c86e6}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae870d45af3680c177f23904a315c86e6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!heading\+\_\+yaw@{heading\+\_\+yaw}}
+\index{heading\+\_\+yaw@{heading\+\_\+yaw}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{heading\+\_\+yaw}{heading\_yaw}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::heading\+\_\+yaw \{\}}
+
+
+
+Heading angle from lidar perception object to the x axis in world coordinate(radian) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_ab948118698cdc885c0cac10cbe0c9abb}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_ab948118698cdc885c0cac10cbe0c9abb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!heading\+\_\+yaw\+\_\+sigma@{heading\+\_\+yaw\+\_\+sigma}}
+\index{heading\+\_\+yaw\+\_\+sigma@{heading\+\_\+yaw\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{heading\+\_\+yaw\+\_\+sigma}{heading\_yaw\_sigma}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::heading\+\_\+yaw\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the heading yaw 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a7cd684310b3e3ce43267f3318eb72b36}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a7cd684310b3e3ce43267f3318eb72b36}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!polygon\+\_\+bottom@{polygon\+\_\+bottom}}
+\index{polygon\+\_\+bottom@{polygon\+\_\+bottom}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{polygon\+\_\+bottom}{polygon\_bottom}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::polygon\+\_\+bottom \{\}}
+
+
+
+bottom polygon of lidar perception object in ego-\/vehicle coordinate 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a7e0c16b1a2c2a2c0edf687416a36d3f2}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a7e0c16b1a2c2a2c0edf687416a36d3f2}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!polygon\+\_\+top@{polygon\+\_\+top}}
+\index{polygon\+\_\+top@{polygon\+\_\+top}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{polygon\+\_\+top}{polygon\_top}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Polygon3f}{Polygon3f} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::polygon\+\_\+top \{\}}
+
+
+
+top polygon of lidar perception object in ego-\/vehicle coordinate 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a169e06ecc2edc187920fa20735b7d2bb}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a169e06ecc2edc187920fa20735b7d2bb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!position@{position}}
+\index{position@{position}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::position \{\}}
+
+
+
+Position(x,y,z) of lidar perception object in world coordinate (m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_aa3c891f5faee1965dfa7e3392b4fac16}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_aa3c891f5faee1965dfa7e3392b4fac16}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!position\+\_\+sigma@{position\+\_\+sigma}}
+\index{position\+\_\+sigma@{position\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{position\+\_\+sigma}{position\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::position\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the position 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_ab2d6bef6152245942f5beafcf887b553}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_ab2d6bef6152245942f5beafcf887b553}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+acceleration@{relative\+\_\+acceleration}}
+\index{relative\+\_\+acceleration@{relative\+\_\+acceleration}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+acceleration}{relative\_acceleration}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+acceleration \{\}}
+
+
+
+Acceleration(\+Ax,\+Ay,\+Az) of lidar perception object in ego-\/vehicle coordinate (m/s$^\wedge$2) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae9fe80197c88bc4435fd4d2cc5959f02}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae9fe80197c88bc4435fd4d2cc5959f02}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+acceleration\+\_\+sigma@{relative\+\_\+acceleration\+\_\+sigma}}
+\index{relative\+\_\+acceleration\+\_\+sigma@{relative\+\_\+acceleration\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+acceleration\+\_\+sigma}{relative\_acceleration\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+acceleration\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the relative acceleration 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a424e7e5180fb6b8cd4efc4e950737ed1}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a424e7e5180fb6b8cd4efc4e950737ed1}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+angular\+\_\+velocity@{relative\+\_\+angular\+\_\+velocity}}
+\index{relative\+\_\+angular\+\_\+velocity@{relative\+\_\+angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+angular\+\_\+velocity}{relative\_angular\_velocity}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+angular\+\_\+velocity \{\}}
+
+
+
+Angular velocity of lidar perception object in ego-\/vehicle coordinate(radian/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_acac950941f55796da6c716c737931cfa}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_acac950941f55796da6c716c737931cfa}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+angular\+\_\+velocity\+\_\+sigma@{relative\+\_\+angular\+\_\+velocity\+\_\+sigma}}
+\index{relative\+\_\+angular\+\_\+velocity\+\_\+sigma@{relative\+\_\+angular\+\_\+velocity\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+angular\+\_\+velocity\+\_\+sigma}{relative\_angular\_velocity\_sigma}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+angular\+\_\+velocity\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the relative angular velocity 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_aebe0fa46c2cfd9724d9aadd3803538f3}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_aebe0fa46c2cfd9724d9aadd3803538f3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}}
+\index{relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+heading\+\_\+yaw}{relative\_heading\_yaw}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+heading\+\_\+yaw \{\}}
+
+
+
+Heading angle from lidar perception object to the x axis in ego-\/vehicle coordinate(radian) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_aea72d2ba6468f2df27dad2d943375a27}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_aea72d2ba6468f2df27dad2d943375a27}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+heading\+\_\+yaw\+\_\+sigma@{relative\+\_\+heading\+\_\+yaw\+\_\+sigma}}
+\index{relative\+\_\+heading\+\_\+yaw\+\_\+sigma@{relative\+\_\+heading\+\_\+yaw\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+heading\+\_\+yaw\+\_\+sigma}{relative\_heading\_yaw\_sigma}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+heading\+\_\+yaw\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the relative heading yaw 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a77aacd754c08a3de60d463efce691324}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a77aacd754c08a3de60d463efce691324}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+position@{relative\+\_\+position}}
+\index{relative\+\_\+position@{relative\+\_\+position}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+position}{relative\_position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+position \{\}}
+
+
+
+Position(x,y,z) of lidar perception object in ego-\/vehicle coordinate (m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a723e6eba9b09902ee051dd6c7f0cbee9}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a723e6eba9b09902ee051dd6c7f0cbee9}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+position\+\_\+sigma@{relative\+\_\+position\+\_\+sigma}}
+\index{relative\+\_\+position\+\_\+sigma@{relative\+\_\+position\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+position\+\_\+sigma}{relative\_position\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+position\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the relative position 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_aa33e7a11a7d46db9f28fddd635e3b454}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_aa33e7a11a7d46db9f28fddd635e3b454}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+velocity@{relative\+\_\+velocity}}
+\index{relative\+\_\+velocity@{relative\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+velocity}{relative\_velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+velocity \{\}}
+
+
+
+Velocity(\+Vx,\+Vy,\+Vz) of lidar perception object in ego-\/vehicle coordinate (m/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_aec53fe4d54b19bf8c35cc44eccc9dc01}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_aec53fe4d54b19bf8c35cc44eccc9dc01}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!relative\+\_\+velocity\+\_\+sigma@{relative\+\_\+velocity\+\_\+sigma}}
+\index{relative\+\_\+velocity\+\_\+sigma@{relative\+\_\+velocity\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+velocity\+\_\+sigma}{relative\_velocity\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::relative\+\_\+velocity\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the relative velocity 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a6180a4225aef1ac41520fd9b94b9dd6c}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a6180a4225aef1ac41520fd9b94b9dd6c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!reserved\+\_\+info@{reserved\+\_\+info}}
+\index{reserved\+\_\+info@{reserved\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{reserved\+\_\+info}{reserved\_info}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::reserved\+\_\+info \{\}}
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a020003b46cab727716be5b38d1d621ba}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a020003b46cab727716be5b38d1d621ba}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::score \{\}}
+
+
+
+existence score of the object 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a0d4007e94dc78adf856447aa196a6641}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a0d4007e94dc78adf856447aa196a6641}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!shape@{shape}}
+\index{shape@{shape}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::shape \{\}}
+
+
+
+Shape(length,width, height) of lidar perception object (m) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a646fc5eb840ce70b0546ddfa918124d0}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a646fc5eb840ce70b0546ddfa918124d0}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!shape\+\_\+sigma@{shape\+\_\+sigma}}
+\index{shape\+\_\+sigma@{shape\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{shape\+\_\+sigma}{shape\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::shape\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the shape 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a63c918c644f861f43a481733b055f3bb}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a63c918c644f861f43a481733b055f3bb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::track\+\_\+id \{\}}
+
+
+
+Track id of lidar perception object. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a40b20909ebfaf5cc90f7beaef8dfb8f6}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a40b20909ebfaf5cc90f7beaef8dfb8f6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::type\+\_\+info \{\}}
+
+
+
+Type of lidar perception object. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae1d3a87b602c44b55963562ec8f5b491}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_ae1d3a87b602c44b55963562ec8f5b491}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!velocity@{velocity}}
+\index{velocity@{velocity}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::velocity \{\}}
+
+
+
+Velocity(\+Vx,\+Vy,\+Vz) of lidar perception object in world coordinate (m/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a679dfeddb72555a05c171f5c222125e3}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a679dfeddb72555a05c171f5c222125e3}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!velocity\+\_\+relative\+\_\+to\+\_\+ground@{velocity\+\_\+relative\+\_\+to\+\_\+ground}}
+\index{velocity\+\_\+relative\+\_\+to\+\_\+ground@{velocity\+\_\+relative\+\_\+to\+\_\+ground}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity\+\_\+relative\+\_\+to\+\_\+ground}{velocity\_relative\_to\_ground}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::velocity\+\_\+relative\+\_\+to\+\_\+ground \{\}}
+
+
+
+Velocity of lidar perception object relative to ground(m/s) 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a63856fa20bdcebb359aa97e9ea9f1d01}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a63856fa20bdcebb359aa97e9ea9f1d01}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma@{velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma}}
+\index{velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma@{velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma}{velocity\_relative\_to\_ground\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::velocity\+\_\+relative\+\_\+to\+\_\+ground\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the velocity relative to ground 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1LidarPerceptionObjectData_a4f13ce0aedba07e55a9081efd1fd5c35}\label{structmaf__perception__interface_1_1LidarPerceptionObjectData_a4f13ce0aedba07e55a9081efd1fd5c35}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}!velocity\+\_\+sigma@{velocity\+\_\+sigma}}
+\index{velocity\+\_\+sigma@{velocity\+\_\+sigma}!maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity\+\_\+sigma}{velocity\_sigma}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Lidar\+Perception\+Object\+Data\+::velocity\+\_\+sigma \{\}}
+
+
+
+the standard deviation or uncertainty of the velocity 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

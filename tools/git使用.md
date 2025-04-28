@@ -148,3 +148,20 @@ git cherry-pick commit1 commit2 commit3 # 你可以同时拣选多个提交，�
            Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes refs/heads/, refs/tags/ and refs/remotes/ will not be printed. If full is
            specified, the full ref name (including prefix) will be printed. The default option is short.
 ```
+
+### tips
+
+查看某行删除的commit信息
+
+```shell
+
+# 搜索包含指定字符串的提交（精确匹配）
+git log -S "被删除的文本内容" -- path/to/file
+
+# 示例：查找文件 app.js 中删除 "const debugMode = true" 的提交
+git log -S "const debugMode = true" -- app.js
+```
+
+### 合并提交
+
+git rebase -i commit_id #合并commit_id之后的提交，不包含commit_id

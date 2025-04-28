@@ -1,0 +1,6 @@
+<map id="maf_perception_interface::FusionParkingSlotData" name="maf_perception_interface::FusionParkingSlotData">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1ParkingSlotVirtualPoint.html" title="Structure to represent fusion slot virtual point. " alt="" coords="308,5,476,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1Point3f.html" title="maf_perception_interface\l::Point3f" alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1FusionSpecialParkingSlotType.html" title="maf_perception_interface\l::FusionSpecialParkingSlotType" alt="" coords="288,71,496,112"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1FusionParkingSlotType.html" title="Structure to represent fusion slot type. " alt="" coords="308,136,476,177"/>
+</map>

@@ -1,0 +1,178 @@
+\hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Perception\+Fusion\+A\+E\+B\+Object\+Data Struct Reference}
+\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData}\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+
+
+A\+EB \hyperlink{structmaf__perception__interface_1_1Object}{Object} data information struct.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Perception\+Fusion\+A\+E\+B\+Object\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_ac094dcba03db8f82eec44991b11db9a2}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em Track id. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a221a8cb55a68ceaffb1db1e9008100c7}{type\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em Type. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a07dabbcbea6c8edc73128ff5ffc0e479}{score} \{\}
+\begin{DoxyCompactList}\small\item\em Score of existing. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a128e76ef29eafaf1ebf0b17dd2b6f5eb}{ttc} \{\}
+\begin{DoxyCompactList}\small\item\em ttc(time to collision) \{s\} \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a2278eaf38a60fcfe307fb0e9490ec55e}{shape} \{\}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} 3d shape \{m\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_af2e82077c1b3355fa41a9dd7e1682c58}{relative\+\_\+position} \{\}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structmaf__perception__interface_1_1Object}{Object} center location in ego-\/vehicle coordinate at bird\textquotesingle{}s-\/eye view \{m\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_abd8f9c92aaeedd0a17f72625690aeecd}{relative\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em Relative velocity of object center at bird\textquotesingle{}s-\/eye view \{m/s\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a22c9420d05aedd26ceed9f82a69c8c3a}{relative\+\_\+acceleration} \{\}
+\begin{DoxyCompactList}\small\item\em Relative acceleration of object center at bird\textquotesingle{}s-\/eye view \{m/s$^\wedge$2\}. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a574dcc89a92665a41b7ff330a9cdd645}{relative\+\_\+heading\+\_\+yaw} \{\}
+\begin{DoxyCompactList}\small\item\em Heading angle from the object heading to the x axis under local world coordinate \{radian\} \{-\/2$\ast$pi\} \{2$\ast$pi\}. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_afc8e2d918d03d09420e70422d314c8f5}{relative\+\_\+angular\+\_\+velocity} \{\}
+\begin{DoxyCompactList}\small\item\em Angular velocity of object center at bird\textquotesingle{}s-\/eye view \{radian/s\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a6e3d044f87c811b5d7b1a7d0c6fbd33f}{velocity\+\_\+relative\+\_\+to\+\_\+ground} \{\}
+\begin{DoxyCompactList}\small\item\em Velocity of object center to the ground at bird\textquotesingle{}s-\/eye view \{m/s\}. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} \hyperlink{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_abddbe98fc88ebc7c512ff2ab3be6c20d}{acceleration\+\_\+relative\+\_\+to\+\_\+ground} \{\}
+\begin{DoxyCompactList}\small\item\em Acceleration of object center to the ground at bird\textquotesingle{}s-\/eye view \{m/s\}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+EB \hyperlink{structmaf__perception__interface_1_1Object}{Object} data information struct. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_abddbe98fc88ebc7c512ff2ab3be6c20d}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_abddbe98fc88ebc7c512ff2ab3be6c20d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!acceleration\+\_\+relative\+\_\+to\+\_\+ground@{acceleration\+\_\+relative\+\_\+to\+\_\+ground}}
+\index{acceleration\+\_\+relative\+\_\+to\+\_\+ground@{acceleration\+\_\+relative\+\_\+to\+\_\+ground}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{acceleration\+\_\+relative\+\_\+to\+\_\+ground}{acceleration\_relative\_to\_ground}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::acceleration\+\_\+relative\+\_\+to\+\_\+ground \{\}}
+
+
+
+Acceleration of object center to the ground at bird\textquotesingle{}s-\/eye view \{m/s\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a22c9420d05aedd26ceed9f82a69c8c3a}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a22c9420d05aedd26ceed9f82a69c8c3a}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!relative\+\_\+acceleration@{relative\+\_\+acceleration}}
+\index{relative\+\_\+acceleration@{relative\+\_\+acceleration}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+acceleration}{relative\_acceleration}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::relative\+\_\+acceleration \{\}}
+
+
+
+Relative acceleration of object center at bird\textquotesingle{}s-\/eye view \{m/s$^\wedge$2\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_afc8e2d918d03d09420e70422d314c8f5}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_afc8e2d918d03d09420e70422d314c8f5}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!relative\+\_\+angular\+\_\+velocity@{relative\+\_\+angular\+\_\+velocity}}
+\index{relative\+\_\+angular\+\_\+velocity@{relative\+\_\+angular\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+angular\+\_\+velocity}{relative\_angular\_velocity}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::relative\+\_\+angular\+\_\+velocity \{\}}
+
+
+
+Angular velocity of object center at bird\textquotesingle{}s-\/eye view \{radian/s\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a574dcc89a92665a41b7ff330a9cdd645}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a574dcc89a92665a41b7ff330a9cdd645}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}}
+\index{relative\+\_\+heading\+\_\+yaw@{relative\+\_\+heading\+\_\+yaw}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+heading\+\_\+yaw}{relative\_heading\_yaw}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::relative\+\_\+heading\+\_\+yaw \{\}}
+
+
+
+Heading angle from the object heading to the x axis under local world coordinate \{radian\} \{-\/2$\ast$pi\} \{2$\ast$pi\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_af2e82077c1b3355fa41a9dd7e1682c58}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_af2e82077c1b3355fa41a9dd7e1682c58}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!relative\+\_\+position@{relative\+\_\+position}}
+\index{relative\+\_\+position@{relative\+\_\+position}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+position}{relative\_position}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3d}{Point3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::relative\+\_\+position \{\}}
+
+
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} center location in ego-\/vehicle coordinate at bird\textquotesingle{}s-\/eye view \{m\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_abd8f9c92aaeedd0a17f72625690aeecd}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_abd8f9c92aaeedd0a17f72625690aeecd}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!relative\+\_\+velocity@{relative\+\_\+velocity}}
+\index{relative\+\_\+velocity@{relative\+\_\+velocity}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{relative\+\_\+velocity}{relative\_velocity}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::relative\+\_\+velocity \{\}}
+
+
+
+Relative velocity of object center at bird\textquotesingle{}s-\/eye view \{m/s\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a07dabbcbea6c8edc73128ff5ffc0e479}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a07dabbcbea6c8edc73128ff5ffc0e479}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!score@{score}}
+\index{score@{score}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::score \{\}}
+
+
+
+Score of existing. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a2278eaf38a60fcfe307fb0e9490ec55e}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a2278eaf38a60fcfe307fb0e9490ec55e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!shape@{shape}}
+\index{shape@{shape}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3d}{Shape3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::shape \{\}}
+
+
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} 3d shape \{m\}. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_ac094dcba03db8f82eec44991b11db9a2}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_ac094dcba03db8f82eec44991b11db9a2}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily uint64\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::track\+\_\+id \{\}}
+
+
+
+Track id. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a128e76ef29eafaf1ebf0b17dd2b6f5eb}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a128e76ef29eafaf1ebf0b17dd2b6f5eb}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!ttc@{ttc}}
+\index{ttc@{ttc}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{ttc}{ttc}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::ttc \{\}}
+
+
+
+ttc(time to collision) \{s\} 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a221a8cb55a68ceaffb1db1e9008100c7}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a221a8cb55a68ceaffb1db1e9008100c7}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!type\+\_\+info@{type\+\_\+info}}
+\index{type\+\_\+info@{type\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{type\+\_\+info}{type\_info}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1ObjectTypeInfo}{Object\+Type\+Info} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::type\+\_\+info \{\}}
+
+
+
+Type. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a6e3d044f87c811b5d7b1a7d0c6fbd33f}\label{structmaf__perception__interface_1_1PerceptionFusionAEBObjectData_a6e3d044f87c811b5d7b1a7d0c6fbd33f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}!velocity\+\_\+relative\+\_\+to\+\_\+ground@{velocity\+\_\+relative\+\_\+to\+\_\+ground}}
+\index{velocity\+\_\+relative\+\_\+to\+\_\+ground@{velocity\+\_\+relative\+\_\+to\+\_\+ground}!maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data@{maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data}}
+\subsubsection{\texorpdfstring{velocity\+\_\+relative\+\_\+to\+\_\+ground}{velocity\_relative\_to\_ground}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector3d}{Vector3d} maf\+\_\+perception\+\_\+interface\+::\+Perception\+Fusion\+A\+E\+B\+Object\+Data\+::velocity\+\_\+relative\+\_\+to\+\_\+ground \{\}}
+
+
+
+Velocity of object center to the ground at bird\textquotesingle{}s-\/eye view \{m/s\}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}

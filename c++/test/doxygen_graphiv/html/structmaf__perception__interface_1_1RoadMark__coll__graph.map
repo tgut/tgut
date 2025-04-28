@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::RoadMark" name="maf_perception_interface::RoadMark">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1RoadMarkLabelMap.html" title="roadmark label map struct " alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1CameraSourceEnum.html" title="Enum to the camera source. " alt="" coords="5,71,173,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1CameraModelEnum.html" title="Enum to the camera model. " alt="" coords="5,136,173,177"/>
+</map>

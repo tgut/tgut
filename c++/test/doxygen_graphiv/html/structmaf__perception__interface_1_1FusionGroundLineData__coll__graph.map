@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::FusionGroundLineData" name="maf_perception_interface::FusionGroundLineData">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1GroundLineTypeEnum.html" title="Enum to the type of ground line. " alt="" coords="13,5,181,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1FusionObstacleTypeEnum.html" title="maf_perception_interface\l::FusionObstacleTypeEnum" alt="" coords="5,71,189,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1FusionObstaclePointType.html" title="maf_perception_interface\l::FusionObstaclePointType" alt="" coords="7,136,187,177"/>
+</map>

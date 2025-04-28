@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::FusionParkingSlotResult" name="maf_perception_interface::FusionParkingSlotResult">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1FusionParkingSlot.html" title="maf_perception_interface\l::FusionParkingSlot" alt="" coords="339,5,507,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1EgoParkingSlot.html" title="maf_perception_interface\l::EgoParkingSlot" alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1PerceptionFusionResultMeta.html" title="maf_perception_interface\l::PerceptionFusionResultMeta" alt="" coords="324,71,523,112"/>
+</map>

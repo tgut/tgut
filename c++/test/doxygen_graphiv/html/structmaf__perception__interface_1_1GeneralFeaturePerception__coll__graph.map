@@ -1,0 +1,6 @@
+<map id="maf_perception_interface::GeneralFeaturePerception" name="maf_perception_interface::GeneralFeaturePerception">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1ImageRetrievalDescriptorPerception.html" title="maf_perception_interface\l::ImageRetrievalDescriptorPerception" alt="" coords="336,35,576,76"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1ImageRetrievalDescriptor.html" title="maf_perception_interface\l::ImageRetrievalDescriptor" alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1PerceptionMeta.html" title="maf_perception_interface\l::PerceptionMeta" alt="" coords="11,95,179,136"/>
+<area shape="rect" id="node5" href="$structmaf__perception__interface_1_1FeaturePointPerception.html" title="maf_perception_interface\l::FeaturePointPerception" alt="" coords="372,164,540,205"/>
+</map>

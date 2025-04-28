@@ -1,0 +1,5 @@
+<map id="maf_perception_interface::ADBInfo" name="maf_perception_interface::ADBInfo">
+<area shape="rect" id="node2" href="$structmaf__perception__interface_1_1ADBSysStatusEnum.html" title="Enum to the adb system status. " alt="" coords="21,5,189,47"/>
+<area shape="rect" id="node3" href="$structmaf__perception__interface_1_1PerceptionFusionResultMeta.html" title="maf_perception_interface\l::PerceptionFusionResultMeta" alt="" coords="5,71,204,112"/>
+<area shape="rect" id="node4" href="$structmaf__perception__interface_1_1ADASPerceptionResult.html" title="ADAS Perception result struct. " alt="" coords="21,136,189,177"/>
+</map>

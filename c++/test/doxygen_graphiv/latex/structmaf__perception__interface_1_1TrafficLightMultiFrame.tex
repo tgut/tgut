@@ -1,0 +1,238 @@
+\hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame}{}\section{maf\+\_\+perception\+\_\+interface\+:\+:Traffic\+Light\+Multi\+Frame Struct Reference}
+\label{structmaf__perception__interface_1_1TrafficLightMultiFrame}\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+
+
+Structure to represent information of fusion result of the traffic light.  
+
+
+
+
+{\ttfamily \#include $<$maf\+\_\+perception\+\_\+interface.\+h$>$}
+
+
+
+Collaboration diagram for maf\+\_\+perception\+\_\+interface\+:\+:Traffic\+Light\+Multi\+Frame\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmaf__perception__interface_1_1TrafficLightMultiFrame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a334b0338a8a394dc246f11ebe67a1112}{camera\+\_\+source} \{\}
+\begin{DoxyCompactList}\small\item\em Camera source. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a33c441008015df1522483745efd46dac}{camera\+\_\+model} \{\}
+\begin{DoxyCompactList}\small\item\em Camera model. \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1TrafficLightTypeEnum}{Traffic\+Light\+Type\+Enum} \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_ac94d2b175b16689e25d5ba992bbada1c}{type} \{\}
+\begin{DoxyCompactList}\small\item\em Traffic light Type information. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a77394e5afb1b785b596250eb89a7bc5e}{track\+\_\+id} \{\}
+\begin{DoxyCompactList}\small\item\em Track id. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1TrafficLightPatternEnum}{Traffic\+Light\+Pattern\+Enum} $>$ \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a9fc087ee5341cd8603e74ba43d36242c}{pattern} \{\}
+\begin{DoxyCompactList}\small\item\em Pattern. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1TrafficLightStatusEnum}{Traffic\+Light\+Status\+Enum} $>$ \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a74c62c1f073e1e7a3f6f0a6d8ab25a42}{status} \{\}
+\begin{DoxyCompactList}\small\item\em Status. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_ad4a8566fd3321f01139129bfce0d5c3f}{pattern\+\_\+score} \{\}
+\begin{DoxyCompactList}\small\item\em Confidence of pattern. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_aec05cf791158e4f91df350f036360734}{status\+\_\+score} \{\}
+\begin{DoxyCompactList}\small\item\em Confidence of status. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_ac6e93b821fbb15988591a612b6cfae0f}{duration} \{\}
+\begin{DoxyCompactList}\small\item\em Current status duration. \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a51bc16f4d5bc4c5cb6372eee02a4349c}{remaining} \{\}
+\begin{DoxyCompactList}\small\item\em Current status remaining. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_aeb469fce4d873e76fd90d43758262ede}{count\+\_\+number} \{\}
+\begin{DoxyCompactList}\small\item\em count\+\_\+number from number\+\_\+light \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a96915e66f54604c632e105d6dee427af}{shape\+\_\+3d} \{\}
+\begin{DoxyCompactList}\small\item\em 3D shape \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a7a64e241e206e931f2924cc98f9c129d}{location\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em bird\textquotesingle{}s-\/eye view \end{DoxyCompactList}\item 
+float \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a5af1dbb8d8b6516e7c5c35c90d5c3cde}{heading\+\_\+theta\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em axis in ego-\/vehicle coordinate \end{DoxyCompactList}\item 
+\hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_aa0943396383a07b9b0eeef26ebddd248}{velocity\+\_\+bv} \{\}
+\begin{DoxyCompactList}\small\item\em Relative velocity of object center at bird\textquotesingle{}s-\/eye view. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structmaf__perception__interface_1_1TrafficLightAssociatedInfo}{Traffic\+Light\+Associated\+Info} $>$ \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_a2d7983fb5a6d0e8a3d120f9cb646d7b6}{associated\+\_\+infos} \{\}
+\begin{DoxyCompactList}\small\item\em Association information. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structmaf__perception__interface_1_1TrafficLightMultiFrame_ae8e55acfd7433a911ede7004b109a4ad}{reserved\+\_\+info} \{\}
+\begin{DoxyCompactList}\small\item\em reserved info \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure to represent information of fusion result of the traffic light. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a2d7983fb5a6d0e8a3d120f9cb646d7b6}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a2d7983fb5a6d0e8a3d120f9cb646d7b6}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!associated\+\_\+infos@{associated\+\_\+infos}}
+\index{associated\+\_\+infos@{associated\+\_\+infos}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{associated\+\_\+infos}{associated\_infos}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1TrafficLightAssociatedInfo}{Traffic\+Light\+Associated\+Info}$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::associated\+\_\+infos \{\}}
+
+
+
+Association information. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a33c441008015df1522483745efd46dac}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a33c441008015df1522483745efd46dac}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!camera\+\_\+model@{camera\+\_\+model}}
+\index{camera\+\_\+model@{camera\+\_\+model}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{camera\+\_\+model}{camera\_model}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraModelEnum}{Camera\+Model\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::camera\+\_\+model \{\}}
+
+
+
+Camera model. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a334b0338a8a394dc246f11ebe67a1112}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a334b0338a8a394dc246f11ebe67a1112}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!camera\+\_\+source@{camera\+\_\+source}}
+\index{camera\+\_\+source@{camera\+\_\+source}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{camera\+\_\+source}{camera\_source}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1CameraSourceEnum}{Camera\+Source\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::camera\+\_\+source \{\}}
+
+
+
+Camera source. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_aeb469fce4d873e76fd90d43758262ede}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_aeb469fce4d873e76fd90d43758262ede}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!count\+\_\+number@{count\+\_\+number}}
+\index{count\+\_\+number@{count\+\_\+number}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{count\+\_\+number}{count\_number}}
+{\footnotesize\ttfamily uint8\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::count\+\_\+number \{\}}
+
+
+
+count\+\_\+number from number\+\_\+light 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_ac6e93b821fbb15988591a612b6cfae0f}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_ac6e93b821fbb15988591a612b6cfae0f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!duration@{duration}}
+\index{duration@{duration}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::duration \{\}}
+
+
+
+Current status duration. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a5af1dbb8d8b6516e7c5c35c90d5c3cde}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a5af1dbb8d8b6516e7c5c35c90d5c3cde}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!heading\+\_\+theta\+\_\+bv@{heading\+\_\+theta\+\_\+bv}}
+\index{heading\+\_\+theta\+\_\+bv@{heading\+\_\+theta\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{heading\+\_\+theta\+\_\+bv}{heading\_theta\_bv}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::heading\+\_\+theta\+\_\+bv \{\}}
+
+
+
+axis in ego-\/vehicle coordinate 
+
+Heading angle from the object heading to the x \mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a7a64e241e206e931f2924cc98f9c129d}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a7a64e241e206e931f2924cc98f9c129d}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!location\+\_\+bv@{location\+\_\+bv}}
+\index{location\+\_\+bv@{location\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{location\+\_\+bv}{location\_bv}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Point3f}{Point3f} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::location\+\_\+bv \{\}}
+
+
+
+bird\textquotesingle{}s-\/eye view 
+
+\hyperlink{structmaf__perception__interface_1_1Object}{Object} center location in ego-\/vehicle coordinate at \mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a9fc087ee5341cd8603e74ba43d36242c}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a9fc087ee5341cd8603e74ba43d36242c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!pattern@{pattern}}
+\index{pattern@{pattern}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{pattern}{pattern}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1TrafficLightPatternEnum}{Traffic\+Light\+Pattern\+Enum}$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::pattern \{\}}
+
+
+
+Pattern. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_ad4a8566fd3321f01139129bfce0d5c3f}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_ad4a8566fd3321f01139129bfce0d5c3f}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!pattern\+\_\+score@{pattern\+\_\+score}}
+\index{pattern\+\_\+score@{pattern\+\_\+score}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{pattern\+\_\+score}{pattern\_score}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::pattern\+\_\+score \{\}}
+
+
+
+Confidence of pattern. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a51bc16f4d5bc4c5cb6372eee02a4349c}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a51bc16f4d5bc4c5cb6372eee02a4349c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!remaining@{remaining}}
+\index{remaining@{remaining}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{remaining}{remaining}}
+{\footnotesize\ttfamily float maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::remaining \{\}}
+
+
+
+Current status remaining. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_ae8e55acfd7433a911ede7004b109a4ad}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_ae8e55acfd7433a911ede7004b109a4ad}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!reserved\+\_\+info@{reserved\+\_\+info}}
+\index{reserved\+\_\+info@{reserved\+\_\+info}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{reserved\+\_\+info}{reserved\_info}}
+{\footnotesize\ttfamily std\+::string maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::reserved\+\_\+info \{\}}
+
+
+
+reserved info 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a96915e66f54604c632e105d6dee427af}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a96915e66f54604c632e105d6dee427af}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!shape\+\_\+3d@{shape\+\_\+3d}}
+\index{shape\+\_\+3d@{shape\+\_\+3d}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{shape\+\_\+3d}{shape\_3d}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Shape3f}{Shape3f} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::shape\+\_\+3d \{\}}
+
+
+
+3D shape 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a74c62c1f073e1e7a3f6f0a6d8ab25a42}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a74c62c1f073e1e7a3f6f0a6d8ab25a42}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!status@{status}}
+\index{status@{status}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structmaf__perception__interface_1_1TrafficLightStatusEnum}{Traffic\+Light\+Status\+Enum}$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::status \{\}}
+
+
+
+Status. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_aec05cf791158e4f91df350f036360734}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_aec05cf791158e4f91df350f036360734}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!status\+\_\+score@{status\+\_\+score}}
+\index{status\+\_\+score@{status\+\_\+score}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{status\+\_\+score}{status\_score}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::status\+\_\+score \{\}}
+
+
+
+Confidence of status. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_a77394e5afb1b785b596250eb89a7bc5e}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_a77394e5afb1b785b596250eb89a7bc5e}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!track\+\_\+id@{track\+\_\+id}}
+\index{track\+\_\+id@{track\+\_\+id}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{track\+\_\+id}{track\_id}}
+{\footnotesize\ttfamily int32\+\_\+t maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::track\+\_\+id \{\}}
+
+
+
+Track id. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_ac94d2b175b16689e25d5ba992bbada1c}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_ac94d2b175b16689e25d5ba992bbada1c}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!type@{type}}
+\index{type@{type}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1TrafficLightTypeEnum}{Traffic\+Light\+Type\+Enum} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::type \{\}}
+
+
+
+Traffic light Type information. 
+
+\mbox{\Hypertarget{structmaf__perception__interface_1_1TrafficLightMultiFrame_aa0943396383a07b9b0eeef26ebddd248}\label{structmaf__perception__interface_1_1TrafficLightMultiFrame_aa0943396383a07b9b0eeef26ebddd248}} 
+\index{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}!velocity\+\_\+bv@{velocity\+\_\+bv}}
+\index{velocity\+\_\+bv@{velocity\+\_\+bv}!maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame@{maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame}}
+\subsubsection{\texorpdfstring{velocity\+\_\+bv}{velocity\_bv}}
+{\footnotesize\ttfamily \hyperlink{structmaf__perception__interface_1_1Vector2f}{Vector2f} maf\+\_\+perception\+\_\+interface\+::\+Traffic\+Light\+Multi\+Frame\+::velocity\+\_\+bv \{\}}
+
+
+
+Relative velocity of object center at bird\textquotesingle{}s-\/eye view. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maf__perception__interface_8h}{maf\+\_\+perception\+\_\+interface.\+h}\end{DoxyCompactItemize}
