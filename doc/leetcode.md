@@ -1,3 +1,31 @@
+## 20250622
+    python数据结构整理/练习：1.两数之和，2.两数相加，1273.将字符串拆分为若干长度为 k 的组
+## 20250620
+    141.环形链表
+    226.翻转二叉树
+    2.两数相加
+## 20250607
+### 
+    977有序数组的平方（能否原地排序，用二分法）；209
+## 20250603
+###
+283（快慢指针）,844(栈方式) 还需要学习 string的操作[string](https://cplusplus.com/reference/string/string/push_back/)；
+## 20250602
+
+## 20250601
+### 二分查找
+704，35，34均使用左闭右开来做了一遍c++;
+### nvidia高频题目
+    1.两数之和(学习set,unorded_map),重新认识到map查找到是key对应的数据。
+        242.有效的字母异位词
+        3.两个数组的交集
+    1046.最后一块石头的重量(优先级队列 priority_queue)
+    2571.将整数减少到零需要的最少操作数（贪心算法）
+
+
+
+
+## history
 * leetcode-3 Longest Substring Without Repeating Characters
     #### c
     https://leetcode.com/submissions/detail/398140531/

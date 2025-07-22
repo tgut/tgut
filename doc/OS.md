@@ -405,3 +405,30 @@ docker builder prune -a
 
 docker system prune -a
 ```
+
+### docker中使用gpu硬件
+
+#### docker 命令共享设备到容器内
+
+```bash
+docker run --gpus all|<设备id> -it --rm --name my_container nvidia/cuda:11
+```
+
+参数说明
+--gpus all：允许容器访问所有GPU。
+--gpus device=<id>：指定设备ID（如 device=0 表示使用第一个GPU）。
+--gpus cuda-<版本>：指定CUDA兼容版本（可选）。
+
+
+#### docker中安装
+
+```bash
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) 
+echo $distribution
+
+curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add -
+apt-get update && apt-get install -y libcudnn8 libcudnn8-dev
+apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/3bf863cc.pub
+echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64 /" > /etc/apt/sources.list.d/cuda.list
+
+```
