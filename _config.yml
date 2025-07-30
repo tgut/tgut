@@ -1,0 +1,49 @@
+# GitHub Pages配置
+title: "tgut技术学习笔记"
+description: "个人学习和开发的代码仓库，包含C++、设计模式、操作系统等技术文档"
+author: "tgut"
+
+# 主题设置
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 导航菜单
+header_pages:
+  - doc/README.md
+
+# 网站设置
+url: "https://tgut.github.io"
+baseurl: "/tgut"
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - "*.cpp"
+  - "*.c"
+  - "*.h"
+  - "*.py"
+  - .DS_Store
+  - c++/
+  - c/
+  - python/
+  - shell/
+  - tools/
+
+# 包含文件
+include:
+  - doc/
+  - pic/
+  - _pages

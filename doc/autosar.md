@@ -1,5 +1,28 @@
 # Autosar架构
 
+## AUTOSAR简介
+AUTOSAR（Automotive Open System Architecture）是一个开放的汽车系统架构标准，旨在提高汽车电子系统的可重用性、可扩展性和互操作性。它提供了一套标准化的软件架构和接口，使得不同厂商的汽车电子系统能够更好地协同工作。
+AUTOSAR的主要目标是支持汽车电子系统的模块化设计和开发，以便在不同车型和平台之间实现软件的重用。它还提供了一个统一的软件开发环境，使得汽车制造商和供应商能够更高效地进行协同开发。
+
+### AUTOSAR CP的架构分为四个主要层次：
+1. **应用层（Application Layer）**：包含汽车应用软件组件，这些组件实现了具体的功能，如动力系统控制、车身电子等。
+
+2. **运行环境层（Runtime Environment,RTE）**:提供了应用层和基础软件层之间的接口，使得应用软件可以独立于底层硬件和基础软件进行开发。RTE负责管理应用组件之间的通信和数据交换。
+
+3. **基础软件层（Basic Software Layer）**：提供了对硬件的抽象和访问，包括操作系统、通信协议、诊断服务等。它为应用层提供了必要的支持和服务。
+4. **微控制器抽象层（Microcontroller Abstraction Layer）**：提供了对微控制器硬件的抽象，使得应用软件可以独立于具体的微控制器架构进行开发。
+![AUTOSAR架构图](../pic/doc/autosar/autosar_architecture.png)
+
+更详细的文档参考[AUTOSAR架构概述](https://modelbaba.com/architecture/autosar/1193.html)
+
+### AUTOSAR AP的架构介绍
+AP（Adaptive Platform）是AUTOSAR的一个重要组成部分，主要用于支持高性能计算和复杂应用的开发。AP架构采用了分层设计，主要包括以下几个层次：
+1. **应用层（Application Layer）**：包含了高层次的应用软件组件，这些组件可以实现复杂的功能，如自动驾驶、车联网等。
+
+2. **服务层（Service Layer）**：提供了一系列通用服务，如通信、数据存储、安全等，这些服务可以被应用层的组件调用。
+3. **运行时环境层（Runtime Environment,RTE）**：类似于CP中的RTE，AP的RTE负责管理应用组件之间的通信和数据交换。
+4. **基础软件层（Basic Software Layer）**：提供了对硬件的抽象和访问，包括操作系统、通信协议等。AP的基础软件层通常采用实时操作系统（RTOS）来支持高性能计算。
+![AP架构图](../pic/doc/autosar/ap_architecture.png)
 
 
 ## SOA
