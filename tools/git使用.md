@@ -49,7 +49,12 @@ git cherry-pick commit1..commit2  # 不包括 commit1
 
 git cherry-pick commit1 commit2 commit3 # 你可以同时拣选多个提交，通过空格分隔它们的哈希值
 ```
+### 配置密码记录时间
 
+```bash #默认是记录15min，第二个命令修改为1hour
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+```
 
 以下是使用 Markdown 格式描述的 Git 标签操作步骤：
 

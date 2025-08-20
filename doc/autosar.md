@@ -22,9 +22,9 @@ AP（Adaptive Platform）是AUTOSAR的一个重要组成部分，主要用于支
 2. **服务层（Service Layer）**：提供了一系列通用服务，如通信、数据存储、安全等，这些服务可以被应用层的组件调用。
 3. **运行时环境层（Runtime Environment,RTE）**：类似于CP中的RTE，AP的RTE负责管理应用组件之间的通信和数据交换。
 4. **基础软件层（Basic Software Layer）**：提供了对硬件的抽象和访问，包括操作系统、通信协议等。AP的基础软件层通常采用实时操作系统（RTOS）来支持高性能计算。
-![AP架构图](../pic/doc/autosar/ap_architecture.png)
+![AP架构图](../pic/doc/autosar/ap_autosar.png)
 
-
+[万字长文解读AUTOSAR完整架构及AP特性](https://zhuanlan.zhihu.com/p/536367959)
 ## SOA
 
 
@@ -49,19 +49,6 @@ DoIP在传输层以下的规范遵循ISO 13400，而应用层还是遵循ISO 142
 2. [汽车电子小白如何学习SOME/IP协议？](https://www.zhihu.com/question/535650389)
 
 ## AP Autosar介绍
-
-
-ap 架构图
-
-![AP Autosar图片](../pic/doc/autosar/ap_autosar.png)
-
-1. FO
-
-2. Adaptive Autosar
-
-3. Classic Autosar
-
-## 开源的autosar 代码（todo）
 
 
 > 参考

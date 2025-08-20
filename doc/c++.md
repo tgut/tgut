@@ -532,10 +532,27 @@ gdb your_test_file
 ```
 在 GDB 中设置断点、单步执行、查看变量值等：
 ```gdb
+
+##断点调试
 (gdb) break stl_vector.h:200
 (gdb) run
 (gdb) next
 (gdb) print var_name
+(gdb) frame num #跳到对应的堆栈序号
+(gdb) delete num #删除断点,删除不会提示，建议使用“clear num”(出现提示)
+(gdb）disable num #暂时使断点失效，多个断点可以","隔开
+(gdb) continue #继续运行
+(gdb) info breakpoints #查看断点
+(gdb) rwatch num #当变量被读取时，程序暂停
+(gdb) awatch/watch num #当变量被修改时，程序暂停
+
+##数据命令
+(gdb) whatis 变量 #显示某个变量的类型
+(gdb) print 变量/表达式 #打印变量的值或者表达式的值
+(gdb) set 变量 #设置变量的值
+
+## 更多
+
 ```
 
 #### 6. 阅读文档和标准
