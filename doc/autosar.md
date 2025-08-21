@@ -1,5 +1,6 @@
 # Autosar架构
 
+
 ## AUTOSAR简介
 AUTOSAR（Automotive Open System Architecture）是一个开放的汽车系统架构标准，旨在提高汽车电子系统的可重用性、可扩展性和互操作性。它提供了一套标准化的软件架构和接口，使得不同厂商的汽车电子系统能够更好地协同工作。
 AUTOSAR的主要目标是支持汽车电子系统的模块化设计和开发，以便在不同车型和平台之间实现软件的重用。它还提供了一个统一的软件开发环境，使得汽车制造商和供应商能够更高效地进行协同开发。
@@ -49,6 +50,19 @@ DoIP在传输层以下的规范遵循ISO 13400，而应用层还是遵循ISO 142
 2. [汽车电子小白如何学习SOME/IP协议？](https://www.zhihu.com/question/535650389)
 
 ## AP Autosar介绍
+
+
+ap 架构图
+
+![AP Autosar图片](../pic/doc/autosar/ap_autosar.png)
+
+1. FO
+
+2. Adaptive Autosar
+
+3. Classic Autosar
+
+## 开源的autosar 代码（todo）
 
 
 > 参考
