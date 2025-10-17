@@ -74,5 +74,6 @@
         "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
-    "cmake.sourceDirectory": "/Users/tgut/Documents/tgut/c++/ros_interface/src"
+    "cmake.sourceDirectory": "/Users/tgut/Documents/tgut/c++/ros_interface/src",
+    "idf.pythonInstallPath": "/usr/local/bin/python"
 }

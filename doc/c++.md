@@ -883,3 +883,8 @@ int main ()
   return 0;
 }
 ```
+
+### vsomeip库介绍
+
+
+[SOME/IP 开源实现](https://blog.nsfocus.net/vsomeip-some-ip/)

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/data/tgut/Documents/tgut/c++/ros_interface/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/mnt/data/tgut/Documents/tgut/c++/ros_interface/devel}
+: ${_CATKIN_SETUP_DIR:=/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/devel}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

@@ -174,3 +174,9 @@ git rebase -i commit_id #合并commit_id之后的提交，不包含commit_id
 
 git rebase的目的相当于变更了基础base为目标分支。（git rebase -i  branch_a;那么branch_a即为目标分支，当前HEAD所处的分支相关提交会合并到branch_a）.具体解释可以参考[git rebase 用法详解与工作原理
 ](https://waynerv.com/posts/git-rebase-intro/)
+
+
+### 修改用户名
+
+git commit --amend --author='tgut <lzhchen.free@gmail.com>'
+

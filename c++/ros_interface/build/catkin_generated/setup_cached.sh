@@ -7,8 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/mnt/data/tgut/Documents/tgut/c++/ros_interface/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/mnt/data/tgut/Documents/tgut/c++/ros_interface/devel/lib:$LD_LIBRARY_PATH"
-export PWD='/mnt/data/tgut/Documents/tgut/c++/ros_interface/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/mnt/data/tgut/Documents/tgut/c++/ros_interface/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/mnt/data/tgut/Documents/tgut/c++/ros_interface/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/devel/lib:$LD_LIBRARY_PATH"
+export PWD='/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/mnt/dataTGUT_/DocumentsTGUT_/c++/ros_interface/src:$ROS_PACKAGE_PATH"
