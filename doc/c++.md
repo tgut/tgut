@@ -45,7 +45,7 @@ std::unordered_set底层实现为哈希表，std::set 和std::multiset 的底层
 ### static_cast dynamic_cast, const_cast,reinterpreter_cast
 
 
-1. static_cast可以替代c语言中的强制转换,做上行转换时安全的，是静态类型转换，在编译时做安全检查。
+1. static_cast可以替代c语言中的强制转换,做上行转换时安全的，是静态类型转换，在编译时做安全检查。(upcast，上行转换是指子类指针或引用转换为父类指针或引用的过程)
 
 2. dynamic_cast用于父类到子类的转换（下行转换），是动态类型转换，在运行时做安全检查。
 

@@ -180,3 +180,69 @@ git rebase的目的相当于变更了基础base为目标分支。（git rebase -
 
 git commit --amend --author='tgut <lzhchen.free@gmail.com>'
 
+### 批量修改历史提交的作者与邮箱（重写所有 commit）
+
+注意：此操作会重写历史（更改 commit 哈希），执行后需强制推送，协作者需重新同步。建议先备份或在克隆副本中操作。
+
+推荐方式：使用 `git filter-repo`（替代旧的 `filter-branch`）。
+
+1. 安装（macOS）：
+```bash
+brew install git-filter-repo  # 若未安装
+```
+2. 在仓库根目录执行（示例：将旧邮箱 old@example.com 改为 new@example.com）：
+```bash
+git filter-repo --force --commit-callback '
+import sys
+OLD = b"old@example.com"
+NEW_EMAIL = b"new@example.com"
+NEW_NAME = b"New Name"
+def rewrite(commit):
+   if commit.author_email == OLD:
+      commit.author_email = NEW_EMAIL
+      commit.author_name = NEW_NAME
+   if commit.committer_email == OLD:
+      commit.committer_email = NEW_EMAIL
+      commit.committer_name = NEW_NAME
+'
+```
+3. 验证：
+```bash
+git log --pretty=format:'%h %an <%ae>' -n 5
+```
+4. 强制推送：
+```bash
+git push --force --tags origin main  # 根据实际分支替换 main
+```
+
+旧方法（不推荐，大仓库慢）：`git filter-branch`
+```bash
+git filter-branch --env-filter '
+OLD_EMAIL="old@example.com"
+CORRECT_NAME="New Name"
+CORRECT_EMAIL="new@example.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]; then
+   export GIT_COMMITTER_NAME="$CORRECT_NAME"
+   export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]; then
+   export GIT_AUTHOR_NAME="$CORRECT_NAME"
+   export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
+然后同样强制推送。
+
+协作者后续操作：
+```bash
+git fetch origin
+git reset --hard origin/main   # 或重新克隆
+```
+
+仅修改以后提交而不重写历史：更新全局配置即可：
+```bash
+git config --global user.name "New Name"
+git config --global user.email "new@example.com"
+```
+
+

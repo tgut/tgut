@@ -51,3 +51,35 @@ sudo diskutil eraseVolume free free /dev/disk0s6
 sudo diskutil apfs resizeContainer /dev/disk0s2 0  # 0 表示使用所有相邻空闲空间
 
 ```
+
+
+### macOS 下 Docker 无法使用的解决方法概括
+
+macOS 下 Docker 无法使用通常是 Docker Desktop 未启动或配置问题。以下是常见原因及解决方法：
+
+1. **Docker Desktop 未启动**：
+   - 打开 Applications 中的 Docker Desktop，或运行 `open /Applications/Docker.app`。
+   - 等待图标变绿，表示 daemon 运行。
+
+2. **权限问题**：
+   - 确保用户在 docker 组（macOS 默认处理）。
+   - 如果提示权限错误，重启终端或系统。
+
+3. **版本兼容性**：
+   - 确保 macOS 版本 ≥ 10.15，Docker Desktop ≥ 3.6.0（支持 Apple Silicon）。
+   - 更新 Docker Desktop 到最新版本。
+
+4. **网络或代理问题**：
+   - 检查代理设置：`docker info` 查看代理配置。
+   - 取消代理：`docker config --global --unset proxy`。
+
+5. **磁盘空间不足**：
+   - 检查磁盘空间：`df -h`。
+   - 清理 Docker：`docker system prune -af --volumes`。
+
+6. **其他**：
+   - 重启 Docker Desktop 或系统。
+   - 查看日志：在 Docker Desktop > Troubleshoot > Logs。
+   - 如果是命令行安装，确保 Homebrew 版本正确。
+
+如果问题持续，提供具体错误信息以便精准修复。
