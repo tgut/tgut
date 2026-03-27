@@ -30,6 +30,11 @@ Launch文件使得你可以方便地启动多个节点和配置环境参数。
 ### 6. RViz and Gazebo
 RViz是一个3D可视化工具，可以帮助你在没有物理机器人的情况下查看传感器数据和机器人状态。Gazebo是一个强大的机器人仿真器，允许你在精确和高度可配置的环境中测试你的机器人代码。
 
+扩展下：
+    MuJoCo是Multi-Joint dynamics with Contact的缩写。 它是一个通用物理引擎，旨在促进机器人，生物力学，图形和动画，机器学习以及其他需要快速准确模拟与环境交互的铰接结构的领域的研究和开发
+[探索高效物理引擎：MuJoCo](https://blog.csdn.net/gitblog_00095/article/details/138599615)
+
+
 ### 7. rosbag
 Rosbag是一个命令行工具，用于记录和播放ROS消息数据。
 
