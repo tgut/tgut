@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时地球可视化系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #0a0a2a, #1a1a3a);
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 左侧控制面板 */
+        .control-panel {
+            width: 350px;
+            min-width: 350px;
+            background: rgba(10, 15, 30, 0.8);
+            padding: 25px;
+            border-right: 1px solid rgba(100, 150, 255, 0.2);
+            overflow-y: auto;
+            backdrop-filter: blur(10px);
+            box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        /* 右侧地球容器 */
+        .earth-container {
+            flex: 1;
+            position: relative;
+        }
+
+        #earth-canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            color: #6bb5ff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(107, 181, 255, 0.5);
+        }
+
+        h2 {
+            color: #8cd9ff;
+            margin: 25px 0 15px 0;
+            font-size: 1.3rem;
+            border-bottom: 1px solid rgba(140, 217, 255, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .info-box {
+            background: rgba(20, 30, 60, 0.5);
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 4px solid #6bb5ff;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-label {
+            color: #aac8ff;
+        }
+
+        .info-value {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .sun-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .sun-icon {
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle, #ffcc00, #ff6600);
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0 0 15px #ff9900;
+            flex-shrink: 0;
+        }
+
+        .time-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            background: rgba(30, 60, 120, 0.7);
+            color: #b3d9ff;
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            flex: 1;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: rgba(50, 100, 200, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .btn.active {
+            background: rgba(107, 181, 255, 0.8);
+            color: white;
+            box-shadow: 0 0 10px rgba(107, 181, 255, 0.5);
+        }
+
+        .slider-container {
+            margin: 20px 0;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            -webkit-appearance: none;
+            background: rgba(30, 60, 120, 0.7);
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #6bb5ff;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(107, 181, 255, 0.8);
+        }
+
+        .clicks-list {
+            max-height: 200px;
+            overflow-y: auto;
+            background: rgba(20, 30, 60, 0.3);
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .click-item {
+            background: rgba(30, 60, 120, 0.3);
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-left: 3px solid #6bb5ff;
+            font-size: 0.85rem;
+        }
+
+        .click-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .click-time {
+            color: #aac8ff;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .stat-box {
+            background: rgba(20, 30, 60, 0.5);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6bb5ff;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #aac8ff;
+            margin-top: 5px;
+        }
+
+        .hint {
+            background: rgba(30, 60, 120, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #b3d9ff;
+            border: 1px solid rgba(100, 150, 255, 0.2);
+        }
+
+        /* 加载指示器 */
+        #loading-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 10, 42, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            font-size: 1.2rem;
+            color: #6bb5ff;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .control-panel {
+                width: 100%;
+                min-width: unset;
+                height: 40vh;
+                border-right: none;
+                border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+            }
+
+            .earth-container {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧控制面板 -->
+        <div class="control-panel">
+            <h1>&#x1F30D; 实时地球可视化系统</h1>
+
+            <div class="info-box">
+                <h2>地球状态</h2>
+                <div class="info-item">
+                    <span class="info-label">当前时间：</span>
+                    <span class="info-value" id="current-time">00:00:00</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">太阳位置：</span>
+                    <span class="info-value" id="sun-position">计算中...</span>
+                </div>
+                <div class="sun-info">
+                    <div class="sun-icon"></div>
+                    <span>光照区域：白天/黑夜分界线根据太阳位置实时计算</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>地球控制</h2>
+                <div class="time-controls">
+                    <div class="btn active" id="btn-realtime">实时模式</div>
+                    <div class="btn" id="btn-pause">暂停</div>
+                    <div class="btn" id="btn-reset">重置视角</div>
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <span>地球自转速度</span>
+                        <span id="rotation-speed">1.0x</span>
+                    </div>
+                    <input type="range" min="0" max="200" value="100" class="slider" id="rotation-slider">
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <span>太阳光强度</span>
+                        <span id="light-intensity">100%</span>
+                    </div>
+                    <input type="range" min="10" max="200" value="100" class="slider" id="light-slider">
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>网站点击模拟</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-value" id="total-clicks">0</div>
+                        <div class="stat-label">总点击次数</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="active-countries">0</div>
+                        <div class="stat-label">活跃国家/地区</div>
+                    </div>
+                </div>
+
+                <div class="time-controls">
+                    <div class="btn" id="btn-add-click">模拟点击</div>
+                    <div class="btn" id="btn-auto-click">自动模拟</div>
+                    <div class="btn" id="btn-clear-clicks">清空记录</div>
+                </div>
+
+                <h2>最近点击</h2>
+                <div class="clicks-list" id="clicks-list">
+                    <div class="click-item">点击地球任意位置模拟网站访问</div>
+                </div>
+            </div>
+
+            <div class="hint">
+                <strong>操作提示：</strong><br>
+                1. 鼠标拖拽可旋转地球<br>
+                2. 鼠标滚轮可缩放地球<br>
+                3. 点击地球任意位置模拟网站访问<br>
+                4. 点击"模拟点击"按钮随机生成访问记录
+            </div>
+        </div>
+
+        <!-- 右侧地球容器 -->
+        <div class="earth-container" id="earth-container">
+            <div id="loading-overlay">加载中...</div>
+            <canvas id="earth-canvas"></canvas>
+        </div>
+    </div>
+
+    <!-- 使用 importmap 加载 ES module 版 Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // 全局变量
+        let scene, camera, renderer, earth, clouds, sunLight, ambientLight;
+        let controls, earthRotationSpeed = 0.001;
+        let autoRotate = true;
+        let clickPoints = [];
+        let clickCount = 0;
+        let activeCountries = new Set();
+        let autoClickInterval = null;
+        let isAutoClickActive = false;
+
+        // 主要国家/城市坐标数据
+        const locations = {
+            "北京": { lat: 39.9042, lon: 116.4074, country: "中国" },
+            "上海": { lat: 31.2304, lon: 121.4737, country: "中国" },
+            "纽约": { lat: 40.7128, lon: -74.0060, country: "美国" },
+            "伦敦": { lat: 51.5074, lon: -0.1278, country: "英国" },
+            "东京": { lat: 35.6762, lon: 139.6503, country: "日本" },
+            "悉尼": { lat: -33.8688, lon: 151.2093, country: "澳大利亚" },
+            "莫斯科": { lat: 55.7558, lon: 37.6173, country: "俄罗斯" },
+            "开罗": { lat: 30.0444, lon: 31.2357, country: "埃及" },
+            "里约热内卢": { lat: -22.9068, lon: -43.1729, country: "巴西" },
+            "新德里": { lat: 28.6139, lon: 77.2090, country: "印度" }
+        };
+
+        // ---- 通过 Image + crossOrigin 加载真实卫星纹理 ----
+        // 该方式绕过 TextureLoader 的 file:// 限制，
+        // GitHub Pages 返回 Access-Control-Allow-Origin: * 所以即使 origin=null 也可用
+        function loadImageTexture(url) {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.crossOrigin = 'anonymous';
+                img.onload = () => {
+                    const tex = new THREE.Texture(img);
+                    tex.needsUpdate = true;
+                    tex.colorSpace = THREE.SRGBColorSpace;
+                    resolve(tex);
+                };
+                img.onerror = (e) => reject(e);
+                img.src = url;
+            });
+        }
+
+        // 纹理 URL（Three.js 官方示例资源，托管在 GitHub Pages，CORS 友好）
+        const TEX_URLS = {
+            earth:   'https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg',
+            bump:    'https://threejs.org/examples/textures/planets/earth_normal_2048.jpg',
+            spec:    'https://threejs.org/examples/textures/planets/earth_specular_2048.jpg',
+            clouds:  'https://threejs.org/examples/textures/planets/earth_clouds_1024.png',
+        };
+
+        // 预加载所有纹理，返回 {earth, bump, spec, clouds} 或部分失败时为 null
+        async function loadAllTextures() {
+            const results = {};
+            const keys = Object.keys(TEX_URLS);
+            const promises = keys.map(async (key) => {
+                try {
+                    results[key] = await loadImageTexture(TEX_URLS[key]);
+                } catch {
+                    console.warn(`纹理加载失败: ${key}，将使用程序化纹理`);
+                    results[key] = null;
+                }
+            });
+            await Promise.all(promises);
+            return results;
+        }
+
+        // ---- 程序化纹理作为兜底 ----
+        function generateFallbackEarthTexture() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 2048;
+            canvas.height = 1024;
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#1a4a7a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            function lonLatToCanvas(lon, lat) {
+                return [((lon + 180) / 360) * canvas.width, ((90 - lat) / 180) * canvas.height];
+            }
+            function drawLandmass(coords, color) {
+                ctx.fillStyle = color || '#2d8a4e';
+                ctx.beginPath();
+                const [sx, sy] = lonLatToCanvas(coords[0][0], coords[0][1]);
+                ctx.moveTo(sx, sy);
+                for (let i = 1; i < coords.length; i++) {
+                    const [x, y] = lonLatToCanvas(coords[i][0], coords[i][1]);
+                    ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.fill();
+            }
+
+            drawLandmass([[-130,55],[-125,60],[-115,62],[-100,65],[-90,70],[-80,68],[-65,60],[-55,50],[-65,45],[-70,42],[-75,35],[-82,30],[-90,28],[-97,26],[-105,22],[-100,20],[-90,18],[-85,15],[-82,10],[-80,8],[-90,15],[-97,18],[-105,20],[-110,24],[-117,32],[-120,35],[-123,40],[-125,45],[-130,50],[-130,55]], '#2a7a42');
+            drawLandmass([[-80,10],[-75,12],[-65,10],[-60,5],[-50,0],[-45,-2],[-38,-5],[-35,-10],[-38,-15],[-42,-22],[-48,-28],[-55,-33],[-58,-38],[-65,-42],[-68,-48],[-72,-52],[-75,-48],[-72,-40],[-70,-30],[-70,-18],[-75,-10],[-77,-2],[-80,5],[-80,10]], '#2d8a4e');
+            drawLandmass([[-10,36],[-5,38],[0,43],[-2,48],[2,51],[5,53],[10,55],[15,55],[20,58],[28,60],[30,65],[25,70],[15,70],[10,65],[5,60],[0,52],[-5,48],[-10,44],[-10,36]], '#3a8a3a');
+            drawLandmass([[-17,15],[-15,20],[-5,35],[10,37],[12,33],[25,32],[32,30],[35,28],[40,12],[42,5],[50,-2],[45,-10],[40,-15],[38,-22],[35,-30],[30,-34],[25,-33],[20,-28],[15,-18],[12,-5],[10,5],[5,5],[0,5],[-5,5],[-10,8],[-17,15]], '#4a9a3a');
+            drawLandmass([[30,65],[40,68],[60,70],[80,72],[100,70],[120,65],[135,55],[140,50],[145,45],[140,42],[130,38],[125,35],[122,30],[120,22],[110,15],[105,10],[100,5],[95,10],[90,22],[85,28],[75,30],[68,25],[62,25],[58,22],[48,30],[35,32],[30,38],[28,42],[30,50],[30,65]], '#358a3e');
+            drawLandmass([[115,-15],[120,-12],[130,-12],[140,-15],[150,-22],[153,-28],[150,-35],[145,-38],[140,-38],[135,-35],[130,-33],[120,-30],[115,-25],[113,-20],[115,-15]], '#5a9a42');
+            drawLandmass([[130,31],[132,34],[135,35],[137,37],[140,40],[142,43],[145,45],[144,43],[141,39],[139,36],[136,34],[133,32],[130,31]], '#358a3e');
+            drawLandmass([[-55,60],[-48,62],[-42,65],[-35,70],[-20,75],[-18,78],[-25,80],[-35,82],[-45,82],[-55,78],[-58,72],[-55,65],[-55,60]], '#dde8d0');
+
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            const data = imageData.data;
+            for (let i = 0; i < data.length; i += 4) {
+                const noise = (Math.random() - 0.5) * 15;
+                data[i] = Math.max(0, Math.min(255, data[i] + noise));
+                data[i+1] = Math.max(0, Math.min(255, data[i+1] + noise));
+                data[i+2] = Math.max(0, Math.min(255, data[i+2] + noise));
+            }
+            ctx.putImageData(imageData, 0, 0);
+            const tex = new THREE.CanvasTexture(canvas);
+            tex.colorSpace = THREE.SRGBColorSpace;
+            return tex;
+        }
+
+        function generateFallbackCloudTexture() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 1024;
+            canvas.height = 512;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < 300; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const r = Math.random() * 60 + 10;
+                const o = Math.random() * 0.3 + 0.1;
+                const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+                g.addColorStop(0, `rgba(255,255,255,${o})`);
+                g.addColorStop(1, 'rgba(255,255,255,0)');
+                ctx.fillStyle = g;
+                ctx.fillRect(x - r, y - r, r * 2, r * 2);
+            }
+            return new THREE.CanvasTexture(canvas);
+        }
+
+        // ---- 获取容器尺寸 ----
+        function getContainerSize() {
+            const container = document.getElementById('earth-container');
+            return { width: container.clientWidth, height: container.clientHeight };
+        }
+
+        // 预加载的纹理缓存
+        let loadedTextures = {};
+
+        // 初始化Three.js场景（异步，等待纹理加载）
+        async function init() {
+            const loadingOverlay = document.getElementById('loading-overlay');
+            loadingOverlay.textContent = '正在加载卫星纹理...';
+
+            // 先异步加载真实卫星纹理
+            loadedTextures = await loadAllTextures();
+
+            const size = getContainerSize();
+
+            // 创建场景
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x0a0a2a);
+
+            // 创建相机
+            camera = new THREE.PerspectiveCamera(60, size.width / size.height, 0.1, 1000);
+            camera.position.z = 5;
+
+            // 创建渲染器
+            renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById('earth-canvas'),
+                antialias: true
+            });
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(size.width, size.height);
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+            // 添加轨道控制器
+            controls = new OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.minDistance = 3;
+            controls.maxDistance = 20;
+            controls.maxPolarAngle = Math.PI;
+
+            // 添加环境光（模拟大气散射，让暗面也不至于全黑）
+            ambientLight = new THREE.AmbientLight(0x222244, 0.15);
+            scene.add(ambientLight);
+
+            // 添加太阳光（平行光）
+            sunLight = new THREE.DirectionalLight(0xffffff, 2.0);
+            sunLight.castShadow = true;
+            sunLight.shadow.mapSize.width = 2048;
+            sunLight.shadow.mapSize.height = 2048;
+            scene.add(sunLight);
+
+            // 创建地球
+            createEarth();
+
+            // 创建云层
+            createClouds();
+
+            // 添加星星背景
+            createStars();
+
+            // 更新太阳位置
+            updateSunPosition();
+
+            // 添加窗口大小调整监听
+            window.addEventListener('resize', onWindowResize);
+
+            // 添加地球点击事件
+            renderer.domElement.addEventListener('click', onEarthClick, false);
+
+            // 更新当前时间
+            updateCurrentTime();
+
+            // 隐藏加载
+            loadingOverlay.style.display = 'none';
+
+            // 开始动画循环
+            animate();
+
+            // 添加初始点击模拟
+            simulateInitialClicks();
+
+            // 控制台输出纹理加载状态
+            const loaded = Object.entries(loadedTextures).filter(([,v]) => v !== null).map(([k]) => k);
+            const failed = Object.entries(loadedTextures).filter(([,v]) => v === null).map(([k]) => k);
+            if (loaded.length > 0) console.log('卫星纹理加载成功:', loaded.join(', '));
+            if (failed.length > 0) console.log('使用程序化兜底纹理:', failed.join(', '));
+        }
+
+        // 创建地球（优先真实纹理，CORS失败时用程序化兜底）
+        function createEarth() {
+            const geometry = new THREE.SphereGeometry(2, 64, 64);
+
+            const earthTexture = loadedTextures.earth || generateFallbackEarthTexture();
+            const earthBump = loadedTextures.bump || null;
+            const earthSpec = loadedTextures.spec || null;
+
+            const matOpts = {
+                map: earthTexture,
+                specular: new THREE.Color(0x333333),
+                shininess: 5,
+            };
+            if (earthBump) {
+                matOpts.bumpMap = earthBump;
+                matOpts.bumpScale = 0.05;
+            }
+            if (earthSpec) {
+                matOpts.specularMap = earthSpec;
+            }
+
+            const material = new THREE.MeshPhongMaterial(matOpts);
+
+            earth = new THREE.Mesh(geometry, material);
+            // rotation.y 由 updateSunPosition() 根据实时 UTC 计算设置
+            scene.add(earth);
+
+            const clickPointsGroup = new THREE.Group();
+            earth.add(clickPointsGroup);
+            earth.clickPointsGroup = clickPointsGroup;
+        }
+
+        // 创建云层
+        function createClouds() {
+            const geometry = new THREE.SphereGeometry(2.05, 64, 64);
+
+            const cloudTexture = loadedTextures.clouds || generateFallbackCloudTexture();
+
+            const material = new THREE.MeshPhongMaterial({
+                map: cloudTexture,
+                transparent: true,
+                opacity: 0.4
+            });
+
+            clouds = new THREE.Mesh(geometry, material);
+            scene.add(clouds);
+        }
+
+        // 创建星星背景
+        function createStars() {
+            const starGeometry = new THREE.BufferGeometry();
+            const starCount = 5000;
+            const positions = new Float32Array(starCount * 3);
+
+            for (let i = 0; i < starCount * 3; i += 3) {
+                positions[i] = (Math.random() - 0.5) * 2000;
+                positions[i + 1] = (Math.random() - 0.5) * 2000;
+                positions[i + 2] = (Math.random() - 0.5) * 2000;
+            }
+
+            starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+            const starMaterial = new THREE.PointsMaterial({
+                color: 0xffffff,
+                size: 0.7,
+                transparent: true
+            });
+
+            const stars = new THREE.Points(starGeometry, starMaterial);
+            scene.add(stars);
+        }
+
+        // 根据当前时间更新太阳位置
+        // 太阳固定在场景中，地球自转来表现昼夜
+        // 关键：UTC 12:00 时经度 0°（本初子午线）正对太阳
+        // 所以 UTC 07:30 ≈ 北京时间 15:30，中国应处于日照区
+        function updateSunPosition() {
+            const now = new Date();
+            const hours = now.getUTCHours();
+            const minutes = now.getUTCMinutes();
+            const seconds = now.getUTCSeconds();
+
+            // 太阳赤纬角（简化计算，按一年中的日期估算）
+            const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+            const declination = 23.44 * Math.sin((2 * Math.PI / 365) * (dayOfYear - 81)) * (Math.PI / 180);
+
+            // 太阳固定在 +X 方向（即经度 0° 方向）
+            const sunDistance = 10;
+            sunLight.position.set(
+                sunDistance * Math.cos(declination),
+                sunDistance * Math.sin(declination),
+                0
+            );
+
+            // 地球自转：UTC 12:00 时经度 0°正对 +X（太阳方向）
+            // 时角 = (UTC小时 - 12) * 15°/小时
+            const utcDecimalHours = hours + minutes / 60 + seconds / 3600;
+            // 地球 rotation.y：当 y=0 时纹理的经度0°面向+X
+            // 需要旋转使"当前太阳直射经度"对准+X
+            // 太阳直射经度 = (12 - utcHours) * 15°
+            // 地球需要转 earthRotY 使得该经度面向+X
+            // Three.js 球体纹理：rotation.y=0 时经度 0°朝向 +X（但初始设了 PI）
+            // 去掉额外的 PI 偏移，直接用时角计算
+            const hourAngle = (utcDecimalHours - 12) * (Math.PI / 12);  // 弧度
+            // Three.js SphereGeometry: rotation.y=0 时 lon=0° 朝+X
+            // 正向 rotation.y 将 +X 转向 +Z（即 lon=0° 转向 90°W 方向）
+            // 所以要让 sub-solar 经度对准太阳(+X)，需要 rotation.y = hourAngle（不取反）
+            earth.rotation.y = hourAngle;
+
+            // 云层跟随，稍微偏移模拟风
+            clouds.rotation.y = earth.rotation.y + 0.02;
+
+            const sunPositionElement = document.getElementById('sun-position');
+            const formattedTime = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ' UTC';
+            // 计算太阳直射经度，方便调试
+            const subSolarLon = ((12 - utcDecimalHours) * 15 + 360) % 360;
+            const displayLon = subSolarLon > 180 ? subSolarLon - 360 : subSolarLon;
+            sunPositionElement.textContent = `${formattedTime} (直射经度 ${displayLon.toFixed(1)}°)`;
+        }
+
+        // 在地球上添加点击标记
+        function addClickPoint(lat, lon, city, country) {
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = (lon + 180) * (Math.PI / 180);
+
+            const radius = 2.01;
+            const x = -(radius * Math.sin(phi) * Math.cos(theta));
+            const y = radius * Math.cos(phi);
+            const z = radius * Math.sin(phi) * Math.sin(theta);
+
+            const markerGeometry = new THREE.SphereGeometry(0.03, 8, 8);
+            const markerMaterial = new THREE.MeshBasicMaterial({
+                color: 0xff4444,
+                transparent: true,
+                opacity: 0.9
+            });
+
+            const marker = new THREE.Mesh(markerGeometry, markerMaterial);
+            marker.position.set(x, y, z);
+            marker.lookAt(0, 0, 0);
+
+            earth.clickPointsGroup.add(marker);
+
+            const clickInfo = {
+                id: clickCount,
+                lat: lat,
+                lon: lon,
+                city: city,
+                country: country,
+                time: new Date().toLocaleTimeString(),
+                marker: marker
+            };
+
+            clickPoints.push(clickInfo);
+            activeCountries.add(country);
+
+            clickCount++;
+            updateStats();
+            addClickRecord(clickInfo);
+            createPulseEffect(x, y, z);
+
+            return clickInfo;
+        }
+
+        // 创建脉冲动画效果
+        function createPulseEffect(x, y, z) {
+            const pulseGeometry = new THREE.SphereGeometry(0.05, 16, 16);
+            const pulseMaterial = new THREE.MeshBasicMaterial({
+                color: 0xff4444,
+                transparent: true,
+                opacity: 0.7
+            });
+
+            const pulseSphere = new THREE.Mesh(pulseGeometry, pulseMaterial);
+            pulseSphere.position.set(x, y, z);
+            scene.add(pulseSphere);
+
+            let scale = 1;
+            const pulseAnimation = () => {
+                scale += 0.1;
+                pulseSphere.scale.set(scale, scale, scale);
+                pulseMaterial.opacity -= 0.02;
+
+                if (pulseMaterial.opacity > 0) {
+                    requestAnimationFrame(pulseAnimation);
+                } else {
+                    scene.remove(pulseSphere);
+                    pulseSphere.geometry.dispose();
+                    pulseMaterial.dispose();
+                }
+            };
+
+            pulseAnimation();
+        }
+
+        // 在控制面板添加点击记录
+        function addClickRecord(clickInfo) {
+            const clicksList = document.getElementById('clicks-list');
+            const clickElement = document.createElement('div');
+            clickElement.className = 'click-item';
+            clickElement.innerHTML = `
+                <strong>${clickInfo.city}</strong>, ${clickInfo.country}<br>
+                <span class="click-time">${clickInfo.time} | 纬度: ${clickInfo.lat.toFixed(2)}&deg;, 经度: ${clickInfo.lon.toFixed(2)}&deg;</span>
+            `;
+
+            clicksList.insertBefore(clickElement, clicksList.firstChild);
+
+            if (clicksList.children.length > 10) {
+                clicksList.removeChild(clicksList.lastChild);
+            }
+        }
+
+        // 更新统计数据
+        function updateStats() {
+            document.getElementById('total-clicks').textContent = clickCount;
+            document.getElementById('active-countries').textContent = activeCountries.size;
+        }
+
+        // 地球点击事件处理
+        function onEarthClick(event) {
+            const rect = renderer.domElement.getBoundingClientRect();
+            const mouse = new THREE.Vector2();
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+            const raycaster = new THREE.Raycaster();
+            raycaster.setFromCamera(mouse, camera);
+
+            const intersects = raycaster.intersectObject(earth);
+
+            if (intersects.length > 0) {
+                const point = intersects[0].point;
+
+                const lat = 90 - (Math.acos(point.y / 2) * 180 / Math.PI);
+                const lon = ((Math.atan2(point.z, point.x) * 180 / Math.PI) + 180) % 360 - 180;
+
+                const cityNames = Object.keys(locations);
+                const randomCity = cityNames[Math.floor(Math.random() * cityNames.length)];
+                const location = locations[randomCity];
+
+                addClickPoint(lat, lon, randomCity, location.country);
+            }
+        }
+
+        // 模拟初始点击
+        function simulateInitialClicks() {
+            const initialCities = ["北京", "纽约", "伦敦", "东京", "悉尼"];
+
+            initialCities.forEach(city => {
+                const location = locations[city];
+                addClickPoint(location.lat, location.lon, city, location.country);
+            });
+        }
+
+        // 模拟随机点击
+        function simulateRandomClick() {
+            const cityNames = Object.keys(locations);
+            const randomCity = cityNames[Math.floor(Math.random() * cityNames.length)];
+            const location = locations[randomCity];
+
+            const lat = location.lat + (Math.random() - 0.5) * 10;
+            const lon = location.lon + (Math.random() - 0.5) * 20;
+
+            addClickPoint(lat, lon, randomCity, location.country);
+        }
+
+        // 更新当前时间
+        function updateCurrentTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('current-time').textContent = timeString;
+        }
+
+        // 窗口大小调整处理
+        function onWindowResize() {
+            const size = getContainerSize();
+            camera.aspect = size.width / size.height;
+            camera.updateProjectionMatrix();
+            renderer.setSize(size.width, size.height);
+        }
+
+        // 动画循环
+        function animate() {
+            requestAnimationFrame(animate);
+
+            if (autoRotate) {
+                // 实时模式：updateSunPosition 按 UTC 设置绝对角度
+                // 这里高频调用以保持平滑
+                updateSunPosition();
+            } else {
+                // 手动/暂停模式：用户可用滑块控制速度
+                earth.rotation.y += earthRotationSpeed;
+                clouds.rotation.y += earthRotationSpeed * 0.9;
+            }
+
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        // 初始化UI事件
+        function initUIEvents() {
+            const rotationSlider = document.getElementById('rotation-slider');
+            const rotationSpeedValue = document.getElementById('rotation-speed');
+
+            rotationSlider.addEventListener('input', function() {
+                const value = this.value;
+                earthRotationSpeed = (value / 100) * 0.002;
+                rotationSpeedValue.textContent = (value / 100).toFixed(1) + 'x';
+            });
+
+            const lightSlider = document.getElementById('light-slider');
+            const lightIntensityValue = document.getElementById('light-intensity');
+
+            lightSlider.addEventListener('input', function() {
+                const value = this.value;
+                const ratio = value / 100;
+                // 平行光：基准 2.0，范围 0.2 ~ 4.0
+                sunLight.intensity = 2.0 * ratio;
+                // 环境光跟随变化，范围 0.03 ~ 0.3
+                ambientLight.intensity = 0.15 * ratio;
+                lightIntensityValue.textContent = value + '%';
+            });
+
+            document.getElementById('btn-realtime').addEventListener('click', function() {
+                autoRotate = true;
+                this.classList.add('active');
+                document.getElementById('btn-pause').classList.remove('active');
+                updateSunPosition();
+            });
+
+            document.getElementById('btn-pause').addEventListener('click', function() {
+                autoRotate = false;
+                this.classList.add('active');
+                document.getElementById('btn-realtime').classList.remove('active');
+            });
+
+            document.getElementById('btn-reset').addEventListener('click', function() {
+                controls.reset();
+                camera.position.z = 5;
+            });
+
+            document.getElementById('btn-add-click').addEventListener('click', simulateRandomClick);
+
+            document.getElementById('btn-auto-click').addEventListener('click', function() {
+                isAutoClickActive = !isAutoClickActive;
+
+                if (isAutoClickActive) {
+                    this.classList.add('active');
+                    this.textContent = '停止自动';
+                    autoClickInterval = setInterval(simulateRandomClick, 3000);
+                } else {
+                    this.classList.remove('active');
+                    this.textContent = '自动模拟';
+                    clearInterval(autoClickInterval);
+                }
+            });
+
+            document.getElementById('btn-clear-clicks').addEventListener('click', function() {
+                while (earth.clickPointsGroup.children.length > 0) {
+                    const child = earth.clickPointsGroup.children[0];
+                    child.geometry.dispose();
+                    child.material.dispose();
+                    earth.clickPointsGroup.remove(child);
+                }
+
+                clickPoints = [];
+                clickCount = 0;
+                activeCountries.clear();
+
+                updateStats();
+
+                const clicksList = document.getElementById('clicks-list');
+                clicksList.innerHTML = '<div class="click-item">点击地球任意位置模拟网站访问</div>';
+            });
+        }
+
+        // 页面加载完成后初始化
+        // init 是 async，等纹理加载完再绑定 UI 和定时器
+        init().then(() => {
+            initUIEvents();
+            setInterval(updateCurrentTime, 1000);
+            // updateSunPosition 在 animate() 中每帧调用（实时模式下）
+            setInterval(() => {
+                if (Math.random() > 0.5) {
+                    simulateRandomClick();
+                }
+            }, 300000);
+        });
+    </script>
+</body>
+</html>

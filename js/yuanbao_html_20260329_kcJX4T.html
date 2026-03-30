@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB颜色混合实验室</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px;
+            transition: background 0.5s ease;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .lab-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .color-controls {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(25, 25, 40, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .color-preview {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(25, 25, 40, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .slider-container {
+            margin-bottom: 30px;
+        }
+        
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #f0f0f0;
+            font-weight: 500;
+        }
+        
+        .color-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .color-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+        
+        .red-dot {
+            background-color: #ff4757;
+        }
+        
+        .green-dot {
+            background-color: #2ed573;
+        }
+        
+        .blue-dot {
+            background-color: #1e90ff;
+        }
+        
+        .slider-value {
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .slider {
+            width: 100%;
+            height: 20px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            outline: none;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .red-slider::-webkit-slider-thumb {
+            background: #ff4757;
+        }
+        
+        .red-slider {
+            background: linear-gradient(to right, #000, #ff4757);
+        }
+        
+        .green-slider::-webkit-slider-thumb {
+            background: #2ed573;
+        }
+        
+        .green-slider {
+            background: linear-gradient(to right, #000, #2ed573);
+        }
+        
+        .blue-slider::-webkit-slider-thumb {
+            background: #1e90ff;
+        }
+        
+        .blue-slider {
+            background: linear-gradient(to right, #000, #1e90ff);
+        }
+        
+        .color-display {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .color-display:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .hex-label {
+            color: #aaa;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .hex-code {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .copy-btn {
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #4ecdc4, #45b7d1);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .copy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+        
+        .copy-btn.copied {
+            background: linear-gradient(90deg, #2ed573, #1e90ff);
+        }
+        
+        .values-display {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .rgb-value {
+            text-align: center;
+            color: #f0f0f0;
+            padding: 0 15px;
+        }
+        
+        .rgb-value .label {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+        
+        .rgb-value .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .red-value {
+            color: #ff4757;
+        }
+        
+        .green-value {
+            color: #2ed573;
+        }
+        
+        .blue-value {
+            color: #1e90ff;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #777;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .instructions {
+            color: #aaa;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .lab-container {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .color-controls, .color-preview {
+                min-width: 100%;
+            }
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-flask"></i> RGB颜色混合实验室</h1>
+            <p class="subtitle">拖动下方的RGB滑块来混合颜色，实时查看合成效果和HEX颜色代码。点击复制按钮可复制当前颜色的HEX值。</p>
+        </header>
+        
+        <div class="lab-container">
+            <div class="color-controls">
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <div class="color-name">
+                            <div class="color-dot red-dot"></div>
+                            <span>红色 (R)</span>
+                        </div>
+                        <span class="slider-value" id="red-value">127</span>
+                    </div>
+                    <input type="range" min="0" max="255" value="127" class="slider red-slider" id="red-slider">
+                </div>
+                
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <div class="color-name">
+                            <div class="color-dot green-dot"></div>
+                            <span>绿色 (G)</span>
+                        </div>
+                        <span class="slider-value" id="green-value">127</span>
+                    </div>
+                    <input type="range" min="0" max="255" value="127" class="slider green-slider" id="green-slider">
+                </div>
+                
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <div class="color-name">
+                            <div class="color-dot blue-dot"></div>
+                            <span>蓝色 (B)</span>
+                        </div>
+                        <span class="slider-value" id="blue-value">127</span>
+                    </div>
+                    <input type="range" min="0" max="255" value="127" class="slider blue-slider" id="blue-slider">
+                </div>
+                
+                <div class="values-display">
+                    <div class="rgb-value">
+                        <div class="label">红色值</div>
+                        <div class="value red-value" id="red-num">127</div>
+                    </div>
+                    <div class="rgb-value">
+                        <div class="label">绿色值</div>
+                        <div class="value green-value" id="green-num">127</div>
+                    </div>
+                    <div class="rgb-value">
+                        <div class="label">蓝色值</div>
+                        <div class="value blue-value" id="blue-num">127</div>
+                    </div>
+                </div>
+                
+                <p class="instructions">每个滑块控制一种原色的强度，范围从0到255。拖动滑块时，三种颜色会实时混合，形成新的颜色。</p>
+            </div>
+            
+            <div class="color-preview">
+                <div class="color-display" id="color-display"></div>
+                
+                <div class="hex-container">
+                    <div class="hex-label">HEX颜色代码</div>
+                    <div class="hex-code" id="hex-code">#7F7F7F</div>
+                    <button class="copy-btn" id="copy-btn">
+                        <i class="far fa-copy"></i> 复制HEX代码
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>RGB颜色混合实验室 &copy; 2023 | 拖动滑块实时合成颜色 | 背景会动态响应颜色变化</p>
+        </div>
+    </div>
+
+    <script>
+        // 获取DOM元素
+        const redSlider = document.getElementById('red-slider');
+        const greenSlider = document.getElementById('green-slider');
+        const blueSlider = document.getElementById('blue-slider');
+        
+        const redValue = document.getElementById('red-value');
+        const greenValue = document.getElementById('green-value');
+        const blueValue = document.getElementById('blue-value');
+        
+        const redNum = document.getElementById('red-num');
+        const greenNum = document.getElementById('green-num');
+        const blueNum = document.getElementById('blue-num');
+        
+        const colorDisplay = document.getElementById('color-display');
+        const hexCode = document.getElementById('hex-code');
+        const copyBtn = document.getElementById('copy-btn');
+        
+        // 初始化颜色
+        let red = 127;
+        let green = 127;
+        let blue = 127;
+        
+        // 更新颜色显示
+        function updateColor() {
+            // 更新颜色值
+            red = parseInt(redSlider.value);
+            green = parseInt(greenSlider.value);
+            blue = parseInt(blueSlider.value);
+            
+            // 更新显示的值
+            redValue.textContent = red;
+            greenValue.textContent = green;
+            blueValue.textContent = blue;
+            
+            redNum.textContent = red;
+            greenNum.textContent = green;
+            blueNum.textContent = blue;
+            
+            // 将RGB值转换为十六进制
+            const hex = rgbToHex(red, green, blue);
+            
+            // 更新颜色显示区域
+            colorDisplay.style.backgroundColor = hex;
+            
+            // 更新HEX代码显示
+            hexCode.textContent = hex;
+            
+            // 更新背景渐变
+            updateBackground(red, green, blue);
+            
+            // 更新粒子颜色
+            updateParticles(red, green, blue);
+        }
+        
+        // 将RGB值转换为十六进制
+        function rgbToHex(r, g, b) {
+            return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+        
+        // 将单个颜色分量转换为十六进制
+        function componentToHex(c) {
+            const hex = c.toString(16);
+            return hex.length === 1 ? "0" + hex : hex;
+        }
+        
+        // 更新背景渐变
+        function updateBackground(r, g, b) {
+            // 创建互补色
+            const complementR = 255 - r;
+            const complementG = 255 - g;
+            const complementB = 255 - b;
+            
+            // 设置背景渐变
+            document.body.style.background = `
+                linear-gradient(135deg, 
+                rgba(${r}, ${g}, ${b}, 0.7) 0%, 
+                rgba(${complementR}, ${complementG}, ${complementB}, 0.7) 100%),
+                linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)
+            `;
+        }
+        
+        // 创建背景粒子效果
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // 随机大小
+                const size = Math.random() * 60 + 20;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // 随机位置
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // 随机模糊和透明度
+                particle.style.filter = `blur(${Math.random() * 10}px)`;
+                particle.style.opacity = Math.random() * 0.4 + 0.1;
+                
+                // 随机动画
+                const duration = Math.random() * 20 + 10;
+                particle.style.animation = `float ${duration}s infinite ease-in-out`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // 更新粒子颜色
+        function updateParticles(r, g, b) {
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach(particle => {
+                // 创建带有透明度的颜色
+                const alpha = Math.random() * 0.3 + 0.1;
+                particle.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+            });
+        }
+        
+        // 复制HEX代码到剪贴板
+        copyBtn.addEventListener('click', () => {
+            const hex = hexCode.textContent;
+            navigator.clipboard.writeText(hex)
+                .then(() => {
+                    // 显示复制成功反馈
+                    const originalText = copyBtn.innerHTML;
+                    copyBtn.innerHTML = '<i class="fas fa-check"></i> 已复制!';
+                    copyBtn.classList.add('copied');
+                    
+                    setTimeout(() => {
+                        copyBtn.innerHTML = originalText;
+                        copyBtn.classList.remove('copied');
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('复制失败: ', err);
+                    alert('复制失败，请手动复制颜色代码');
+                });
+        });
+        
+        // 添加滑块事件监听
+        redSlider.addEventListener('input', updateColor);
+        greenSlider.addEventListener('input', updateColor);
+        blueSlider.addEventListener('input', updateColor);
+        
+        // 添加随机颜色按钮功能
+        function addRandomColorButton() {
+            const controls = document.querySelector('.color-controls');
+            const randomBtn = document.createElement('button');
+            randomBtn.className = 'copy-btn';
+            randomBtn.innerHTML = '<i class="fas fa-dice"></i> 随机颜色';
+            randomBtn.style.marginTop = '20px';
+            randomBtn.style.width = '100%';
+            
+            randomBtn.addEventListener('click', () => {
+                // 生成随机RGB值
+                redSlider.value = Math.floor(Math.random() * 256);
+                greenSlider.value = Math.floor(Math.random() * 256);
+                blueSlider.value = Math.floor(Math.random() * 256);
+                
+                updateColor();
+            });
+            
+            controls.appendChild(randomBtn);
+        }
+        
+        // 初始化
+        function init() {
+            // 创建粒子效果
+            createParticles();
+            
+            // 初始化颜色
+            updateColor();
+            
+            // 添加随机颜色按钮
+            addRandomColorButton();
+            
+            // 添加浮动动画
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes float {
+                    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+                    25% { transform: translate(20px, -20px) rotate(5deg); }
+                    50% { transform: translate(-15px, 15px) rotate(-5deg); }
+                    75% { transform: translate(10px, -10px) rotate(3deg); }
+                }
+                
+                .particle {
+                    position: absolute;
+                    border-radius: 50%;
+                    pointer-events: none;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        
+        // 页面加载完成后初始化
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
